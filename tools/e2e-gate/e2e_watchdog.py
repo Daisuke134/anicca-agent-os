@@ -129,19 +129,25 @@ def gh_dispatch(version, build):
         raise RuntimeError(f"gh workflow run failed: {p.stderr.strip()[:300]}")
 
 
-def gh_find_run(dispatched_at):
-    """Newest completed gate run created at/after dispatched_at."""
+def gh_find_runs(dispatched_at):
+    """Completed gate runs created at/after dispatched_at, newest
+    first. A LIST, not a single run: runs dispatched by hand (or for
+    another build) interleave with the watchdog's own, and the
+    harvest must be able to skip manifests that certify a different
+    build (observed 2026-11-25: 841 manifests filed under 844/845/846
+    because the newest completed run was a manual 841 dispatch)."""
     p = run(["gh", "run", "list", "--repo", REPO, "--workflow", WORKFLOW,
              "--limit", "30", "--json",
              "databaseId,status,conclusion,createdAt,url"])
     if p.returncode != 0:
-        return None
+        return []
+    out = []
     for r in json.loads(p.stdout):
         created = e2e_gate.parse_ts(r.get("createdAt"))
         if (r.get("status") == "completed" and created
                 and created >= dispatched_at - timedelta(minutes=5)):
-            return r
-    return None
+            out.append(r)
+    return out
 
 
 def gh_download_manifest(run_id):
@@ -309,9 +315,18 @@ def job_trigger(ops, builds, now, dispatch_fn, find_run_fn,
                     manifest = r.get("manifest")
                     break
         else:
-            found = find_run_fn(dispatched_at)
-            if found:
-                manifest = download_fn(found["databaseId"])
+            # Accept only a manifest that certifies THIS version and
+            # build — the manifest declares both from the built app,
+            # so a foreign run's result can never be filed under this
+            # build's name. (The checker independently re-verifies
+            # the match, so a misfiling could never certify; this
+            # keeps the bookkeeping truthful and the trigger honest.)
+            for cand in find_run_fn(dispatched_at) or []:
+                m = download_fn(cand["databaseId"])
+                if (m and str(m.get("version")) == version
+                        and str(m.get("build")) == build):
+                    manifest = m
+                    break
         if manifest:
             ops.write_json(ops.record_path(version, build),
                            assemble_record(manifest, b))
@@ -410,7 +425,7 @@ def main() -> int:
             or v.get("attributes", {}).get("appStoreState")
             == "PREPARE_FOR_SUBMISSION"}
         dispatch_fn, find_run_fn, download_fn = (
-            gh_dispatch, gh_find_run, gh_download_manifest)
+            gh_dispatch, gh_find_runs, gh_download_manifest)
     else:
         with open(os.path.join(args.fixtures, "builds.json"),
                   encoding="utf-8") as f:
