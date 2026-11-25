@@ -218,11 +218,24 @@ class Ops:
         if c.returncode != 0:
             print(f"watchdog: nothing to commit ({c.stdout.strip()[:120]})")
             return
-        p = run(["git", "-C", self.root, "push", "origin", "main"])
-        if p.returncode != 0:
-            print(f"watchdog: PUSH FAILED: {p.stderr.strip()[:300]}")
-            raise SystemExit(1)
-        print(f"watchdog: pushed ({message})")
+        # anicca-ops is a shared clone with many lanes committing;
+        # a bare push lost the race on every tick of 2026-11-25.
+        # Rebase onto the moved remote and retry before giving up.
+        for attempt in range(3):
+            p = run(["git", "-C", self.root, "push", "origin", "main"])
+            if p.returncode == 0:
+                print(f"watchdog: pushed ({message})")
+                return
+            print(f"watchdog: push attempt {attempt + 1} rejected; "
+                  "fetch+rebase and retry")
+            run(["git", "-C", self.root, "fetch", "origin"], check=False)
+            rb = run(["git", "-C", self.root, "rebase", "origin/main"])
+            if rb.returncode != 0:
+                run(["git", "-C", self.root, "rebase", "--abort"],
+                    check=False)
+                break
+        print("watchdog: PUSH FAILED after retries")
+        raise SystemExit(1)
 
 
 # -------------------------------------------------------------- LOGIC
@@ -247,9 +260,27 @@ def assemble_record(manifest, build_info):
 
 
 def job_trigger(ops, builds, now, dispatch_fn, find_run_fn,
-                download_fn, fixture_runs=None):
+                download_fn, fixture_runs=None, in_scope_versions=None):
     actions = []
-    for version, b in sorted(latest_builds_per_version(builds, now).items()):
+    latest = latest_builds_per_version(builds, now)
+    if in_scope_versions is not None:
+        # Scope learned from the first live ticks (2026-11-25): the
+        # unscoped rule dispatched the latest build of EVERY version
+        # in the window — 7 dispatches per tick, mostly for versions
+        # released long before the gate existed — and the workflow's
+        # shared concurrency group cancelled most of them, including
+        # a run for the submitted build. The gate only needs records
+        # for builds that can still be submitted: the newest version's
+        # latest build, plus the latest build of any version in a
+        # review state or PREPARE_FOR_SUBMISSION.
+        keep = set(in_scope_versions)
+        if latest:
+            newest = max(
+                latest.items(),
+                key=lambda kv: e2e_gate.parse_ts(kv[1]["uploadedDate"]))
+            keep.add(newest[0])
+        latest = {v: b for v, b in latest.items() if v in keep}
+    for version, b in sorted(latest.items()):
         build = str(b["build"])
         if ops.has_record(version, build):
             continue
@@ -366,9 +397,18 @@ def main() -> int:
     ops.sync_in()
 
     fixture_runs = None
+    in_scope_versions = None
     if live:
         builds = live_builds()
         versions = live_versions()
+        states = asc_json(["versions", "list", "--app", APP_ID,
+                           "--platform", "IOS"]).get("data", [])
+        in_scope_versions = {
+            v.get("attributes", {}).get("versionString")
+            for v in states
+            if v.get("attributes", {}).get("appStoreState") in REVIEW_STATES
+            or v.get("attributes", {}).get("appStoreState")
+            == "PREPARE_FOR_SUBMISSION"}
         dispatch_fn, find_run_fn, download_fn = (
             gh_dispatch, gh_find_run, gh_download_manifest)
     else:
@@ -392,7 +432,8 @@ def main() -> int:
         find_run_fn = download_fn = None
 
     actions = job_trigger(ops, builds, now, dispatch_fn, find_run_fn,
-                          download_fn, fixture_runs)
+                          download_fn, fixture_runs,
+                          in_scope_versions=in_scope_versions)
     actions += job_watchdog(ops, versions, now)
     for a in actions:
         print(f"watchdog: {a}")
