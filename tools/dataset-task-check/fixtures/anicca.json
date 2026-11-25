@@ -1,0 +1,32 @@
+{
+ "decision": {
+  "decision_recorded": false,
+  "owner_recorded": false,
+  "canonical_source_recorded": false
+ },
+ "foundation": {
+  "tasks_from_real_failures": false,
+  "unambiguous_two_expert_test": false,
+  "reference_solution_per_task": false
+ },
+ "design": {
+  "balanced_positive_negative": false,
+  "capability_regression_split": false,
+  "initial_size_in_range": false
+ },
+ "metrics": {
+  "multiple_trials_per_task": false,
+  "pass_metrics_chosen": false,
+  "zero_pass_triage": false
+ },
+ "harness": {
+  "isolated_clean_environment": false,
+  "grade_outcome_not_path": true,
+  "partial_credit": false
+ },
+ "maintenance": {
+  "transcripts_read": false,
+  "saturation_monitored": false,
+  "suite_health_maintained": false
+ }
+}

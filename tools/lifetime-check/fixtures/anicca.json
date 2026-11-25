@@ -1,0 +1,20 @@
+{
+ "lifetime_surface_recorded_per_app": true,
+ "lifetime_is_nonconsumable_iap_not_subscription": false,
+ "decision_uses_cohort_ltv_not_average": false,
+ "lifetime_price_at_or_above_breakeven_formula": false,
+ "lifetime_multiplier_tested_not_guessed": false,
+ "commission_difference_accounted": false,
+ "lifetime_tested_via_owned_channels_first": false,
+ "lifetime_targets_lapsed_and_long_tenure_first": false,
+ "paywall_placement_deliberate_and_priced_clear": false,
+ "marginal_cost_features_metered_or_excluded": false,
+ "family_sharing_decided_before_launch": false,
+ "lifetime_scope_and_future_tiers_defined": false,
+ "subscriber_switch_handles_cancellation": false,
+ "google_purchase_acknowledged_within_3_days": false,
+ "refund_support_load_tracked_14_days": false,
+ "lifetime_revenue_tracked_separate_from_recurring": false,
+ "revenue_mix_cap_watched": false,
+ "cannibalization_shadow_watched": false
+}

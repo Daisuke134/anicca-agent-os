@@ -1,0 +1,33 @@
+{
+ "app": "compliant-fixture",
+ "citation": {
+  "effect_claimed_as_cure_or_app_equivalent_to_therapy": false,
+  "revenue_chain_recorded": true,
+  "source_numbers_cited_with_design": true
+ },
+ "design": {
+  "contact_graded_and_user_controlled_not_forced_exposure": true,
+  "language_invites_allowing_not_controlling_or_eliminating_feeling": true,
+  "willingness_paired_with_a_chosen_values_action": true
+ },
+ "ethics": {
+  "clinical_claim_made": false,
+  "core_acceptance_available_to_free_users": true,
+  "review_cadence_recorded": true
+ },
+ "inventory": {
+  "acceptance_defined_as_willingness_plus_values_action_distinct_from_suppression_distraction_endurance": true,
+  "acceptance_surfaces_inventoried": true,
+  "evidence_scope_and_measurement_caveat_audited": true
+ },
+ "measurement": {
+  "counts_recorded_not_rates_only": true,
+  "flexibility_measured_behaviourally_not_aaq2_alone": true,
+  "outcomes_measured_at_followup_separately_from_same_day_relief": true
+ },
+ "prohibitions": {
+  "acceptance_used_to_endure_harm_or_bypass_changeable_problems": false,
+  "suppression_or_distraction_counted_as_acceptance": false,
+  "unwillingness_shamed_or_framed_as_failure": false
+ }
+}

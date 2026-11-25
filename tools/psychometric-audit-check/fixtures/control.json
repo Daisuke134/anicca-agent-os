@@ -1,0 +1,42 @@
+{
+  "app": "adversarial control; illustrative unsupported claims",
+  "baseline": {
+    "name": "Gaussian copula",
+    "non_llm": true,
+    "strongest_comparator": true,
+    "synthetic_score": 0.81,
+    "baseline_score": 0.82,
+    "higher_is_better": true,
+    "conclusion": "below-baseline",
+    "used_as_evidence": true
+  },
+  "human_anchor": {
+    "kind": "unanchored",
+    "score": 0.89,
+    "reference": "fixture repeated human panel"
+  },
+  "joint_structure": {
+    "item_correlations": "fixture correlation matrix audited",
+    "latent_structure": "fixture factor loadings audited",
+    "reliability": "fixture reliability coefficients audited",
+    "within_person_sd_ratio": 0.664,
+    "marginals_only_validity_claim": true
+  },
+  "negative_controls": {
+    "human_null_established": true,
+    "reference": "fixture null human mediation paths",
+    "paths_tested": 0,
+    "synthetic_significant_paths": 4
+  },
+  "held_out": {
+    "training_data": "synthetic",
+    "test_data": "training",
+    "metric": "R2",
+    "value": -0.14,
+    "split_reference": "fixture disjoint human holdout"
+  },
+  "segment_gap": {
+    "decision_reversal": true,
+    "comparison": "fixture synthetic segment A vs human segment B"
+  }
+}

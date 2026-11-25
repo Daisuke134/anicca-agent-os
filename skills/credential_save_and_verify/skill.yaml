@@ -1,0 +1,21 @@
+name: credential_save_and_verify
+title: Credential Save and Verify
+description: Verify a credential in the shared store by reading it back and testing it before the session ends, so a later session never loses a login that once worked.
+category: Work and knowledge
+include_in_prompt: true
+skill_improvement:
+  managed: true
+  status: retired
+  evidence_handles:
+  - assistant-msg-ffd17d31
+  - assistant-msg-e4b8703a
+  - assistant-msg-d57ec3f1
+  measurement:
+    proxy_metric_id: human_gate_routing_rate
+    success_criterion: Within 14 days after consolidation, no password, MFA, biometric or device step is presented to the user, no sign-in batch launches two logins for the same account in parallel, every sampled successful login has a shared store entry read back and passing a length, format and authenticated test before the session ends, and zero later sessions fail to log in because a prior login was unsaved or saved corrupted.
+    window_days: 14
+  needs_review: false
+  rationale: Retirement in the same consolidation batch as the merged agent_side_auth_gate proposal above. Its save, read back, length and format check, authenticated test, reporting and recovery method is carried into that merged document, so this file leaves active discovery while staying on disk.
+  review_after: 2026-11-26T05:25:12.755092+00:00
+  reviewed_at: 2026-11-12T05:25:12.755092+00:00
+  run_id: sirun_7de1ed1a6c794176adf2851d354cefb9

@@ -1,0 +1,20 @@
+name: legacy_loop_takeover_proof
+title: Legacy Loop Takeover Proof
+description: Stop a legacy job or loop only after the replacement has proven itself for that exact account, so no account is left without a publisher.
+category: Work and knowledge
+include_in_prompt: true
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - assistant-msg-009bf691
+  - assistant-msg-a4d31c39
+  measurement:
+    proxy_metric_id: legacy_stop_blank_account_rate
+    success_criterion: Within 14 days after install, no legacy job or loop is stopped without a recorded live proof for that exact account, no account is left with zero coverage after a stop, and at least one takeover completes account by account with its proof recorded.
+    window_days: 14
+  needs_review: false
+  rationale: 'The evidence shows a stop order failure, not a single posting error. Assistant-msg-009bf691 stopped 29 Mac posting jobs, then the coverage audit in assistant-msg-a4d31c39 found cloud posting proven for only 4 accounts and restored 23 jobs as a bridge, after the user corrected the order to stop only after cloud proof for that account and forbade creating an account nobody posts to. This skill adds the missing method: proof defined as live replacement output for the exact account, one reversible stop at a time, a post-stop coverage check, and bridge restoration when proof fails. It does not duplicate social_post_lane_check, which checks owner, product, and handle before a post rather than governing when a legacy job may stop. The deterministic candidates were rejected because the goals_bookkeeping and memory recurring counts and the suppressed handoff counts carry no failure detail, and the chunk 4 cron failures that pause for a user-only action fall under agent_side_auth_gate, which remains inside its measurement window to 2026-11-12 and is not re-proposed. With 4 learned skills, no consolidation is triggered.'
+  review_after: 2026-11-13T10:09:41.697973+00:00
+  reviewed_at: 2026-10-30T10:09:41.697973+00:00
+  run_id: sirun_2d65bef72687498c9925268f1a7c5a1e

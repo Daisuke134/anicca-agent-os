@@ -1,0 +1,35 @@
+{
+  "estimand_type": "distal",
+  "distal_outcome": {
+    "name": "weekly wellbeing score",
+    "measurement_time": "week 8"
+  },
+  "policy_class": "stochastic",
+  "probability_bounds": [
+    0.1,
+    0.9
+  ],
+  "decision_points": {
+    "count": 112,
+    "many": true,
+    "classification_reason": "Repeated daily decisions across eight weeks; treated as many for this synthetic evaluation."
+  },
+  "stabilization": "exponential tilting",
+  "uncertainty": {
+    "type": "simultaneous_band"
+  },
+  "routine_elicitation": {
+    "used": true,
+    "playback_check": true,
+    "fragmentation_audit": "Merged duplicate commute entities after playback.",
+    "availability_receptivity_separated": true,
+    "availability_record": "Free at 18:00",
+    "receptivity_record": "Low energy after commute"
+  },
+  "claim": {
+    "text": "Synthetic policy optimizes week-8 wellbeing within the declared stochastic class.",
+    "outcome_type": "distal",
+    "optimal": true
+  },
+  "measured_outcome_type": "distal"
+}

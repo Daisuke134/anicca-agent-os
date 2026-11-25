@@ -1,0 +1,33 @@
+{
+ "app": "compliant-fixture",
+ "citation": {
+  "effect_claimed_as_cure_or_single_prompt_equivalent_to_program": false,
+  "revenue_chain_recorded": true,
+  "source_numbers_cited_with_design": true
+ },
+ "design": {
+  "anchor_and_gentle_return_instruction_present": true,
+  "dose_and_repetition_recorded_not_single_prompt_claim": true,
+  "user_can_stop_and_alternative_anchor_offered": true
+ },
+ "ethics": {
+  "clinical_claim_made": false,
+  "core_mindfulness_available_to_free_users": true,
+  "review_cadence_recorded": true
+ },
+ "inventory": {
+  "evidence_scope_and_control_caveat_audited": true,
+  "mindfulness_defined_as_present_moment_nonjudgmental_attention_distinct_from_relaxation_suppression_empty_mind": true,
+  "mindfulness_surfaces_inventoried": true
+ },
+ "measurement": {
+  "attention_measured_separately_from_calm_only": true,
+  "counts_recorded_not_rates_only": true,
+  "outcomes_measured_at_followup_separately_from_immediate_calm": true
+ },
+ "prohibitions": {
+  "distress_moment_used_to_paywall_the_practice": false,
+  "mind_wandering_or_noncompletion_shamed_or_scored_as_failure": false,
+  "relaxation_or_empty_mind_counted_as_mindfulness": false
+ }
+}

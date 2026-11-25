@@ -1,0 +1,59 @@
+{
+ "app": "compliant-example",
+ "audience": {
+  "low_bandwidth_considered": true,
+  "low_quality_video_present": false
+ },
+ "consistency": {
+  "clip_consistency_recorded": true,
+  "expectation_match_goal": true,
+  "same_clip_as_onboarding": true
+ },
+ "goal": {
+  "declared": "visual_explanation"
+ },
+ "inventory_recorded": true,
+ "performance": {
+  "locally_cached": true,
+  "optimized_or_progressive_load": true,
+  "poster_or_thumbnail_immediate": true,
+  "static_fallback_if_load_fails": true
+ },
+ "placement": {
+  "type": "top"
+ },
+ "prerequisites": {
+  "messaging_validated": true,
+  "payment_drivers_identified": true
+ },
+ "returning": {
+  "returning_forced_same_intense_video": false
+ },
+ "setup": {
+  "fades_to_cta": false,
+  "forced_watch_before_access": false,
+  "hero_autoplay_or_optional_click_only": true,
+  "loops": true,
+  "muted_by_default": true
+ },
+ "shown_to_subscribed_users": false,
+ "testing": {
+  "baseline_static_recorded": true,
+  "first_test_single_variable": true,
+  "judged_on_trial_and_revenue": true,
+  "test_order": "content_placement_setup",
+  "video_banned_after_one_test": false
+ },
+ "video": {
+  "captions_if_dialogue": true,
+  "dialogue_present": false,
+  "dynamic_video": true,
+  "fabricated_features_present": false,
+  "present": true,
+  "seconds": 20,
+  "shows_real_app_experience": true,
+  "strong_hook_first_seconds": true,
+  "supporting_copy_minimal": true,
+  "works_without_sound": true
+ }
+}

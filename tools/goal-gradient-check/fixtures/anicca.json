@@ -1,0 +1,20 @@
+{
+ "goal_surfaces_recorded_per_app": false,
+ "distance_shown_as_remaining_and_proportion": false,
+ "goal_distance_truthful_no_moving_finish": false,
+ "long_goals_segmented_into_near_subgoals": false,
+ "near_finish_zone_explicitly_designed": false,
+ "next_action_visible_at_every_distance": false,
+ "acceleration_measured_by_distance_band": false,
+ "post_reward_reset_anticipated": false,
+ "next_goal_seeded_before_completion": false,
+ "strongest_accelerators_reengaged_first": false,
+ "segment_effects_read_separately": false,
+ "no_fake_progress_or_illusory_distance": false,
+ "completion_time_not_promise": false,
+ "primary_numbers_quoted_with_design": false,
+ "expectations_discounted_for_single_domain": false,
+ "gradient_not_used_as_pressure_dark_pattern": false,
+ "effort_can_pause_without_distance_penalty": false,
+ "revenue_claim_tied_to_retention_read": false
+}

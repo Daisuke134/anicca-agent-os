@@ -1,0 +1,20 @@
+{
+ "pair_inventory_recorded": true,
+ "one_sentence_need_per_pair": true,
+ "audience_overlap_evidenced": true,
+ "placement_after_core_action": true,
+ "native_contextual_placement": true,
+ "frequency_capped": true,
+ "already_installed_suppressed": true,
+ "relevance_explained_in_copy": true,
+ "dedicated_landing_per_pair": true,
+ "campaign_token_attribution": true,
+ "holdout_incrementality_measured": true,
+ "source_retention_read_with_installs": true,
+ "keywords_split_not_shared": true,
+ "no_weaker_model_flow_for_payers": true,
+ "no_install_gate_or_incentive": true,
+ "no_storefront_mimicry": true,
+ "no_near_duplicate_pairs": true,
+ "outside_equals_inside_crosspromo": true
+}

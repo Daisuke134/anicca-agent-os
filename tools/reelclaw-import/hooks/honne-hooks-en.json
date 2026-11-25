@@ -1,0 +1,390 @@
+{
+  "family": "honne-reelclaw",
+  "language": "en",
+  "version": 3,
+  "note": "v3: 5 seed hooks + 4 variants each = 25 total. lines配列, separate drawtext per line. アポストロフィ禁止 (ffmpeg drawtext破壊). 絵文字は drawtext 非対応のため除外。",
+  "seedHooks": [
+    "How is this legal?",
+    "I wanna kiss the Google engineer who showed me this",
+    "What do you mean by that?",
+    "My friends are all evil.",
+    "I am cooked."
+  ],
+  "hooks": [
+    {
+      "id": "HEN-001",
+      "lines": [
+        "how is this",
+        "even legal"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "shock",
+        "discovery"
+      ],
+      "emotion": "shock",
+      "lastUsed": "2026-07-31T07:00:06+09:00"
+    },
+    {
+      "id": "HEN-002",
+      "lines": [
+        "this should be",
+        "illegal fr"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "shock",
+        "discovery"
+      ],
+      "emotion": "shock",
+      "lastUsed": "2026-07-31T11:00:07+09:00"
+    },
+    {
+      "id": "HEN-003",
+      "lines": [
+        "wait this",
+        "cannot be real"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "shock",
+        "discovery"
+      ],
+      "emotion": "shock",
+      "lastUsed": "2026-07-31T20:30:02+09:00"
+    },
+    {
+      "id": "HEN-004",
+      "lines": [
+        "the FBI is gonna",
+        "find me for this"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "shock",
+        "humor"
+      ],
+      "emotion": "shock",
+      "lastUsed": "2026-08-01T07:00:03+09:00"
+    },
+    {
+      "id": "HEN-005",
+      "lines": [
+        "someone tell me",
+        "this is illegal"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "shock",
+        "discovery"
+      ],
+      "emotion": "shock",
+      "lastUsed": "2026-07-23T20:30:08+09:00"
+    },
+    {
+      "id": "HEN-006",
+      "lines": [
+        "i wanna kiss the google",
+        "engineer who showed me this"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "love",
+        "amazement"
+      ],
+      "emotion": "joy",
+      "lastUsed": "2026-07-24T07:00:08+09:00"
+    },
+    {
+      "id": "HEN-007",
+      "lines": [
+        "the dev who built this",
+        "deserves a medal"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "love",
+        "amazement"
+      ],
+      "emotion": "joy",
+      "lastUsed": "2026-07-24T11:00:05+09:00"
+    },
+    {
+      "id": "HEN-008",
+      "lines": [
+        "whoever made this app",
+        "i love you"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "love",
+        "amazement"
+      ],
+      "emotion": "joy",
+      "lastUsed": "2026-07-24T20:30:40+09:00"
+    },
+    {
+      "id": "HEN-009",
+      "lines": [
+        "tell the dev i",
+        "wanna marry them"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "love",
+        "humor"
+      ],
+      "emotion": "joy",
+      "lastUsed": "2026-07-25T07:00:08+09:00"
+    },
+    {
+      "id": "HEN-010",
+      "lines": [
+        "someone give the",
+        "dev a raise rn"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "love",
+        "amazement"
+      ],
+      "emotion": "joy",
+      "lastUsed": "2026-07-25T11:00:06+09:00"
+    },
+    {
+      "id": "HEN-011",
+      "lines": [
+        "wait what does",
+        "that even mean"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "confusion",
+        "decode"
+      ],
+      "emotion": "confusion",
+      "lastUsed": "2026-07-25T20:30:09+09:00"
+    },
+    {
+      "id": "HEN-012",
+      "lines": [
+        "what do you",
+        "mean by that"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "confusion",
+        "decode"
+      ],
+      "emotion": "confusion",
+      "lastUsed": "2026-07-26T07:00:06+09:00"
+    },
+    {
+      "id": "HEN-013",
+      "lines": [
+        "explain this to me",
+        "like im 5"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "confusion",
+        "decode"
+      ],
+      "emotion": "confusion",
+      "lastUsed": "2026-07-26T11:00:07+09:00"
+    },
+    {
+      "id": "HEN-014",
+      "lines": [
+        "i need to know",
+        "what this means"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "confusion",
+        "decode"
+      ],
+      "emotion": "confusion",
+      "lastUsed": "2026-07-26T20:30:09+09:00"
+    },
+    {
+      "id": "HEN-015",
+      "lines": [
+        "but actually",
+        "what does that mean"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "confusion",
+        "decode"
+      ],
+      "emotion": "confusion",
+      "lastUsed": "2026-07-27T07:00:05+09:00"
+    },
+    {
+      "id": "HEN-016",
+      "lines": [
+        "my friends are",
+        "actually evil"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "betrayal",
+        "humor"
+      ],
+      "emotion": "disappointed",
+      "lastUsed": "2026-07-27T20:30:07+09:00"
+    },
+    {
+      "id": "HEN-017",
+      "lines": [
+        "everyone i know",
+        "is so evil"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "betrayal",
+        "humor"
+      ],
+      "emotion": "disappointed",
+      "lastUsed": "2026-07-28T07:00:09+09:00"
+    },
+    {
+      "id": "HEN-018",
+      "lines": [
+        "the audacity of",
+        "my group chat"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "betrayal",
+        "humor"
+      ],
+      "emotion": "disappointed",
+      "lastUsed": "2026-07-28T11:00:02+09:00"
+    },
+    {
+      "id": "HEN-019",
+      "lines": [
+        "this is exactly what",
+        "my friends would say"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "betrayal",
+        "relatable"
+      ],
+      "emotion": "disappointed",
+      "lastUsed": "2026-07-28T20:31:17+09:00"
+    },
+    {
+      "id": "HEN-020",
+      "lines": [
+        "my friends really do",
+        "be like this"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "betrayal",
+        "humor"
+      ],
+      "emotion": "disappointed",
+      "lastUsed": "2026-07-29T07:00:05+09:00"
+    },
+    {
+      "id": "HEN-021",
+      "lines": [
+        "i am",
+        "so cooked"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "overwhelmed",
+        "humor"
+      ],
+      "emotion": "overwhelmed",
+      "lastUsed": "2026-07-29T11:00:05+09:00"
+    },
+    {
+      "id": "HEN-022",
+      "lines": [
+        "this app",
+        "exposed me"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "overwhelmed",
+        "humor"
+      ],
+      "emotion": "overwhelmed",
+      "lastUsed": "2026-07-29T20:30:08+09:00"
+    },
+    {
+      "id": "HEN-023",
+      "lines": [
+        "my therapist is gonna",
+        "hear about this"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "overwhelmed",
+        "humor"
+      ],
+      "emotion": "overwhelmed",
+      "lastUsed": "2026-07-30T07:00:08+09:00"
+    },
+    {
+      "id": "HEN-024",
+      "lines": [
+        "i am beyond",
+        "cooked rn"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "overwhelmed",
+        "humor"
+      ],
+      "emotion": "overwhelmed",
+      "lastUsed": "2026-07-30T11:00:08+09:00"
+    },
+    {
+      "id": "HEN-025",
+      "lines": [
+        "she said exactly what",
+        "i was thinking"
+      ],
+      "status": "active",
+      "maxLines": 2,
+      "tags": [
+        "overwhelmed",
+        "decode"
+      ],
+      "emotion": "overwhelmed",
+      "lastUsed": "2026-07-30T20:30:08+09:00"
+    }
+  ]
+}

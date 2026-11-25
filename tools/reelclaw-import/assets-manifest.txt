@@ -1,0 +1,26 @@
+-rw-r--r--  1 anicca  staff  4967 Jul  4 05:04 /Users/anicca/.openclaw/workspace/reelclaw-assets/README.md
+-rw-------  1 anicca  staff  8374948 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/card-en/v3.mp4
+-rw-------  1 anicca  staff  8395471 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/card-en/v2.mp4
+-rw-------  1 anicca  staff  5138568 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/card-en/v1.mp4
+-rw-------  1 anicca  staff  8738269 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/card-en/v4.mp4
+-rw-------@ 1 anicca  staff  8902781 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/widget-ja/v3.mp4
+-rw-------@ 1 anicca  staff  7264512 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/widget-ja/v2.mp4
+-rw-------  1 anicca  staff  5138568 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/widget-ja/v1.mp4
+-rw-------  1 anicca  staff  10010638 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/widget-ja/v4.mp4
+-rw-------@ 1 anicca  staff  9067705 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/honne-ja/v3.mp4
+-rw-------  1 anicca  staff  6590548 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/honne-ja/v2.mp4
+-rw-------@ 1 anicca  staff  8522603 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/honne-ja/v1.mp4
+-rw-------@ 1 anicca  staff  8479843 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/honne-ja/v4.mp4
+-rw-------@ 1 anicca  staff  4241616 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/card-ja/v3.mp4
+-rw-------  1 anicca  staff  9342938 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/card-ja/v2.mp4
+-rw-------  1 anicca  staff  5138568 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/card-ja/v1.mp4
+-rw-------  1 anicca  staff  9571939 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/card-ja/v4.mp4
+-rw-------@ 1 anicca  staff  9630036 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/widget-en/v3.mp4
+-rw-------@ 1 anicca  staff  6416749 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/widget-en/v2.mp4
+-rw-------  1 anicca  staff  8465574 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/widget-en/v1.mp4
+-rw-------@ 1 anicca  staff  6476836 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/widget-en/v4.mp4
+-rw-------  1 anicca  staff  6217552 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/honne-en/v3.mp4
+-rw-------  1 anicca  staff  3872899 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/honne-en/v2.mp4
+-rw-------  1 anicca  staff  6230548 Jul  4 05:06 /Users/anicca/.openclaw/workspace/reelclaw-assets/videos/honne-en/v1.mp4
+-rw-r--r--@ 1 anicca  staff  583187 Aug 25 15:30 /Users/anicca/.openclaw/workspace/reelclaw-assets/capafy-ig-report/interview-coach-4014388606-thumbnail.png
+       6

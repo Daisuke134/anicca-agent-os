@@ -1,0 +1,33 @@
+{
+ "app": "compliant",
+ "inventory": {
+  "gaps_inventoried_per_surface": true,
+  "gap_is_specific_question": true,
+  "partial_knowledge_present": true
+ },
+ "design": {
+  "gap_opened_before_answer": true,
+  "answer_exists_and_closable": true,
+  "closure_distance_honest": true
+ },
+ "prohibitions": {
+  "payoff_unrelated_or_absent": false,
+  "gap_never_closed": false,
+  "fabricated_mystery": false
+ },
+ "measurement": {
+  "open_and_closure_measured_separately": true,
+  "post_answer_disappointment_measured": true,
+  "counts_recorded_not_rates_only": true
+ },
+ "citation": {
+  "source_numbers_cited_with_design": true,
+  "lab_effect_used_as_product_promise": false,
+  "revenue_chain_recorded": true
+ },
+ "ethics": {
+  "paywall_blocks_self_generated_answer": false,
+  "user_can_ignore_gap_without_penalty": true,
+  "review_cadence_recorded": true
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "pause_offer_exists": true,
+ "pause_matched_to_not_now_reason": false,
+ "pause_not_offered_for_price_or_feature_reasons": false,
+ "platform_pause_mechanism_verified": true,
+ "fixed_length_with_resume_date_shown": false,
+ "extendable_once_only": false,
+ "billing_stops_and_resumes_same_plan": true,
+ "data_and_settings_preserved": true,
+ "data_retention_stated_in_one_sentence": true,
+ "pause_available_outside_cancel_flow": true,
+ "reminder_before_resume_and_confirmation_on_day": true,
+ "resume_rate_measured": false,
+ "net_resume_rate_measured": false,
+ "pause_to_cancel_counted_as_churn": false,
+ "pauses_reported_by_reason_and_extension": true,
+ "paused_mrr_reported_separately": false,
+ "no_fake_save_counting": false,
+ "outside_equals_inside_pause": true,
+ "app": "contrast: open-ended pause offered to every canceller and counted as a save on day one"
+}

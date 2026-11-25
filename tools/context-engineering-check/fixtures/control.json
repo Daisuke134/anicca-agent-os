@@ -1,0 +1,32 @@
+{
+ "anatomy": {
+  "examples_canonical_diverse_not_laundry_list": true,
+  "system_prompt_right_altitude_tested_minimal": true,
+  "tools_minimal_nonoverlapping_token_efficient": true
+ },
+ "budget_measurement": {
+  "attention_budget_rot_measured_on_own_traces": false,
+  "smallest_high_signal_set_compared": false,
+  "tool_result_clearing_and_pruning_applied": false
+ },
+ "decision": {
+  "canonical_source_recorded": true,
+  "decision_recorded": true,
+  "owner_recorded": true
+ },
+ "discipline": {
+  "context_changes_evaluated_before_promotion": false,
+  "context_configuration_versioned_as_unit": true,
+  "simplest_thing_autonomy_boundary_recorded": false
+ },
+ "just_in_time": {
+  "hybrid_boundary_decided_per_task": true,
+  "identifiers_kept_data_loaded_at_runtime": true,
+  "progressive_disclosure_metadata_used": true
+ },
+ "long_horizon": {
+  "compaction_tuned_recall_then_precision": true,
+  "structured_notes_outside_context_pulled_back": true,
+  "subagents_return_distilled_summaries": true
+ }
+}

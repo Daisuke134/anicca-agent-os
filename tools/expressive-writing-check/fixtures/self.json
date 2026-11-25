@@ -1,0 +1,15 @@
+{
+  "inventory": {},
+  "design": {},
+  "prohibitions": {
+    "distress_presented_as_proof_it_works_or_required": false,
+    "expressive_writing_paywalled_or_upsold_at_disclosure_moment": false,
+    "forced_daily_streak_or_public_sharing_required": false
+  },
+  "measurement": {},
+  "citation": {},
+  "ethics": {
+    "clinical_claim_made": false
+  },
+  "app": "anicca-self-assessment-2026-11-25"
+}

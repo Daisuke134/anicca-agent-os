@@ -1,0 +1,21 @@
+{
+ "community_decision_recorded": false,
+ "natural_repeat_reason_exists": true,
+ "newcomer_first_weeks_focus": false,
+ "group_activity_shown_prominently": false,
+ "return_triggers_from_other_users": false,
+ "group_identity_prioritised_over_bonds": false,
+ "first_post_response_guaranteed": false,
+ "early_feedback_loop_tracked": false,
+ "reading_participation_supported": false,
+ "seeding_plan_before_launch": false,
+ "cadence_calendar_planned": false,
+ "moderation_is_precondition": false,
+ "causal_design_holdout_or_matched": false,
+ "judged_at_week4_and_month3": false,
+ "self_selection_bias_acknowledged": false,
+ "history_accumulates_inside_app": false,
+ "no_fabricated_members_or_activity": true,
+ "outside_equals_inside_community": true,
+ "app": "anicca-current (recorded practice only; no in-app community surface)"
+}

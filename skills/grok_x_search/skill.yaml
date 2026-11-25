@@ -1,0 +1,5 @@
+name: "grok_x_search"
+title: "Search X with Grok Build"
+description: "Procedure for finding X (Twitter) posts by topic with Grok Build (xAI grok CLI, x_search), then reading them via FxTwitter. Manual only: login, install and paid-plan usage are Grok's lane."
+category: "Work and knowledge"
+include_in_prompt: true

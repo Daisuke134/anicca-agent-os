@@ -1,0 +1,32 @@
+{
+ "application": {
+  "drift_measured": false,
+  "entitlement_reflects_reconciled": true,
+  "idempotent_replay": false
+ },
+ "backfill": {
+  "signed_payloads_verified": false,
+  "statuses_as_current_arbiter": false,
+  "transaction_history_backfill": false
+ },
+ "decision": {
+  "cadence_recorded": false,
+  "decision_recorded": false,
+  "owner_recorded": false
+ },
+ "foundation": {
+  "credentials_verified": false,
+  "environment_separated": false,
+  "transaction_id_retrievable": false
+ },
+ "notification_history": {
+  "only_failures_checked": false,
+  "pagination_followed": false,
+  "sweep_scheduled_within_window": false
+ },
+ "verification": {
+  "out_of_order_tested": false,
+  "pagination_unit_tested": false,
+  "sandbox_missed_event_tested": false
+ }
+}

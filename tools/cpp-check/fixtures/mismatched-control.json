@@ -1,0 +1,4 @@
+{"app":"Control","keyword_field":["morning"],
+ "pages":[
+  {"name":"bad","channel":"direct","intent":"everyone","traffic_source":"blog","just_did":"read a breakup post","cluster_size":9,"branded":true,"monthly_impressions":50,"conversion_below_average":false,"keywords":["morning","unknownterm"],"promo_text":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","first_frame_shows_result":false,"ban_list":["intenseword"],"text_layers":["an intenseword headline over a form"],"deep_link_continuity":false}],
+ "measurement":{"total_views":10000,"total_downloads":200,"pages":{"bad":{"views":1000,"downloads":5}},"checks_retention_proceeds":false,"sample_weeks":1,"rerouted_below_1x":false}}

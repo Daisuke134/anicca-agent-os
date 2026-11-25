@@ -1,0 +1,33 @@
+{
+ "app": "compliant-fixture",
+ "citation": {
+  "effect_claimed_as_cure_or_lab_effect_claimed_as_clinical_outcome": false,
+  "revenue_chain_recorded": true,
+  "source_numbers_cited_with_design": true
+ },
+ "design": {
+  "distancing_paired_with_reconstrual_and_a_next_action": true,
+  "event_chosen_by_user_and_can_stop_or_return_to_first_person": true,
+  "named_distancing_technique_with_externalisation_present": true
+ },
+ "ethics": {
+  "clinical_claim_made": false,
+  "core_distancing_available_to_free_users": true,
+  "review_cadence_recorded": true
+ },
+ "inventory": {
+  "distancing_defined_as_perspective_shift_while_engaging_distinct_from_avoidance_distraction_suppression_defusion": true,
+  "distancing_surfaces_inventoried": true,
+  "evidence_scope_and_counterweight_audited": true
+ },
+ "measurement": {
+  "counts_recorded_not_rates_only": true,
+  "followup_measured_not_only_immediate_calm": true,
+  "reactivity_and_reconstrual_measured_separately": true
+ },
+ "prohibitions": {
+  "avoidance_or_distraction_counted_as_distancing": false,
+  "cold_detachment_or_dismissal_of_feelings_used": false,
+  "distress_moment_used_to_paywall_the_exercise": false
+ }
+}

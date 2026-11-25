@@ -1,0 +1,7 @@
+{"app":"compliant-design",
+ "inventory":{"purchase_surfaces_recorded":true,"restore_outcomes_defined":true,"transfer_behavior_recorded":true},
+ "entry":{"restore_on_paywall":true,"restore_in_settings_direct":true,"settings_restore_string_referenced":true},
+ "mechanism":{"calls_restore_purchases":true,"user_initiated_only":true,"identity_login_linking_evidenced":true},
+ "outcomes":{"success_advances_flow":true,"no_entitlement_message_shown":true,"failure_message_shown":true,"cancellation_distinguished":true},
+ "customer_center":{"customer_center_linked_in_settings":true,"customer_center_restore_config_verified":true},
+ "measurement":{"restore_started_counted":true,"restore_result_counted":true,"restore_results_connected_to_revenue":true}}

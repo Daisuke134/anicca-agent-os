@@ -1,0 +1,7 @@
+{
+  "evaluation_name": "Anicca documented current state, 2026-11-20",
+  "source_paths": [
+    "files/paper-loop-synthetic2-mrt2-gates-spec-2026-11-20.md"
+  ],
+  "documented_state": "Specification sections 4, 6 and 7: new reporting gates; Anicca measurement evidence is not supplied. Unknown declarations intentionally absent; this is a documentation snapshot, not a live system audit."
+}

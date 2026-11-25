@@ -1,0 +1,23 @@
+name: social_post_lane_check
+title: Social Post Lane Check
+description: Check the owner, product assignment, and verified channel handle for a social account before posting, so a post never goes to the wrong lane.
+category: Business
+include_in_prompt: true
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - assistant-msg-c8b5ab1e
+  - assistant-msg-4ffca2a7
+  - assistant-msg-31d59c21
+  - assistant-msg-4b4c237b
+  - scheduler_job:anicca-distribution-loop
+  measurement:
+    proxy_metric_id: social_post_lane_conflict_rate
+    success_criterion: Within 14 days after consolidation, no post is published to an account with an active different owner and no recorded handover, no post is published for a product outside that account assignment, no scheduled post relies on a display name alone as channel proof, no video or slideshow is published with a missing audio stream or a silent mean volume, and every gated asset has a recorded stream, level and sound type check.
+    window_days: 14
+  needs_review: false
+  rationale: Third merge in the same consolidation batch. social_post_lane_check and media_audio_gate are both pre-publish gates on the same posting decision, and winner_copy_by_measurement already runs both of them in sequence before publishing. The lane check stops wrong owner, wrong product and display name only channel errors from assistant-msg-c8b5ab1e and assistant-msg-4ffca2a7, while the audio gate stops silent assets measured at mean -91.0 dB and assets with no audio stream in assistant-msg-31d59c21, with the three part fix recorded in assistant-msg-4b4c237b. One gate skill for the publish decision replaces two, the audio method moves into social_post_lane_check, and media_audio_gate is retired in this batch. Its file stays on disk, so the link from winner_copy_by_measurement still resolves.
+  review_after: 2026-11-26T05:25:12.755092+00:00
+  reviewed_at: 2026-11-12T05:25:12.755092+00:00
+  run_id: sirun_7de1ed1a6c794176adf2851d354cefb9

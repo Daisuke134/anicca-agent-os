@@ -1,0 +1,23 @@
+{
+  "candidate_recorded": true,
+  "category": "affirmation",
+  "needs_marketplace": false, "needs_social_feed": false, "needs_chat": false, "needs_team": false, "needs_expensive_backend": false,
+  "step1_printing": {
+    "source_monthly_revenue_usd": 400000, "revenue_evidence_how": "ranking + reviews/week + creator activity",
+    "total_reviews": 738808, "rating": 4.8, "reviews_per_week": 900,
+    "creators_posting": true, "creator_video_views": 1200000,
+    "source_paywall_recorded": true, "creator_one_liner": "daily affirmations that rewire your mind",
+    "ranked_by_revenue_over_quality": true
+  },
+  "step2_winnable": {
+    "one_sentence": true, "one_screenshot": true, "visible_twist": true,
+    "daily_creators_in_niche": true, "belong_or_hire_creators": true,
+    "build_days": 12, "day1_win": true, "mascot_or_visual": true,
+    "three_screenshots_planned": true,
+    "paywall_model": "soft_freemium", "paywall_model_reason": "owner decision 2026-11-13: Anicca portfolio is soft paywall; free core reaches the aha first",
+    "twist_elements": ["new_angle", "better_design"]
+  },
+  "step3_content_first": {"best_competitor_videos_found": 10, "hooks_written": 10, "format": "reaction_demo", "best_competitor_video_views": 450000},
+  "step4_money_math": {"yearly_price_usd": 47.99, "weekly_price_usd": 6.99, "views_to_paid_math_recorded": true, "download_to_paid_pct": 4, "months_to_10k": 6, "paid_creators_required": false, "paid_ads_required": false, "reaches_10k_on_free_organic": true},
+  "step5_launch_test": {"onboarding_paywall_copied_from": "I am (named winner)", "launch_hooks": 10, "day1_alive_rule_recorded": true, "kill_rule_recorded": true, "no_tinker_until_3k_recorded": true}
+}

@@ -1,0 +1,116 @@
+#!/usr/bin/env python3
+"""tikwm: TikTok 投稿の全指標（再生・いいね・コメント・共有・保存）を取得する。
+使い方: tikwm <TikTok投稿URL or 短縮リンク>
+実体は公開API https://www.tikwm.com/api/ （認証不要・無料）。読み取り専用。
+
+間欠失敗への対策（2026-11-15。切り分け正本: tikwm-health-2026-11-15.md）:
+- 取得の主経路は curl（同一時間帯の交互実測で curl 4/4・urllib 1/4 と差が確定したため）。
+  curl が無い環境では urllib にフォールバックし、そちらにも同じリトライと救済がかかる。
+- 転送層の一時的エラー（IncompleteRead / RemoteDisconnected / URLError 等）は
+  初回＋最大4回まで、指数バックオフ（3秒→6秒→12秒→24秒、±20% のジッタ付き）で再試行する。
+  失敗は時間帯で波になるため、試行間隔を広めに取って波を跨ぐ。レート制限応答のときは最低15秒空ける。
+- IncompleteRead でも本文が完結していれば（JSON としてパースできれば）そのまま使う。
+  chunked の終端チャンクを取りこぼしただけのケースが実測で大半を占めるため。
+- API が code != 0 を返した場合は原則として再試行せず即エラーにする（恒常的な失敗を隠さない）。
+  ただしレート制限（"Free Api Limit: 1 request/second"）だけは一時的なので再試行対象とする。
+  再試行し尽くした場合は最後の応答をそのまま返し、エラーとして表に出す。"""
+import http.client, json, random, subprocess, sys, time, urllib.request, urllib.parse, urllib.error
+
+MAX_ATTEMPTS = 5  # 初回 + 再試行4回
+BACKOFF = [3, 6, 12, 24]  # 試行間の待機秒数（失敗の波を跨ぐため広めに取る）
+RATE_LIMIT_MIN_WAIT = 15  # レート制限応答のときの最低待機秒数（同一IPの他呼び出しと競合するため）
+
+def is_rate_limit(d):
+    """API の code != 0 応答のうち、レート制限（一時的）かどうか。"""
+    return "limit" in str(d.get("msg") or "").lower()
+
+def fetch_via_curl(api):
+    """curl で1回取得する。この proxy + Cloudflare 経路では urllib より切断に強い
+    （同一時間帯の交互実測で curl 4/4 成功・urllib 1/4 成功。tikwm-health-2026-11-15.md）。"""
+    p = subprocess.run(
+        ["curl", "-sS", "--max-time", "30", "-A", "Mozilla/5.0", api],
+        capture_output=True, timeout=45)
+    if p.returncode != 0:
+        raise urllib.error.URLError(
+            f"curl exit {p.returncode}: {p.stderr.decode('utf-8', 'replace').strip()[:120]}")
+    return json.loads(p.stdout.decode("utf-8"))
+
+def fetch_via_urllib(api):
+    """urllib で1回取得する（curl が無い環境向けのフォールバック）。
+    IncompleteRead は本文が完結していれば救済する。"""
+    req = urllib.request.Request(api, headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except http.client.IncompleteRead as e:
+        # chunked の終端チャンクを取りこぼしただけで本文が完結している場合は
+        # そのまま使う（JSON としてパースできれば構造的に完全な応答だと保証される。
+        # 健全性確認 tikwm-health-2026-11-15.md で実証済みのケース）。
+        partial = e.partial or b""
+        if partial:
+            try:
+                d = json.loads(partial.decode("utf-8"))
+                print(f"note: IncompleteRead but body complete ({len(partial)} bytes) - using it", file=sys.stderr)
+                return d
+            except ValueError:
+                pass
+        raise
+
+def fetch_once(api):
+    """1回だけ取得する。主経路は curl、無い場合だけ urllib。"""
+    try:
+        return fetch_via_curl(api)
+    except FileNotFoundError:
+        return fetch_via_urllib(api)
+
+def fetch(api):
+    """API から JSON を取得する。再試行するのは一時的な失敗だけ。"""
+    last_err = None
+    last_resp = None
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        try:
+            d = fetch_once(api)
+        except urllib.error.HTTPError as e:
+            # 4xx は恒常的な失敗なので即エラー。5xx は一時的として再試行する。
+            if e.code < 500:
+                raise
+            last_err = e
+        except (http.client.IncompleteRead, http.client.RemoteDisconnected,
+                ConnectionError, TimeoutError, urllib.error.URLError,
+                json.JSONDecodeError, subprocess.TimeoutExpired) as e:
+            last_err = e
+        else:
+            if d.get("code") == 0 or not is_rate_limit(d):
+                return d
+            # レート制限だけは一時的なので再試行する。それ以外の code != 0 は
+            # 上の分岐で即座に返している（恒常的な失敗を隠さない）。
+            last_resp = d
+            last_err = None
+        if attempt < MAX_ATTEMPTS:
+            wait = BACKOFF[attempt - 1] * random.uniform(0.8, 1.2)
+            if last_err is None:  # レート制限応答のときは長めに空ける
+                wait = max(wait, RATE_LIMIT_MIN_WAIT)
+            reason = type(last_err).__name__ if last_err is not None else "ApiRateLimit"
+            print(f"retry {attempt}/{MAX_ATTEMPTS - 1}: {reason} - {wait:.0f}s 待機", file=sys.stderr)
+            time.sleep(wait)
+    if last_resp is not None:
+        return last_resp
+    raise last_err
+
+def main():
+    if len(sys.argv) < 2:
+        print("usage: tikwm <tiktok post url>"); return 2
+    api = "https://www.tikwm.com/api/?url=" + urllib.parse.quote(sys.argv[1], safe="")
+    try:
+        d = fetch(api)
+    except Exception as e:
+        print(f"ERROR: {type(e).__name__}: {e}"); return 1
+    if d.get("code") != 0:
+        print(f"ERROR: {d.get('msg')}"); return 1
+    v = d["data"]
+    print(f"id={v.get('id')} author={v.get('author',{}).get('unique_id')}")
+    print(f"views={v.get('play_count')} likes={v.get('digg_count')} comments={v.get('comment_count')} shares={v.get('share_count')} saves={v.get('collect_count')}")
+    print(f"title={v.get('title','')[:120]}")
+    return 0
+if __name__ == "__main__":
+    sys.exit(main())

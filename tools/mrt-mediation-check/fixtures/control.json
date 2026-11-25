@@ -1,0 +1,97 @@
+{
+  "design": {
+    "treatment_type": "factorial",
+    "outcomes": {
+      "proximal_types": [
+        "engagement",
+        "target_behavior"
+      ],
+      "distal_present": true
+    }
+  },
+  "distal_claim": true,
+  "distal_effects": [
+    "direct",
+    "indirect",
+    "total"
+  ],
+  "mediation_claim": true,
+  "mediator": {
+    "definition": "practice confidence",
+    "measurement_time": "immediately after each treatment",
+    "nearest_after_treatment": true
+  },
+  "estimands": {
+    "direct": "natural direct excursion effect",
+    "indirect": "natural indirect excursion effect",
+    "total": "total excursion effect"
+  },
+  "identification_assumptions": [
+    "consistency",
+    "positivity",
+    "sequential ignorability"
+  ],
+  "estimator": {
+    "robustness": "doubly_robust",
+    "cross_fitting": false,
+    "numeric_mediation_claim": true
+  },
+  "factorial": {
+    "factors": {
+      "feedback": [
+        "off",
+        "on"
+      ],
+      "granularity": [
+        "utterance",
+        "session"
+      ]
+    },
+    "arms": [
+      {
+        "feedback": "off",
+        "granularity": "utterance"
+      },
+      {
+        "feedback": "off",
+        "granularity": "session"
+      },
+      {
+        "feedback": "on",
+        "granularity": "utterance"
+      },
+      {
+        "feedback": "on",
+        "granularity": "session"
+      }
+    ],
+    "interaction_contrasts": [
+      "feedback by granularity difference-in-differences"
+    ],
+    "preregistered": true,
+    "selection_basis": [
+      "main_effects"
+    ]
+  },
+  "randomization": {
+    "fixed": false,
+    "algorithm_version": "example-policy-v1",
+    "clipping": {
+      "lower": 0.1,
+      "upper": 0.9
+    },
+    "actual_probability_logged": false,
+    "fixed_probability_assumed": true
+  },
+  "proximal_outcomes": {
+    "engagement": [
+      "practice opened"
+    ],
+    "target_behavior": [
+      "skill performance"
+    ],
+    "cross_outcome_inference": true
+  },
+  "feasibility_as_efficacy": true,
+  "fixture_note": "Negative control: otherwise complete design with prohibited inferences."
+}

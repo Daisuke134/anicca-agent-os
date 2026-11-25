@@ -1,0 +1,21 @@
+{
+ "link_inventory_recorded": false,
+ "pt_obtained_from_app_store_connect": false,
+ "pt_recorded_once_and_reused": false,
+ "every_controlled_link_tagged": false,
+ "ct_within_30_chars_and_charset": false,
+ "mt8_preserved_as_generated": false,
+ "one_ct_per_placement_not_per_platform": false,
+ "creators_tagged_individually": false,
+ "naming_scheme_channel_placement_date": false,
+ "ct_ledger_with_location_and_live_date": false,
+ "links_direct_to_apps_apple_com": true,
+ "button_itself_carries_ct": false,
+ "links_tested_on_device_in_host_apps": false,
+ "read_in_30day_windows_after_24h": false,
+ "threshold_5_respected_no_premature_kill": false,
+ "last_click_and_24h_window_in_reading": false,
+ "search_lift_crosschecked_on_posting_days": false,
+ "unverified_surfaces_not_relied_on": true,
+ "app": "anicca-current (audit 2026-11-23: every apps.apple.com link found in company records is a bare URL with no pt/ct -- e.g. apps.apple.com/app/daily-affirmations-anicca/id6755129214 and the Honne link explicitly recorded as 'ctなし'; links are direct to apps.apple.com and no undocumented surface is relied on, hence the 2 passive passes; no pt, ct, ledger, scheme or campaign reading exists)"
+}

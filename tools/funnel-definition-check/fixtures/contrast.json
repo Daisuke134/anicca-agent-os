@@ -1,0 +1,20 @@
+{
+ "funnel_steps_recorded": true,
+ "each_step_has_firing_moment": true,
+ "primary_funnel_named_and_owned": true,
+ "screen_event_on_appearance": false,
+ "completion_before_paywall_or_signup": false,
+ "skip_carries_origin_screen": true,
+ "paywall_view_every_appearance_with_placement": false,
+ "signup_only_new_accounts": false,
+ "funnel_split_by_source": true,
+ "trial_purchase_from_server_truth": false,
+ "no_double_counting_app_and_server": false,
+ "paywall_conversion_read_per_placement": true,
+ "fixed_short_screen_names": false,
+ "no_answers_or_pii_in_events": false,
+ "test_devices_excluded_automatically": true,
+ "cohort_by_install_date": false,
+ "unordered_counting_and_maturity_rules": false,
+ "minimum_n_before_comparison": true
+}

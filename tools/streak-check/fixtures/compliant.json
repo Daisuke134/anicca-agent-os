@@ -1,0 +1,52 @@
+{
+ "activation_window_days_by_plan": {
+  "annual": 30,
+  "monthly": 14,
+  "weekly": 5
+ },
+ "app": "compliant-design",
+ "counter_visible_on_home": true,
+ "forgiveness": {
+  "paid": false,
+  "type": "weekly_free_skip"
+ },
+ "frp": {
+  "defined": true,
+  "denominator": "activated_users",
+  "measured_from_survivors_vs_churners": true
+ },
+ "full_goal_required": false,
+ "increments_without_core_action": false,
+ "milestones_days": [
+  3,
+  7,
+  30
+ ],
+ "points_economy_farmable": false,
+ "post_break": {
+  "break_copy_style": "encouragement_no_shame",
+  "consistency_window_shown": true,
+  "cumulative_progress_preserved": true,
+  "day_boundary": "device_local_timezone",
+  "grace_paywalled": false,
+  "hard_day_declaration_protects": true,
+  "longest_streak_record_preserved": true,
+  "offline_completion_counts_on_sync": true,
+  "outage_protection": true,
+  "punishment_on_break": false,
+  "repair_method": "earn_back_core_action",
+  "repair_offered_after_break": true,
+  "repair_paid": false,
+  "repair_window_hours": 72,
+  "rescue_notifications_after_break": 1,
+  "streak_display_opt_out": true
+ },
+ "qualifying_action": "one_core_action_complete",
+ "reminder": {
+  "hours_after_last": 23.5,
+  "message_style": "value_oriented_streak_named",
+  "timing_basis": "hours_after_last"
+ },
+ "store_copy_claims_no_streaks": false,
+ "streak_implemented": true
+}

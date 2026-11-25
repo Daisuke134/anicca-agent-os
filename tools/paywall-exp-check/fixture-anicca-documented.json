@@ -1,0 +1,7 @@
+{"experiment":{"recorded":false,"hypothesis":"","variables_changed":5,"variants_otherwise_identical":false,"change_size":"micro"},
+ "metrics":{"primary_preregistered":false,"decision_metric":"trial_start_rate","refund_watched":false},
+ "sample":{"size_preregistered":false,"stop_date_preregistered":false,"baseline_rate":0.05,"mde_relative":0.20,"per_variant_views":23,"weekly_paywall_views":23},
+ "duration_days":3,
+ "stopping":{"stopped_early_on_peek":true,"peeked":true,"sequential_method":false,"stopped_reason":"looked_significant"},
+ "assignment":{"deterministic_hash":false,"randomize_per_session":true,"cohort_tracked_to_d30":false},
+ "operations":{"overlapping_same_placement":true,"segment_check_channel_country":false,"holdout_pct":0}}

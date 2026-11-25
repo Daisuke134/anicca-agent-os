@@ -1,0 +1,20 @@
+{
+  "needs_surfaces_recorded_per_app": true,
+  "three_needs_measured_separately": true,
+  "autonomous_vs_controlled_motivation_distinguished": true,
+  "meaningful_choice_not_cosmetic": true,
+  "rationale_given_for_requests": true,
+  "decline_pause_without_penalty": true,
+  "challenge_graded_optimal_not_trivial_or_overwhelming": true,
+  "informational_feedback_specific_and_noncontrolling": true,
+  "effectance_progress_visible_without_score_pressure": true,
+  "relatedness_from_genuine_care_and_belonging": true,
+  "relatedness_not_guilt_comparison_or_social_pressure": true,
+  "human_or_community_connection_not_faked": true,
+  "tangible_rewards_not_expected_contingent_on_engagement": true,
+  "language_noncontrolling_no_must_shame_deadline_pressure": true,
+  "need_thwarting_surfaces_audited": true,
+  "primary_numbers_quoted_with_design": true,
+  "expectations_discounted_small_medium_heterogeneous": true,
+  "revenue_claim_tied_to_autonomous_motivation_chain": true
+}

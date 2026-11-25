@@ -1,0 +1,74 @@
+{
+ "annual_nomination_count": 1,
+ "app": "Anicca \u2014 New Year Reset (compliant design)",
+ "contact_inbox_read_daily": true,
+ "nominations": [
+  {
+   "asset_pack_ready_before_submit": true,
+   "criteria": {
+    "accessibility": {
+     "contrast_45": true,
+     "dynamic_type_ok": true,
+     "tap_targets_44": true,
+     "voiceover_core_flow": true
+    },
+    "innovation": true,
+    "localization": {
+     "languages_count": 6,
+     "target_storefronts_covered": true
+    },
+    "product_page": {
+     "frames_consistent": true,
+     "preview_current": true,
+     "review_base_meaningful": true,
+     "screenshots_legible_thumbnail": true,
+     "screenshots_outcome_first": true
+    },
+    "ui_design": true,
+    "uniqueness": true,
+    "ux": true
+   },
+   "includes_preview_video": true,
+   "includes_testflight": true,
+   "is_major_window": true,
+   "is_significant": true,
+   "lead_days": 70,
+   "measurement": {
+    "baseline_recorded": true,
+    "silence_read_as_default": true
+   },
+   "moment_named": "New Year (January habits)",
+   "name": "New Year Reset 2027",
+   "publish_date_recorded": true,
+   "story": {
+    "hook_first_sentence": true,
+    "is_feature_list_only": false,
+    "pitch_words": 250,
+    "three_sentences_present": true
+   },
+   "supplemental_urls_count": 5,
+   "type": "New Content",
+   "type_matches_release": true
+  }
+ ],
+ "nominations_recorded": true,
+ "submitter_role_confirmed": true,
+ "program": {
+  "calendar_12mo_exists": true,
+  "milestones_recorded_per_app": true,
+  "uses_csv_import": false,
+  "csv_autosubmit_understood": true,
+  "priority_stated_honestly": true,
+  "description_clean": true,
+  "build_live_by_featuring_date": true,
+  "pitch_general_not_single_slot": true,
+  "detection_via_browse_source": true,
+  "launch_plan_works_without_featuring": true,
+  "reuse_if_not_featured": true,
+  "play_eligibility_checked": true,
+  "play_eligible": true,
+  "play_lead_days": 21,
+  "play_images_text_free": true,
+  "play_review_buffer_days": 7
+ }
+}

@@ -1,0 +1,21 @@
+{
+  "decided": true,
+  "owner": "Manager research / agent platform ops",
+  "source": "https://platform.claude.com/docs/en/build-with-claude/message-threads",
+  "gain_is_latency_not_cost_ttft35_500k_1m_pricing_ratelimits_unchanged_known": true,
+  "create_sends_full_conversation_system_tools_thread_create_stored_under_response_id_known": true,
+  "continue_sends_only_new_messages_previous_id_omits_system_tools_even_null_400_known": true,
+  "beta_header_message_threads_2026_08_12_on_every_request_known": true,
+  "fixed_fields_model_toolchoice_thinking_mcp_ctxmgmt_outputconfig_skills_cachecontrol_betaset_identical_mismatch400_known": true,
+  "free_fields_maxtokens_stop_stream_metadata_tier_can_change_and_fallbacks_all_requests_or_none_known": true,
+  "changing_createonly_or_fixed_means_new_thread_and_thinking_blocks_dropped_on_listed_models_known": true,
+  "expires_5min_deleted_within_1h_inmemory_encrypted_never_durable_known": true,
+  "application_source_of_truth_keep_own_copy_replay_built_from_start_no_storage_confirmation_known": true,
+  "thread_not_found_404_replay_full_new_create_check_error_code_continue_once_from_latest_id_known": true,
+  "thread_does_not_cache_max4_breakpoints_toplevel_counts_create_breakpoints_recounted_known": true,
+  "continue_only_after_message_stop_dropped_stream_resend_then_replay_on_already_continued_in_flight_known": true,
+  "pause_turn_resume_continue_empty_messages_no_new_user_message_404_replay_including_paused_known": true,
+  "unsupported_batches_tokencount_compaction_contextedit_except_clearthinking_keepall_hipaa_inferencehooks_400_known": true,
+  "refusal_do_not_continue_new_thread_fallback_turn_not_stored_detect_fallback_message_new_create_sticky1h_known": true,
+  "not_zdr_eligible_files_by_reference_keep_available_no_list_read_delete_api_known": true
+}

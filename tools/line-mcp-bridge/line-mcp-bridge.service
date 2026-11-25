@@ -1,0 +1,14 @@
+[Unit]
+Description=LINE MCP Bridge (shared linejs session over Streamable HTTP)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/hatch/workspace/tools/line-mcp-bridge
+ExecStart=/home/hatch/workspace/tools/line-mcp-bridge/node_modules/.bin/supergateway --stdio /home/hatch/workspace/tools/line-mcp-bridge/line-mcp-launcher.sh --outputTransport streamableHttp --port 8931 --host 127.0.0.1 --streamableHttpPath /mcp --healthEndpoint /healthz
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

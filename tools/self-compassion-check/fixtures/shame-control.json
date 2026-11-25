@@ -1,0 +1,9 @@
+{
+ "app": "shame-retention-control",
+ "inventory": {"lapse_surfaces_inventoried": true, "three_components_defined": false, "current_copy_audited_for_self_judgment": false},
+ "design": {"compassion_break_before_reengagement_ask": false, "return_path_no_penalty": false, "compassion_precedes_paywall_at_lapse": false},
+ "prohibitions": {"shame_or_guilt_copy": true, "toxic_positivity_denies_suffering": true, "compassion_withheld_behind_paywall": true},
+ "measurement": {"lapse_return_measured_separately": false, "post_lapse_churn_measured": false, "counts_recorded_not_rates_only": false},
+ "citation": {"source_numbers_cited_with_design": false, "program_effect_used_as_product_promise": true, "revenue_chain_recorded": false},
+ "ethics": {"clinical_claim_made": true, "compassion_available_to_free_users": false, "review_cadence_recorded": false}
+}

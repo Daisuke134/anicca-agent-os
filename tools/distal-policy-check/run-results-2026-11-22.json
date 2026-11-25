@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-22",
+  "checker": "distal-policy-check",
+  "runs": [
+    {
+      "fixture": "fixtures/compliant.json",
+      "command": [
+        "python3",
+        "distal_policy_check.py",
+        "fixtures/compliant.json"
+      ],
+      "exit_code": 0,
+      "report": {
+        "checker": "distal-policy-check",
+        "result": "PASS",
+        "gates": {
+          "DP-0": "PASS",
+          "DP-1": "PASS",
+          "DP-2": "PASS",
+          "DP-3": "PASS",
+          "DP-4": "PASS",
+          "DP-5": "PASS"
+        },
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "failed_gates": []
+      }
+    },
+    {
+      "fixture": "fixtures/control.json",
+      "command": [
+        "python3",
+        "distal_policy_check.py",
+        "fixtures/control.json"
+      ],
+      "exit_code": 1,
+      "report": {
+        "checker": "distal-policy-check",
+        "result": "FAIL",
+        "gates": {
+          "DP-0": "FAIL",
+          "DP-1": "FAIL",
+          "DP-2": "FAIL",
+          "DP-3": "FAIL",
+          "DP-4": "FAIL",
+          "DP-5": "FAIL"
+        },
+        "passed": 0,
+        "failed": 6,
+        "total": 6,
+        "failed_gates": [
+          "DP-0",
+          "DP-1",
+          "DP-2",
+          "DP-3",
+          "DP-4",
+          "DP-5"
+        ]
+      }
+    },
+    {
+      "fixture": "fixtures/anicca-current-state.json",
+      "command": [
+        "python3",
+        "distal_policy_check.py",
+        "fixtures/anicca-current-state.json"
+      ],
+      "exit_code": 1,
+      "report": {
+        "checker": "distal-policy-check",
+        "result": "FAIL",
+        "gates": {
+          "DP-0": "FAIL",
+          "DP-1": "FAIL",
+          "DP-2": "FAIL",
+          "DP-3": "FAIL",
+          "DP-4": "FAIL",
+          "DP-5": "FAIL"
+        },
+        "passed": 0,
+        "failed": 6,
+        "total": 6,
+        "failed_gates": [
+          "DP-0",
+          "DP-1",
+          "DP-2",
+          "DP-3",
+          "DP-4",
+          "DP-5"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "fixtures": 3,
+    "passed": 1,
+    "failed": 2,
+    "gates_passed": 6,
+    "gates_failed": 12
+  }
+}

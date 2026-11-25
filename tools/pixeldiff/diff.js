@@ -1,0 +1,9 @@
+const fs = require('fs');
+const {PNG} = require('pngjs');
+const pixelmatch = require('pixelmatch');
+const a = PNG.sync.read(fs.readFileSync(process.argv[2]));
+const b = PNG.sync.read(fs.readFileSync(process.argv[3]));
+const {width, height} = a;
+const diff = new PNG({width, height});
+const n = pixelmatch(a.data, b.data, diff.data, width, height, {threshold: 0.1});
+console.log(`${process.argv[4]}: diff pixels ${n} / ${width*height} = ${(100*n/(width*height)).toFixed(1)}%`);

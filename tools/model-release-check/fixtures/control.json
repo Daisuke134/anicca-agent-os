@@ -1,0 +1,32 @@
+{
+ "decision": {
+  "decision_recorded": true,
+  "owner_recorded": true,
+  "canonical_source_recorded": true
+ },
+ "separation": {
+  "capability_and_regression_suites_separate": false,
+  "regression_suite_near_100_bar": false,
+  "capability_suite_starts_low_with_slope": true
+ },
+ "trials": {
+  "multiple_trials_per_task": true,
+  "pass_at_k_and_pass_caret_k_reported": true,
+  "zero_pass_investigated_as_broken_task": false
+ },
+ "comparison": {
+  "same_conditions_all_candidates": true,
+  "negative_capability_checked": false,
+  "cost_latency_tokens_compared": true
+ },
+ "release_decision": {
+  "preregistered_promotion_thresholds": false,
+  "regressions_read_before_total": true,
+  "prior_fallback_plan": true
+ },
+ "evolution": {
+  "saturated_tasks_graduate_to_regression": true,
+  "new_failures_become_cases": true,
+  "release_log_with_versions_and_scores": true
+ }
+}

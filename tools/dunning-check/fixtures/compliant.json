@@ -1,0 +1,72 @@
+{
+ "access": {
+  "continues_in_grace": true,
+  "in_app_payment_form": false,
+  "modal_only_after_grace": true,
+  "non_blocking_ui_in_grace": true,
+  "one_tap_manage_link": true
+ },
+ "app": "compliant-design",
+ "discount_offered_to_billing_error": false,
+ "grace_period": {
+  "duration_days": 28,
+  "enabled": true,
+  "environment": "production_and_sandbox",
+  "recorded": true,
+  "scope": "all_renewals",
+  "weekly_cap_understood": true
+ },
+ "involuntary_separated_from_voluntary": true,
+ "measurement": {
+  "benchmark_recorded": true,
+  "billing_issue_mrr_share_tracked": true,
+  "denominator": "billing_issue_events",
+  "recovery_rate_tracked": true,
+  "split_by_plan": true
+ },
+ "messaging": {
+  "names_specific_loss": true,
+  "pre_dunning_email_to_active": false,
+  "quiet_hours_respected": true,
+  "stops_on_expiration_to_winback": true,
+  "stops_on_renewal": true,
+  "tone": "non_blaming_card_problem",
+  "touches_days": [
+   0,
+   2,
+   7,
+   14
+  ],
+  "weekly_touches_days": [
+   0,
+   1,
+   3
+  ]
+ },
+ "recovery_surface": {
+  "android_sold": false,
+  "checked_on_foreground": true,
+  "customer_center_plan_eligible": false,
+  "customerinfo_listener_clears_banner": true,
+  "detection_signal": "isActive_and_billingIssueDetectedAt",
+  "fix_surface": "management_url",
+  "google_play": {
+   "not_applicable_reason": "iOS-only app; no Google Play listing sold"
+  },
+  "management_url_null_guarded": true,
+  "sandbox_e2e_verified": true,
+  "webhook_deadline_from_event": true
+ },
+ "state_separation": {
+  "entitlement_from_live_state": true,
+  "subtypes_distinguished": true
+ },
+ "surge": {
+  "denominator": "renewal_attempts",
+  "inflow_rate_tracked": true,
+  "resolution_rate_merged_with_full_recovery": false,
+  "resolution_rate_within_grace_tracked": true,
+  "surge_threshold_defined": true
+ },
+ "trigger_event": "BILLING_ISSUE"
+}

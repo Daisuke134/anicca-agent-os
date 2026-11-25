@@ -1,0 +1,104 @@
+{
+  "runs": [
+    {
+      "checker": "receptivity-check",
+      "fixture": "anicca-documented.json",
+      "command": [
+        "/usr/bin/python3",
+        "/home/hatch/workspace/tools/receptivity-check/receptivity_check.py",
+        "/home/hatch/workspace/tools/receptivity-check/fixtures/anicca-documented.json"
+      ],
+      "exit_code": 1,
+      "output": {
+        "checker": "receptivity-check",
+        "result": "FAIL",
+        "gates": {
+          "TR-0": "FAIL",
+          "TR-1": "FAIL",
+          "TR-2": "FAIL",
+          "TR-3": "FAIL",
+          "TR-4": "FAIL",
+          "TR-5": "FAIL",
+          "CG-0": "FAIL",
+          "CG-1": "FAIL"
+        },
+        "passed": 0,
+        "failed": 8,
+        "total": 8,
+        "failed_gates": [
+          "TR-0",
+          "TR-1",
+          "TR-2",
+          "TR-3",
+          "TR-4",
+          "TR-5",
+          "CG-0",
+          "CG-1"
+        ]
+      }
+    },
+    {
+      "checker": "receptivity-check",
+      "fixture": "compliant.json",
+      "command": [
+        "/usr/bin/python3",
+        "/home/hatch/workspace/tools/receptivity-check/receptivity_check.py",
+        "/home/hatch/workspace/tools/receptivity-check/fixtures/compliant.json"
+      ],
+      "exit_code": 0,
+      "output": {
+        "checker": "receptivity-check",
+        "result": "PASS",
+        "gates": {
+          "TR-0": "PASS",
+          "TR-1": "PASS",
+          "TR-2": "PASS",
+          "TR-3": "PASS",
+          "TR-4": "PASS",
+          "TR-5": "PASS",
+          "CG-0": "PASS",
+          "CG-1": "PASS"
+        },
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "failed_gates": []
+      }
+    },
+    {
+      "checker": "receptivity-check",
+      "fixture": "control.json",
+      "command": [
+        "/usr/bin/python3",
+        "/home/hatch/workspace/tools/receptivity-check/receptivity_check.py",
+        "/home/hatch/workspace/tools/receptivity-check/fixtures/control.json"
+      ],
+      "exit_code": 1,
+      "output": {
+        "checker": "receptivity-check",
+        "result": "FAIL",
+        "gates": {
+          "TR-0": "PASS",
+          "TR-1": "FAIL",
+          "TR-2": "FAIL",
+          "TR-3": "FAIL",
+          "TR-4": "FAIL",
+          "TR-5": "PASS",
+          "CG-0": "PASS",
+          "CG-1": "FAIL"
+        },
+        "passed": 3,
+        "failed": 5,
+        "total": 8,
+        "failed_gates": [
+          "TR-1",
+          "TR-2",
+          "TR-3",
+          "TR-4",
+          "CG-1"
+        ]
+      }
+    }
+  ],
+  "additional_assertions_passed": 91
+}

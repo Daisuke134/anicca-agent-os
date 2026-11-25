@@ -1,0 +1,6 @@
+{"decision":{"continuity_decision_recorded":true,"sync_owner_recorded":true,"reinstall_expectation_recorded":true},
+"coverage":{"every_store_classified":true,"upload_path_exists":true,"download_restore_path_exists":true,"identity_survives_device_change":true},
+"account_status":{"account_status_checked":true,"unavailable_preserves_cache_no_enqueue":true,"account_change_observed":true},
+"conflict":{"conflict_rule_recorded":true,"pending_survives_restart":true,"retry_trigger_wired":true},
+"deletion":{"deletion_propagates_to_synced_copy":true,"signout_data_behavior_decided":true,"account_switch_isolation":true},
+"verification":{"sync_outcomes_measured":true,"restore_rehearsal_recorded":true,"sync_state_logged":true}}

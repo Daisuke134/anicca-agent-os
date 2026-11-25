@@ -1,0 +1,7 @@
+{"_note":"Contrast design: adopt CloudKit and sync every store both ways, but no account-status handling, no conflict rule, deletion stays local, no restore rehearsal.",
+"decision":{"continuity_decision_recorded":true,"sync_owner_recorded":true,"reinstall_expectation_recorded":false},
+"coverage":{"every_store_classified":true,"upload_path_exists":true,"download_restore_path_exists":true,"identity_survives_device_change":true},
+"account_status":{"account_status_checked":false,"unavailable_preserves_cache_no_enqueue":false,"account_change_observed":false},
+"conflict":{"conflict_rule_recorded":false,"pending_survives_restart":true,"retry_trigger_wired":true},
+"deletion":{"deletion_propagates_to_synced_copy":false,"signout_data_behavior_decided":true,"account_switch_isolation":true},
+"verification":{"sync_outcomes_measured":false,"restore_rehearsal_recorded":false,"sync_state_logged":true}}

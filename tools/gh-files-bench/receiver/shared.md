@@ -1,0 +1,10 @@
+seed
+<<<<<<< HEAD
+writer-A round 1 1795308834993836925
+=======
+writer-B round 1 1795308835043671490
+>>>>>>> 2ff6903 (B round 1)
+writer-B round 2 1795308852355367955
+writer-B round 3 1795308875892500185
+writer-B round 4 1795308897444361384
+writer-B round 5 1795308917068126408

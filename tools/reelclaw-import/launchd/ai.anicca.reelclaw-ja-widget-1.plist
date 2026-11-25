@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>ai.anicca.reelclaw-ja-widget-1</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-p</string>
+    <string>/Users/anicca/profitable-claude/bin/launchd_run_and_report.sh</string>
+    <string>--label</string>
+    <string>reelclaw-ja-widget-1</string>
+    <string>--channel</string>
+    <string>telegram</string>
+    <string>--target</string>
+    <string>8547730585</string>
+    <string>--</string>
+    <string>/bin/bash</string>
+    <string>/Users/anicca/.openclaw/skills/_dispatcher/scripts/cron-bash.sh</string>
+    <string>reelclaw/scripts/run-widget-ja.sh</string>
+    <string>--tt</string>
+    <string>cmnhlk3ju058lpn0ytilqdpo0</string>
+    <string>--ig</string>
+    <string>cmmzzg2es0539p30ycb94ayx0</string>
+    <string>--yt</string>
+    <string>cmn1oukj9012nnq0yqhouc3ib</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict>
+      <key>Hour</key>
+      <integer>8</integer>
+      <key>Minute</key>
+      <integer>0</integer>
+    </dict>
+    <dict>
+      <key>Hour</key>
+      <integer>22</integer>
+      <key>Minute</key>
+      <integer>37</integer>
+    </dict>
+  </array>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>WorkingDirectory</key>
+  <string>/Users/anicca</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key>
+    <string>/Users/anicca</string>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>BASH_ENV</key>
+    <string>/dev/null</string>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/anicca/.openclaw/logs/reelclaw-ja-widget-1-launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/anicca/.openclaw/logs/reelclaw-ja-widget-1-launchd.err.log</string>
+</dict>
+</plist>

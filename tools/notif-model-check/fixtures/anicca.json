@@ -1,0 +1,36 @@
+{
+ "decision_ownership": {
+  "decision_recorded": false,
+  "model_decides_timing_and_quantity": false,
+  "model_decides_wording": false,
+  "onboarding_does_not_ask_preferred_time": false
+ },
+ "generation": {
+  "words_generated_per_person_not_catalogue": false,
+  "generated_from_synthetic_user_and_reaction_history": false,
+  "novelty_rotation_no_repeat_template": false,
+  "fallback_recorded_and_personal": false
+ },
+ "volume_and_protection": {
+  "delivered_volume_measured_per_user_week": false,
+  "volume_floor_and_ceiling_both_checked": false,
+  "caps_and_quiet_hours_enforced": false,
+  "coordination_no_stacking_same_day": false
+ },
+ "lifecycle_triggers": {
+  "triggers_are_behavioral_not_broadcast": false,
+  "lifecycle_stage_determines_message": false,
+  "reengagement_names_specific_pickup_point": false,
+  "peak_window_timing_per_user": false
+ },
+ "display_and_taste": {
+  "full_text_fits_banner_length_budget_checked": false,
+  "comedy_taste_present_in_copy": false,
+  "founder_first_gate_laugh_hard_day_test": false
+ },
+ "measurement": {
+  "chosen_word_logged_with_probability": false,
+  "pushed_vs_nonpushed_30d_retention_compared": false,
+  "optout_trend_watched_as_guardrail": false
+ }
+}

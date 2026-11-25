@@ -1,0 +1,20 @@
+name: prepaid_api_credit_guard
+title: Prepaid API Credit Guard
+description: Check a paid API funding source and disable any auto reload before use, so work runs only on already paid credit and stops when that credit is gone.
+category: Finance
+include_in_prompt: true
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - assistant-msg-77592de6-9d7a-7c10-a886-4b3460efd011
+  - assistant-msg-f413be51-96fc-4a5d-4efb-c3249470876f
+  measurement:
+    proxy_metric_id: paid_api_new_charge_count
+    success_criterion: Within 14 days after install, zero new API purchases, top ups, or auto reload charges occur, at least one paid API lane records its funding source, starting balance, and a read back verified off state for every reload setting before its first paid call, and any exhausted source is reported as exhausted with its surface stopped rather than charged around.
+    window_days: 14
+  needs_review: false
+  rationale: The daily letter in assistant-msg-77592de6-9d7a-7c10-a886-4b3460efd011 reports a new $10 HeyGen API charge fired by auto reload one day after the absolute ban on new API payment was recorded, with the reload cut only after the charge and a $14.98 balance left, and the incident logged as a rule violation. That is a reactive fix, not a preventive one, and the same reload shape can sit on any other paid wallet in active use. The later Monid check in assistant-msg-f413be51-96fc-4a5d-4efb-c3249470876f shows the desired behaviour applied inconsistently, a balance read first at $6.28 and an explicit statement that no new money was paid, so the check exists as habit in one place and was missing where the charge fired. Skill search returned only financial_planning, business_finance, custom_connector_setup, and advertising_campaigns for billing and credit queries, none of which requires a funding source check, a reload off read back, or a stop on exhaustion before paid API use. The eight managed skills remain inside their measurement windows, including credential_save_and_verify reviewed 2026-11-09 with review after 2026-11-23, which covers credential persistence rather than payment settings and which the Hugging Face token retry in this window actually followed, so none is re-proposed. The deterministic candidates were rejected because the memory, goals_bookkeeping, and ideas recurring counts and the suppressed handoff counts carry no failure detail, and the remaining cron failures are heterogeneous work not finished and user only pauses already covered by agent_side_auth_gate. This skill is listed in every conversation because the reload check has to happen before the first paid call, before any skill search would run.
+  review_after: 2026-11-23T21:40:25.983556+00:00
+  reviewed_at: 2026-11-09T21:40:25.983556+00:00
+  run_id: sirun_da9146efa96d4ed4b73a0bbafe73a044

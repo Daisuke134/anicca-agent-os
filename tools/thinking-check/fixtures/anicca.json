@@ -1,0 +1,8 @@
+{
+ "decision": {"decision_recorded": false, "owner_recorded": false, "thinking_surfaces_inventoried": false},
+ "mode": {"mode_chosen_per_model": false, "depth_control_chosen": true, "thinking_off_decision_explicit": false},
+ "correctness": {"budget_rules_respected": false, "tool_choice_compatibility_handled": false, "sampling_and_prefill_constraints_respected": false},
+ "preservation": {"thinking_blocks_preserved_unmodified": false, "display_chosen_deliberately": false, "streaming_reassembly_handled": false},
+ "verification": {"thinking_tokens_measured": false, "depth_tuned_on_own_tasks": false, "thinking_presence_and_quality_checked": false},
+ "operations": {"config_held_stable_for_cache": true, "context_window_accounted_for_thinking": false, "migration_and_model_switch_recorded": false}
+}

@@ -1,0 +1,84 @@
+{
+ "app": "Anicca",
+ "events_recorded": true,
+ "events": [
+  {
+   "name": "7-Day Calm Challenge",
+   "name_chars": 20,
+   "badge": "Challenge",
+   "badge_matches_content": true,
+   "is_time_limited_real": true,
+   "is_repetitive_daily_task": false,
+   "is_price_promo_without_content": false,
+   "is_general_awareness_only": false,
+   "short_desc_chars": 44,
+   "long_desc_chars": 98,
+   "has_specific_price": false,
+   "has_unverifiable_claim": false,
+   "has_all_caps_or_excess_punct": false,
+   "name_is_cta_or_filler": false,
+   "card_media": {
+    "ratio": "16:9",
+    "w": 1920,
+    "h": 1080,
+    "has_text_or_logo": false,
+    "has_border_or_gradient": false
+   },
+   "details_media": {
+    "ratio": "9:16",
+    "w": 1080,
+    "h": 1920,
+    "has_text_or_logo": false,
+    "has_border_or_gradient": false
+   },
+   "media_visually_related": true,
+   "deep_link": {
+    "is_universal_link": true,
+    "lands_on_event": true,
+    "uses_shortener_or_redirect": false,
+    "handles_new_user_onboarding": true,
+    "pre_start_landing": true
+   },
+   "purpose": "lapsed users",
+   "content_live_at_start": true,
+   "requires_iap_declared": false,
+   "submit_lead_days": 21,
+   "duration_days": 7,
+   "promote_before_days": 14,
+   "editorial_themed": false,
+   "editorial_submit_lead_weeks": 0,
+   "keyword_test": {
+    "target_cluster_recorded": true,
+    "placed_in_name_and_short_desc": true,
+    "pre_event_rank_snapshot": true,
+    "rank_rechecked_two_weeks": true,
+    "treated_as_guaranteed_lift": false
+   }
+  }
+ ],
+ "portfolio": {
+  "published_count": 1,
+  "approved_count": 1
+ },
+ "measurement": {
+  "tracks_impressions": true,
+  "tracks_details_views": true,
+  "tracks_opens": true,
+  "tracks_downloads_by_event": true,
+  "tracks_notification_optins": true,
+  "repeat_format_before_judging": true
+ },
+ "program": {
+  "calendar_exists": true,
+  "events_per_app_per_year": 4,
+  "rejections_logged_with_cost": true
+ },
+ "purpose_program": {
+  "purpose_recorded_per_event": true,
+  "any_event_targets_both_audiences": false,
+  "stagger_overlap_planned": true,
+  "off_store_promotion_planned": true,
+  "post_event_retention_read": true,
+  "low_quality_video_shipped": false
+ }
+}

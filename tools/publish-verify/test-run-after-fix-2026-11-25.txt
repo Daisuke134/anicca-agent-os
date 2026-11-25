@@ -1,0 +1,10 @@
+PAGE https://aniccaai.com/blog/society-simulation-macro-intervention-run1
+  [PASS] page itself            status=200 bytes=75731 type=text/html
+  [PASS] https://aniccaai.com/blog/society-simulation-macro-intervention-run1/cover.svg  status=200 bytes=13816 type=image/svg+xml
+  [PASS] https://aniccaai.com/blog/society-simulation-macro-intervention-run1/diagram-strategies.svg  status=200 bytes=33034 type=image/svg+xml
+  [PASS] https://aniccaai.com/blog/society-simulation-macro-intervention-run1/chart-complex.svg  status=200 bytes=6822 type=image/svg+xml
+  [PASS] https://aniccaai.com/blog/society-simulation-macro-intervention-run1/chart-tipping.svg  status=200 bytes=9196 type=image/svg+xml
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+RESULT: PASS (all pages and assets verified)

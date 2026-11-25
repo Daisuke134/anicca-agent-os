@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+"""fxtwittergo - fetch X (Twitter) posts via the FxTwitter (FxEmbed) public API.
+
+Fallback route for when normal X retrieval (browser/social tools) fails.
+No auth, no cost. API docs: https://docs.fxembed.com/api/introduction
+
+Usage:
+  fxtwittergo <tweet-url-or-id>          Fetch one status (text, author, metrics, article body)
+  fxtwittergo profile <handle>           Fetch a profile (v2)
+  fxtwittergo statuses <handle>          Fetch recent statuses of a profile (v2)
+  fxtwittergo thread <tweet-url-or-id>   Fetch a thread (v2)
+  fxtwittergo --raw <tweet-url-or-id>    Dump full JSON
+"""
+import json, re, sys, urllib.request
+
+BASE = "https://api.fxtwitter.com"
+UA = {"User-Agent": "anicca-agent-fxtwittergo/1.0"}
+
+def get(path):
+    req = urllib.request.Request(BASE + path, headers=UA)
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.load(r)
+
+def parse_id(s):
+    m = re.search(r"status/(\d+)", s)
+    if m: return m.group(1)
+    m = re.search(r"(\d{10,})", s)
+    return m.group(1) if m else s
+
+def parse_handle(s, fallback=None):
+    m = re.search(r"(?:x\.com|twitter\.com)/([A-Za-z0-9_]+)/status", s)
+    return m.group(1) if m else fallback
+
+def show_status(tw):
+    a = tw.get("author", {})
+    print(f"@{a.get('screen_name')} ({a.get('name')}) followers={a.get('followers')}")
+    print(f"date: {tw.get('created_at')}  likes={tw.get('likes')} rt={tw.get('retweets', tw.get('reposts'))} replies={tw.get('replies')} views={tw.get('views')} bookmarks={tw.get('bookmarks')}")
+    print(f"url: {tw.get('url')}")
+    print("--- text ---")
+    print(tw.get("text", ""))
+    art = tw.get("article")
+    if art:
+        print("--- article ---")
+        print("title:", art.get("title"))
+        blocks = (art.get("content") or {}).get("blocks") or []
+        for b in blocks:
+            txt = b.get("text", "")
+            if txt: print(txt)
+    media = tw.get("media") or {}
+    for m in (media.get("all") or []) if isinstance(media, dict) else []:
+        print("media:", m.get("url"))
+
+def main():
+    args = sys.argv[1:]
+    if not args:
+        print(__doc__); return 1
+    raw = "--raw" in args
+    args = [a for a in args if a != "--raw"]
+    cmd = args[0]
+    if cmd == "profile":
+        d = get(f"/2/profile/{args[1].lstrip('@')}")
+        print(json.dumps(d, ensure_ascii=False, indent=2) if raw else json.dumps(d.get("profile", d), ensure_ascii=False, indent=2))
+    elif cmd == "statuses":
+        d = get(f"/2/profile/{args[1].lstrip('@')}/statuses")
+        if raw: print(json.dumps(d, ensure_ascii=False, indent=2)); return 0
+        for s in d.get("results", []):
+            st = s.get("status", s)
+            print(f"[{st.get('created_at')}] likes={st.get('likes')} views={st.get('views')} {st.get('url')}")
+            print(" ", (st.get('text') or '')[:280].replace("\n", " "))
+    elif cmd == "thread":
+        d = get(f"/2/thread/{parse_id(args[1])}")
+        print(json.dumps(d, ensure_ascii=False, indent=2))
+    else:
+        tid = parse_id(cmd); handle = parse_handle(cmd)
+        path = f"/{handle}/status/{tid}" if handle else f"/status/{tid}"
+        d = get(path)
+        if raw: print(json.dumps(d, ensure_ascii=False, indent=2)); return 0
+        show_status(d.get("tweet") or d.get("status") or {})
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main())

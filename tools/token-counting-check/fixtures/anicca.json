@@ -1,0 +1,8 @@
+{
+ "decision": {"decision_recorded": false, "owner_recorded": false, "counting_surfaces_inventoried": false},
+ "method": {"official_endpoint_used_per_target_model": false, "assembled_request_counted_not_pieces": false, "foreign_estimates_not_used_as_truth": false},
+ "coverage": {"all_input_kinds_covered": false, "unsupported_inputs_fallback_to_usage": false, "media_counted_as_base64": false},
+ "preflight": {"counted_before_send_for_costly_requests": false, "window_check_includes_output_ceiling": false, "routing_and_tier_decisions_use_counts": false},
+ "verification": {"estimate_headroom_held": false, "count_vs_usage_reconciled": false, "usage_retained_post_hoc": true},
+ "operations": {"counting_limits_and_cost_discipline": true, "cache_accounting_correct": false, "recount_triggers_recorded": false}
+}

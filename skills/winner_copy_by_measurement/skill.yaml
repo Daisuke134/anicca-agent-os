@@ -1,0 +1,26 @@
+name: winner_copy_by_measurement
+title: Copy a Winning Creative by Measurement
+description: Copy a winning creative type by downloading and measuring the winner, decomposing its structure, and counting the difference before you publish your own version.
+category: Media
+include_in_prompt: true
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - assistant-msg-efb160ea
+  - assistant-msg-120f2610
+  - assistant-msg-7c73ac7e
+  - assistant-msg-8b48d996
+  - assistant-msg-e5a0b88c
+  - assistant-msg-0e971e32
+  - assistant-msg-cdbc35f3
+  - assistant-msg-dbd290b8
+  measurement:
+    proxy_metric_id: winner_copy_measured_post_rate
+    success_criterion: Within 14 days after install, every post that claims a winner source carries the exact winner post link with measured plays, likes, comments, shares and saves, a recorded target profile language and medium check, and a per slide or per frame pixel difference record, and zero posts are published whose medium or language differs from the target account or the winner, or whose recorded difference sits in the pre redo range of roughly 70 to 86 percent reported on 2026-11-15.
+    window_days: 14
+  needs_review: false
+  rationale: The prior version of this skill expired its measurement window on 2026-11-14 and required a downloaded source and a counted difference, yet the 2026-11-15 record shows repeated false copy claims it did not prevent. In assistant-msg-efb160ea the production record for a post claiming a winner admitted the winner live material was not used and the build was its own text frame and zoom assembly. User screenshots and assistant-msg-8b48d996 showed an English carousel whose background and format differed from its claimed winner, later measured at 71.7 to 85.5 percent difference before a redo brought passing packs to 8.7 to 12.3 percent. In assistant-msg-120f2610 and assistant-msg-7c73ac7e eight Japanese posts were scheduled for @honne_reveal before anyone read its profile, which is English, so the reservations were deleted. The Honne case also showed matching opening lines are not a copy when the original is a pink background anime illustration video and the build is a mist forest photo post. This update adds the three missing gates to the same skill, profile first for language and medium, an exact winner link instead of a type name, and a side by side eye check plus a recorded pixelmatch difference for every slide or frame with the eye check deciding, and it names the tikwm tool that assistant-msg-cdbc35f3 repaired and verified for per post TikTok figures. Slideshow specific production already lives in the unmanaged slideshow_production skill, so this update stays at the general winner copy level and points the lane and audio gate work to social_post_lane_check, which remains inside its own measurement window and is not re-proposed. The repeated sign-in card incidents in this window fall under agent_side_auth_gate, which is inside its window to 2026-11-26, so no second proposal is made for that finding.
+  review_after: 2026-11-29T05:06:34.334819+00:00
+  reviewed_at: 2026-11-15T05:06:34.334819+00:00
+  run_id: sirun_12fee601184d4fb4ba78ec911cb577f0

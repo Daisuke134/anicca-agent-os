@@ -1,0 +1,7 @@
+{"_note":"Anicca iOS source fixture, read 2026-11-16 from ~/workspace/anicca-build-20261115 (origin Daisuke134/anicca, branch claude/living-home-paywall-2026-11-15, HEAD 57fab78dd). Localizable.strings parsed keys: en 2643, ja 2643 (missing 0), es 2544 (missing 104), de/fr/pt-BR 1319 (missing 1327 each, 50.2%). Long values (>=20 chars) identical to English: de/fr/pt-BR 247, es 246, ja 1. AdaptiveAffirmations.strings (49 keys) and InfoPlist.strings (3 keys) complete in all 6 locales. NotificationScheduler.localizedString uses value:key, so a missing key renders the raw key. INFOPLIST_KEY_CFBundleLocalizations is 'ja en' in 4 build configs while knownRegions and .lproj folders list 6 locales. NudgeLocalizationTests covers EN/JA nudge keys only.",
+"decision":{"supported_locales_recorded":true,"localization_owner_recorded":false,"source_locale_recorded":true},
+"coverage":{"every_locale_complete_keys":false,"extra_keys_triaged":false,"all_tables_covered":false},
+"untranslated":{"identical_to_source_audited":false,"long_identical_zero_or_waived":false,"placeholder_parity_checked":false},
+"fallback":{"missing_key_fallback_is_source_not_key":false,"fallback_behavior_recorded":false},
+"declaration":{"declared_localizations_match_shipped":false,"known_regions_match_resources":true},
+"verification":{"completeness_measured_in_ci":false,"tests_cover_all_supported_locales":false,"per_locale_render_check_recorded":false}}

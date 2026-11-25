@@ -1,0 +1,65 @@
+{
+  "owner": "Codex",
+  "surface": "notification",
+  "decisions": [
+    {
+      "item": {
+        "difficulty": 0.6,
+        "frequency": 3,
+        "past_outcomes": [
+          true,
+          false,
+          true
+        ]
+      },
+      "learner": {
+        "session_count": 12,
+        "mean_accuracy": 0.8,
+        "ability": 0.7
+      },
+      "half_life": 48,
+      "recall_probability": 0.7071067811865476,
+      "trigger_threshold": 0.75,
+      "top_factors": [
+        "context.elapsed_since_last",
+        "item.difficulty",
+        "learner.ability"
+      ]
+    }
+  ],
+  "fixture_kind": "control: missing context, misrepresented simulated results, mismatched protocol, omitted inference cost",
+  "comparison": {
+    "evidence_type": "simulated_learners",
+    "reported_population": "real_learners",
+    "protocol": "synthetic-example-100-days-v1",
+    "baselines": [
+      {
+        "name": "SM-2",
+        "classical": true,
+        "protocol": "synthetic-example-100-days-v1"
+      },
+      {
+        "name": "uniform",
+        "classical": false,
+        "protocol": "synthetic-example-100-days-v1"
+      },
+      {
+        "name": "adaptive-recall",
+        "classical": false,
+        "protocol": "different-protocol"
+      }
+    ],
+    "claims_confusion_robustness": true,
+    "semantic_confusion": {
+      "confusable": {
+        "sample_size": 100,
+        "success_rate": 0.8
+      },
+      "non_confusable": {
+        "sample_size": 100,
+        "success_rate": 0.9
+      }
+    },
+    "llm_every_decision": true
+  }
+}

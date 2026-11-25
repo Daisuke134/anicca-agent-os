@@ -1,0 +1,1 @@
+{"app":"synthetic-good","placement":"after_value","dialog":"system","gating":false,"incentive":false,"trigger_event":"value_completed","min_distinct_days":3,"min_sessions":null,"cooldown_days":120,"crash_guard":true,"after_error_block":true,"stacking_block":true,"cohort":{"installs":1000,"reached_value":600,"eligible":210,"calls":180}}

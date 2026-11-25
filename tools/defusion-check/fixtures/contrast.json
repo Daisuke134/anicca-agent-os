@@ -1,0 +1,33 @@
+{
+ "app": "contrast-restructuring-mockery-upsell",
+ "citation": {
+  "effect_claimed_as_cure_or_lab_effect_claimed_as_clinical_outcome": false,
+  "revenue_chain_recorded": true,
+  "source_numbers_cited_with_design": true
+ },
+ "design": {
+  "defusion_paired_with_a_next_valued_action": false,
+  "named_defusion_technique_with_dose_present": false,
+  "thought_chosen_by_user_and_can_stop": false
+ },
+ "ethics": {
+  "clinical_claim_made": true,
+  "core_defusion_available_to_free_users": true,
+  "review_cadence_recorded": true
+ },
+ "inventory": {
+  "defusion_defined_as_changing_thought_function_not_content_frequency_or_truth_distinct_from_restructuring_suppression_distraction": true,
+  "defusion_surfaces_inventoried": true,
+  "evidence_scope_and_counterweight_audited": true
+ },
+ "measurement": {
+  "behaviour_followup_measured_not_only_immediate_believability": true,
+  "believability_and_discomfort_measured_separately": true,
+  "counts_recorded_not_rates_only": true
+ },
+ "prohibitions": {
+  "distress_moment_used_to_paywall_the_exercise": true,
+  "restructuring_or_disputation_counted_as_defusion": true,
+  "ridicule_or_mockery_of_users_thought_used": true
+ }
+}

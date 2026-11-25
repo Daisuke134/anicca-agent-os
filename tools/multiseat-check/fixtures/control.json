@@ -1,0 +1,20 @@
+{
+ "inventory_recorded": true,
+ "default_status_verified": true,
+ "channel_owner_recorded": true,
+ "channel_availability_decided": false,
+ "agreement_terms_acknowledged": true,
+ "per_app_fit_assessed": true,
+ "sandbox_group_configured": true,
+ "sandbox_group_tested": false,
+ "entitlement_handles_assigned_seats": false,
+ "seat_lifecycle_handled": false,
+ "individual_purchase_unchanged": true,
+ "no_org_access_to_personal_content": true,
+ "org_buyer_value_copy_exists": false,
+ "group_buyer_path_recorded": true,
+ "per_seat_economics_recorded": false,
+ "measurement_separates_multiseat": false,
+ "support_path_for_seat_issues": true,
+ "periodic_channel_review": true
+}

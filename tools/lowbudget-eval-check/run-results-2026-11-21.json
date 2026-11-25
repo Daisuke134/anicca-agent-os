@@ -1,0 +1,143 @@
+{
+  "checker": "lowbudget-eval-check",
+  "executed_at_utc": "2026-11-20T21:30:45.931211+00:00",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "fixtures": [
+    {
+      "fixture": "compliant",
+      "command": [
+        "python3",
+        "-B",
+        "lowbudget_eval_check.py",
+        "fixtures/compliant.json"
+      ],
+      "exit_code": 0,
+      "report": {
+        "checker": "lowbudget-eval-check",
+        "result": "PASS",
+        "gates": {
+          "LB-0": "PASS",
+          "LB-1": "PASS",
+          "LB-2": "PASS",
+          "LB-3": "PASS",
+          "LB-4": "PASS",
+          "LB-5": "PASS",
+          "CT-0": "PASS",
+          "CT-1": "PASS",
+          "CT-2": "PASS",
+          "CT-3": "PASS",
+          "CT-4": "PASS"
+        },
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "failed_gates": []
+      },
+      "stderr": ""
+    },
+    {
+      "fixture": "anicca-current",
+      "command": [
+        "python3",
+        "-B",
+        "lowbudget_eval_check.py",
+        "fixtures/anicca-current.json"
+      ],
+      "exit_code": 1,
+      "report": {
+        "checker": "lowbudget-eval-check",
+        "result": "FAIL",
+        "gates": {
+          "LB-0": "FAIL",
+          "LB-1": "FAIL",
+          "LB-2": "FAIL",
+          "LB-3": "FAIL",
+          "LB-4": "FAIL",
+          "LB-5": "FAIL",
+          "CT-0": "FAIL",
+          "CT-1": "FAIL",
+          "CT-2": "FAIL",
+          "CT-3": "FAIL",
+          "CT-4": "FAIL"
+        },
+        "passed": 0,
+        "failed": 11,
+        "total": 11,
+        "failed_gates": [
+          "LB-0",
+          "LB-1",
+          "LB-2",
+          "LB-3",
+          "LB-4",
+          "LB-5",
+          "CT-0",
+          "CT-1",
+          "CT-2",
+          "CT-3",
+          "CT-4"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "fixture": "control",
+      "command": [
+        "python3",
+        "-B",
+        "lowbudget_eval_check.py",
+        "fixtures/control.json"
+      ],
+      "exit_code": 1,
+      "report": {
+        "checker": "lowbudget-eval-check",
+        "result": "FAIL",
+        "gates": {
+          "LB-0": "PASS",
+          "LB-1": "FAIL",
+          "LB-2": "PASS",
+          "LB-3": "FAIL",
+          "LB-4": "PASS",
+          "LB-5": "FAIL",
+          "CT-0": "FAIL",
+          "CT-1": "FAIL",
+          "CT-2": "FAIL",
+          "CT-3": "FAIL",
+          "CT-4": "FAIL"
+        },
+        "passed": 3,
+        "failed": 8,
+        "total": 11,
+        "failed_gates": [
+          "LB-1",
+          "LB-3",
+          "LB-5",
+          "CT-0",
+          "CT-1",
+          "CT-2",
+          "CT-3",
+          "CT-4"
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "tests": {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "cwd": ".",
+    "test_count": 15,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_absolute_only_does_not_require_rank_or_differential_evidence (test_lowbudget_eval_check.CheckerTests.test_absolute_only_does_not_require_rank_or_differential_evidence) ... ok\ntest_each_contamination_evidence_field_is_required (test_lowbudget_eval_check.CheckerTests.test_each_contamination_evidence_field_is_required) ... ok\ntest_each_missing_section_fails_its_gate (test_lowbudget_eval_check.CheckerTests.test_each_missing_section_fails_its_gate) ... ok\ntest_empty_state_fails_every_gate (test_lowbudget_eval_check.CheckerTests.test_empty_state_fails_every_gate) ... ok\ntest_extrapolation_requires_prior_and_selection (test_lowbudget_eval_check.CheckerTests.test_extrapolation_requires_prior_and_selection) ... ok\ntest_fixtures (test_lowbudget_eval_check.CheckerTests.test_fixtures) ... ok\ntest_horizon_boundary_and_invalid_types (test_lowbudget_eval_check.CheckerTests.test_horizon_boundary_and_invalid_types) ... ok\ntest_interval_containment_is_recorded_not_required (test_lowbudget_eval_check.CheckerTests.test_interval_containment_is_recorded_not_required) ... ok\ntest_invalid_cli_inputs_fail_closed (test_lowbudget_eval_check.CheckerTests.test_invalid_cli_inputs_fail_closed) ... ok\ntest_malformed_sections_do_not_crash (test_lowbudget_eval_check.CheckerTests.test_malformed_sections_do_not_crash) ... ok\ntest_mixed_or_unknown_claim_types_rejected (test_lowbudget_eval_check.CheckerTests.test_mixed_or_unknown_claim_types_rejected) ... ok\ntest_rank_correlation_has_no_acceptance_threshold (test_lowbudget_eval_check.CheckerTests.test_rank_correlation_has_no_acceptance_threshold) ... ok\ntest_ranking_claim_cannot_hide_behind_discussion_flag (test_lowbudget_eval_check.CheckerTests.test_ranking_claim_cannot_hide_behind_discussion_flag) ... ok\ntest_separate_fits_fail_even_if_same_fit_flag_is_true (test_lowbudget_eval_check.CheckerTests.test_separate_fits_fail_even_if_same_fit_flag_is_true) ... ok\ntest_unused_diagnostic_and_single_metric_exemptions (test_lowbudget_eval_check.CheckerTests.test_unused_diagnostic_and_single_metric_exemptions) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.448s\n\nOK\n"
+  }
+}

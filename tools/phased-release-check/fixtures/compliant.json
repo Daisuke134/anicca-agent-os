@@ -1,0 +1,41 @@
+{
+  "decision": {
+    "phased_choice_recorded_per_version": true,
+    "schedule_known_1_2_5_10_20_50_100": true,
+    "pause_owner_with_required_role": true
+  },
+  "scope": {
+    "not_first_version_acknowledged": true,
+    "auto_update_only_and_manual_bypass_understood": true,
+    "removal_from_sale_cancels_recorded": true
+  },
+  "monitoring": {
+    "daily_checkpoint_metrics_defined": true,
+    "crash_signal_live": true,
+    "pause_thresholds_predefined": true
+  },
+  "pause_resume": {
+    "pause_budget_30d_tracked": true,
+    "resume_and_release_to_all_criteria": true
+  },
+  "fix_forward": {
+    "no_rollback_understood": true,
+    "expedited_fix_build_path_recorded": true
+  },
+  "measurement": {
+    "asc_state_readback_per_version": true,
+    "version_distribution_measured": true,
+    "completion_recorded": true
+  },
+  "rollout_watch": {
+    "day_band_signal_plan_recorded": true,
+    "signals_compared_to_previous_version": true,
+    "early_review_bias_handled": true,
+    "pause_rules_quantified_before_release": true,
+    "keep_going_and_release_all_criteria_recorded": true,
+    "api_state_read_daily": true,
+    "listing_treated_as_live_day1": true,
+    "reply_and_support_discipline_recorded": true,
+    "server_side_switches_written_before_submit": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "app": "Anicca (proposed soft design, 2026-11-13 decision)",
+  "model": "soft",
+  "paywall_dismissible": true,
+  "free_core": ["daily_affirmation_playback_to_end", "basic_reminder", "basic_widget"],
+  "free_core_includes_aha": true,
+  "premium_features": ["full_affirmation_library", "lock_screen_affirmations", "custom_reminder_schedules", "advanced_widgets"],
+  "split_documented": true,
+  "reprompt_triggers": ["locked_feature_tap", "free_limit_reached", "day7_return"],
+  "judge_metrics": ["revenue_per_install", "day35_download_to_paid", "trial_to_paid"],
+  "observation_window_days": 56,
+  "channel_breakdown": true,
+  "refund_rate_tracked": true
+}

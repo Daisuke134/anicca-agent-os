@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "receptivity-generalization"
+version = "1.0.0"
+description = "Cross-study generalization of receptivity models for just-in-time adaptive interventions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.26,<3",
+    "pandas>=2.0",
+    "pyarrow>=14.0",
+    "scikit-learn>=1.3",
+    "xgboost>=2.0",
+    "torch>=2.0",
+    "hyperopt>=0.2.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+receptivity-within-study = "receptivity.cli.within_study:main"
+receptivity-cross-study = "receptivity.cli.cross_study:main"
+
+[tool.setuptools.packages.find]
+include = ["receptivity*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::UserWarning", "ignore::FutureWarning"]

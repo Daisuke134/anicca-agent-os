@@ -1,0 +1,5 @@
+name: loop_self_repair
+title: Repair a Stalled Loop From Its Playbook
+description: Diagnose a stalled loop from run history and output ledgers, repair it with the pre-approved playbook for its failure pattern within bounded attempts, and count the repair as done only when the expected artifact is verified present.
+category: Operations
+include_in_prompt: true

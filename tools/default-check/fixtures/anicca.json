@@ -1,0 +1,20 @@
+{
+ "defaults_inventoried_per_surface": false,
+ "default_value_recorded_with_reason": false,
+ "default_owner_named": false,
+ "default_is_best_for_typical_user": false,
+ "alternatives_equally_visible_and_changeable": false,
+ "default_disclosed_as_preselected": false,
+ "no_default_for_consent_or_privacy": false,
+ "no_default_hiding_cost_or_renewal": false,
+ "default_not_dark_pattern": false,
+ "default_acceptance_measured_separately": false,
+ "switch_away_rate_and_reasons_read": false,
+ "defaults_read_by_cohort_and_option_count": false,
+ "primary_numbers_quoted_with_design": false,
+ "expectations_discounted_for_replication_and_outcome_gap": false,
+ "no_app_effect_promised_from_donation_or_pension_data": false,
+ "default_reversible_without_penalty": false,
+ "default_reviewed_on_schedule": false,
+ "revenue_claim_tied_to_default_chain": false
+}

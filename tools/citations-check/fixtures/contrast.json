@@ -1,0 +1,32 @@
+{
+ "decision": {
+  "decision_recorded": true,
+  "owner_recorded": true,
+  "grounded_surfaces_inventoried": true
+ },
+ "enablement": {
+  "citations_enabled_on_all_documents": true,
+  "document_type_chosen_per_source": true,
+  "granularity_chosen_deliberately": true
+ },
+ "correctness": {
+  "title_and_context_not_treated_as_citable": true,
+  "non_citable_content_excluded": true,
+  "structured_output_conflict_handled": true
+ },
+ "preservation": {
+  "response_blocks_preserved_not_flattened": true,
+  "document_identity_mapped_by_application": false,
+  "cited_text_token_economics_accounted": true
+ },
+ "verification": {
+  "citation_coverage_checked": false,
+  "absent_or_conflicting_evidence_handled": true,
+  "citation_quality_evaluated": false
+ },
+ "operations": {
+  "caching_applied_to_source_documents": true,
+  "streaming_citations_delta_handled": false,
+  "citation_events_logged_with_source_version": false
+ }
+}

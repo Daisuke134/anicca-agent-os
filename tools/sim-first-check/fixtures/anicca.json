@@ -1,0 +1,36 @@
+{
+ "order": {
+  "simulate_first_order_recorded": false,
+  "every_intervention_surface_has_named_simulation": false,
+  "no_intervention_ships_without_prior_simulation_run": false,
+  "simulation_run_logged_with_date_and_inputs": false
+ },
+ "population": {
+  "population_built_from_real_behavior_data": true,
+  "heterogeneity_preserved_not_average_user": false,
+  "fidelity_validated_against_real_responses": false,
+  "person_and_population_layers_both_present": true
+ },
+ "counterfactual": {
+  "candidates_compared_in_simulation_before_live": false,
+  "do_nothing_baseline_included": false,
+  "critical_variables_identified_from_rollouts": false,
+  "side_effects_and_ood_checked": false
+ },
+ "selection": {
+  "live_choice_taken_from_simulation_ranking": false,
+  "chosen_intervention_carries_its_prediction": false,
+  "fallback_is_prior_serving_not_guess": false
+ },
+ "architecture": {
+  "hierarchical_models_large_reasoning_small_high_frequency": false,
+  "rollout_cost_measured_free_or_prepaid_only": false,
+  "simulation_speed_fits_decision_cadence": false
+ },
+ "loop": {
+  "real_outcomes_compared_to_predictions": false,
+  "prediction_error_recorded_and_fed_back": false,
+  "finalists_confirmed_with_real_people": false,
+  "outside_matches_inside_simulated_claims_exist_in_product": false
+ }
+}

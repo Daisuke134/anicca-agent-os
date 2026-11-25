@@ -1,0 +1,33 @@
+{
+  "inventory": {
+    "forgiveness_surfaces_inventoried": true,
+    "forgiveness_defined_as_specific_hurt_decisional_and_emotional_distinct_from_reconciliation_or_excusing": true,
+    "safety_and_pressure_prompts_audited": true
+  },
+  "design": {
+    "process_steps_present_not_decision_only": true,
+    "dose_recorded_and_multi_session": true,
+    "user_chooses_specific_transgression_and_may_stop": true
+  },
+  "prohibitions": {
+    "forgiveness_forced_or_guilt_framed": true,
+    "forgiveness_equated_with_reconciliation_or_excusing": true,
+    "forgiveness_paywalled_or_upsold_at_hurt_moment": true
+  },
+  "measurement": {
+    "unforgiveness_measured_not_mood_only": true,
+    "counts_recorded_not_rates_only": true,
+    "depression_anxiety_measured_separately_and_followup": true
+  },
+  "citation": {
+    "source_numbers_cited_with_design": true,
+    "effect_claimed_as_cure_or_guaranteed_release": true,
+    "revenue_chain_recorded": true
+  },
+  "ethics": {
+    "clinical_claim_made": true,
+    "forgiveness_process_available_to_free_users": true,
+    "review_cadence_recorded": true
+  },
+  "app": "contrast-forced-forgiveness-upsell"
+}

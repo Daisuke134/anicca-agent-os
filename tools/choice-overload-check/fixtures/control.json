@@ -1,0 +1,20 @@
+{
+ "choice_surfaces_recorded_per_app": true,
+ "option_counts_recorded_per_surface": true,
+ "moderators_assessed_per_surface": false,
+ "curated_default_path_exists": true,
+ "full_set_available_on_demand": false,
+ "default_is_genuine_best_not_manipulated": false,
+ "options_categorized_or_chunked": true,
+ "options_comparable_on_shared_attributes": true,
+ "deferral_measured_not_just_conversion": false,
+ "paywall_plans_kept_small_with_preselected_default": true,
+ "onboarding_questions_sequenced_one_choice_at_a_time": true,
+ "satisfaction_and_regret_measured_after_choice": false,
+ "jam_numbers_quoted_with_design": false,
+ "expectations_set_conditional_not_law": false,
+ "no_app_effect_promised_from_jam_study": false,
+ "curation_not_used_to_hide_price_or_terms": false,
+ "reduction_not_used_to_remove_meaningful_choice": false,
+ "revenue_claim_tied_to_source_chain": false
+}

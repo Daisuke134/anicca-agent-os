@@ -1,0 +1,8 @@
+{
+ "decision": {"decision_recorded": false, "owner_recorded": false, "streaming_surfaces_inventoried": false},
+ "transport": {"sdk_used_not_handrolled_sse": true, "streaming_used_where_required": false, "event_contract_handled": false},
+ "deltas": {"partial_json_accumulated_and_parsed_at_block_stop": false, "whole_blocks_and_fallback_blocks_handled": false, "thinking_deltas_and_signature_handled": false},
+ "latency": {"first_token_latency_measured": false, "final_message_accumulated_and_retained": true, "stop_reasons_handled_on_completion": false},
+ "recovery": {"partial_response_captured": false, "continuation_form_matches_model_generation": false, "midstream_error_events_handled": false},
+ "operations": {"fine_grained_tool_streaming_decided": false, "non_streaming_surfaces_explicitly_decided": false, "streaming_reverified_on_model_or_sdk_change": false}
+}

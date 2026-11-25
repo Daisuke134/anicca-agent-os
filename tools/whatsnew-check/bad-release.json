@@ -1,0 +1,27 @@
+{
+ "app": "Example",
+ "version": "2.0.0",
+ "release_date": "2026-11-10",
+ "today": "2026-11-14",
+ "changes_verified": true,
+ "notes_locales": [
+  "en-US",
+  "ja",
+  "de",
+  "fr",
+  "es"
+ ],
+ "release_notes": "Calmer mornings, matched to you: your first affirmation now follows the answer you gave at onboarding.\n- A steadier widget that keeps today's words on your home screen\n- Fixed the reminder that fired twice on Sundays\nTell us what to build next in the reviews - we read all of them.",
+ "release_decision": {
+  "decision_recorded": true,
+  "reset_chosen": true,
+  "top_complaint_fixed_and_verified": false,
+  "all_territories_irreversible_understood": false,
+  "rebuild_forecast_recorded": false,
+  "prompt_ready_in_new_version": false,
+  "version_released": true,
+  "review_summary_checked_within_7d": false,
+  "fixes_named_review_complaint": true,
+  "notes_name_the_fixed_complaint": false
+ }
+}

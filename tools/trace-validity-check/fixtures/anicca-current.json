@@ -1,0 +1,8 @@
+{
+  "evaluation_name": "Anicca documentation snapshot, 2026-11-21",
+  "source_paths": [
+    "files/paper-loop-duolingo2-eval2-gates-spec-2026-11-21.md",
+    "team-outbox/muse/to-codex-2026-11-21-paper-loop-duolingo2-eval2-checks.md"
+  ],
+  "documented_state": "These documents request new reporting gates but supply no Anicca measurement evidence for them. Unknown declarations intentionally absent; not a live system audit."
+}

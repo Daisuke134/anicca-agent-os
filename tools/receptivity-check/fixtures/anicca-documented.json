@@ -1,0 +1,9 @@
+{
+  "_note": "Document-backed current-state evidence snapshot, not a live app audit. Only surface and source are established here. Gate-specific records and accountable owner are not established by reviewed evidence and are deliberately omitted, not inferred absent or unused. All gates fail for missing evidence.",
+  "surface_name": "Anicca notification surface",
+  "source_path": "/home/hatch/workspace/anicca-ops-paper-jitai2-wt/files/personalized-nudge-design-2026-11-14.md",
+  "_reviewed_sources": [
+    "/home/hatch/workspace/anicca-ops-paper-jitai2-wt/files/personalized-nudge-design-2026-11-14.md",
+    "/home/hatch/workspace/anicca-ops-paper-jitai2-wt/files/anicca-onboarding-paywall-iam-form-spec-2026-11-13.md"
+  ]
+}

@@ -1,0 +1,1 @@
+{"close_visible":true,"hide_for_subscribers":true,"holdout":true,"inventory":{"premium_tap":"shown","settings_route":"shown","usage_limit":"shown"},"judge_window_days":42,"later_discount_deeper":false,"primary_metric":"revenue_per_install","same_offering":true,"triggers":["premium_tap","usage_limit"]}

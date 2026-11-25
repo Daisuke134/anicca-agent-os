@@ -1,0 +1,35 @@
+{
+ "actionability": {
+  "collection_connected_to_a_sender": true,
+  "email_attributed_revenue_measured": true,
+  "flows_cover_never_purchased_trial_billing_expired": true
+ },
+ "collection": {
+  "ask_after_something_worth_protecting_built": true,
+  "email_collection_exists": true,
+  "generic_create_account_at_top": false,
+  "placement_pattern_named_from_four": true
+ },
+ "house_rules": {
+  "consent_and_optin_recorded": true,
+  "no_paid_tool_blocks_collection": true,
+  "raw_addresses_kept_private_never_sold": true
+ },
+ "identity_wiring": {
+  "anonymous_ids_turned_into_contacts": false,
+  "apple_relay_address_handling_recorded": true,
+  "email_set_as_subscription_email_attribute": true,
+  "identity_matched_to_app_user_id": true
+ },
+ "measurement": {
+  "optin_rate_measured_against_40pct_winner_bar": true,
+  "paywall_impact_measured_before_after": true,
+  "segment_sizes_known": true
+ },
+ "timing_framing": {
+  "framing_is_preservation_not_account_creation": true,
+  "no_price_information_forced_before_ask_decision_recorded": true,
+  "privacy_commitments_before_ask_for_sensitive_data": true,
+  "result_preview_with_own_numbers_before_ask": true
+ }
+}

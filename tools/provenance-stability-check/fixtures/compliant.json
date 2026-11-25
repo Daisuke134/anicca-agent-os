@@ -1,0 +1,65 @@
+{
+  "claims": [
+    {
+      "type": "stance",
+      "population": "Illustrative adult volunteers"
+    },
+    {
+      "type": "attribute",
+      "population": "Illustrative adult volunteers",
+      "enriched": true,
+      "source": "example/interview/1#turn2",
+      "audit": "supported",
+      "fabrication": false,
+      "stereotyping": false
+    }
+  ],
+  "stability_audit": {
+    "neutral_present": true,
+    "revisions": [
+      {
+        "type": "neutral_paraphrase",
+        "directional_shift": 0.01,
+        "transition_rate": 0.02
+      },
+      {
+        "type": "substantive_addition",
+        "directional_shift": 0.3,
+        "transition_rate": 0.4
+      },
+      {
+        "type": "multimodal",
+        "directional_shift": 0.2,
+        "transition_rate": 0.3
+      }
+    ]
+  },
+  "mechanism": {
+    "name": "preference conditioning",
+    "settings": {
+      "temperature": 0
+    }
+  },
+  "diversity_as_validity": false,
+  "provenance_claimed_as_realism": false,
+  "realism_claim": true,
+  "human_calibration_reference": "example/human-calibration/1",
+  "predictive_claim": true,
+  "human_studies": {
+    "study_count": 2,
+    "participant_count": 50,
+    "correlations": [
+      {
+        "metric": "ranking",
+        "value": 0.8
+      },
+      {
+        "metric": "agreement",
+        "value": 0.6
+      }
+    ],
+    "minimum_correlation": 0.6,
+    "fitted_not_forecast": true
+  },
+  "fixture_note": "Illustrative compliant design; synthetic values are not Anicca observations."
+}

@@ -1,0 +1,20 @@
+{
+ "per_app_category_recorded": true,
+ "per_iap_override_inventory_recorded": false,
+ "owner_named": true,
+ "category_fits_product_not_default_assumed": true,
+ "subcategory_and_attributes_answered": false,
+ "saas_attribute_evaluated": true,
+ "proceeds_are_price_minus_tax_recorded": true,
+ "net_proceeds_by_top_storefronts_tabulated": true,
+ "tax_inclusive_vs_exclusive_understood": false,
+ "apple_tax_notices_monitored": true,
+ "subscription_exclusion_from_price_updates_understood": false,
+ "manual_storefront_tax_responsibility_recorded": false,
+ "california_2027_applicability_decided": true,
+ "california_proceeds_unchanged_customer_total_rises_recorded": false,
+ "transaction_tax_report_location_known": false,
+ "sales_vs_payments_reconciled_monthly": true,
+ "category_change_future_only_understood": false,
+ "decision_review_date_set": true
+}

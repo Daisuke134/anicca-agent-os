@@ -1,0 +1,20 @@
+{
+ "eligibility_assessed_per_app": false,
+ "decision_recorded_per_app": false,
+ "channel_owner_recorded": false,
+ "core_business_model_verified": false,
+ "eligibility_not_assumed_by_analogy": true,
+ "program_dependency_checked": false,
+ "own_sku_catalog_managed": false,
+ "uses_storekit2": true,
+ "in_app_subscription_management": false,
+ "server_api_and_notifications_v2": false,
+ "in_app_refund_path": false,
+ "minimum_os_floor_met": false,
+ "limitations_accepted": false,
+ "commission_unchanged_understood": false,
+ "dual_management_understood": false,
+ "application_per_app_and_addendum": false,
+ "review_submission_hygiene": false,
+ "updates_reapplied_via_form": false
+}

@@ -1,0 +1,113 @@
+{
+  "_note": "Synthetic control: exactly five failures: TR-1, TR-2, TR-3, TR-4, CG-1.",
+  "surface_name": "Synthetic notification surface",
+  "trigger_owner": "Fixture owner",
+  "source_path": "/home/hatch/workspace/anicca-ops-paper-jitai2-wt/files/paper-loop-jitai2-onboarding2-gates-spec-2026-11-18.md",
+  "calibration": {
+    "period": "7 days per participant",
+    "individual_threshold_method": "Participant baseline 70th percentile",
+    "refractory_period": "60 minutes"
+  },
+  "rates": {
+    "usable_decision_fraction": 0.8,
+    "triggers_per_day": 1.5,
+    "intervention_adherence": 0.6
+  },
+  "receptivity": {
+    "horizons_minutes": [
+      15
+    ],
+    "form": "binary_single_window",
+    "time_to_event_record": "Synthetic response-time histogram with right-censored nonresponses",
+    "label_shortage_handling_used": true,
+    "label_shortage_handling": "Self-supervised initialization recorded for synthetic design"
+  },
+  "effects": {
+    "outcomes": [
+      {
+        "trigger_type": "physiological",
+        "outcome_type": "psychological",
+        "record": "Synthetic outcome estimate 0.1"
+      },
+      {
+        "trigger_type": "physiological",
+        "outcome_type": "physiological",
+        "record": "Synthetic outcome estimate 0.1"
+      },
+      {
+        "trigger_type": "physiological",
+        "outcome_type": "behavioral",
+        "record": "Synthetic outcome estimate 0.1"
+      },
+      {
+        "trigger_type": "self_report",
+        "outcome_type": "psychological",
+        "record": "Synthetic outcome estimate 0.1"
+      },
+      {
+        "trigger_type": "self_report",
+        "outcome_type": "physiological",
+        "record": "Synthetic outcome estimate 0.1"
+      },
+      {
+        "trigger_type": "self_report",
+        "outcome_type": "behavioral",
+        "record": "Synthetic outcome estimate 0.1"
+      },
+      {
+        "trigger_type": "random",
+        "outcome_type": "psychological",
+        "record": "Synthetic outcome estimate 0.1"
+      },
+      {
+        "trigger_type": "random",
+        "outcome_type": "physiological",
+        "record": "Synthetic outcome estimate 0.1"
+      },
+      {
+        "trigger_type": "random",
+        "outcome_type": "behavioral",
+        "record": "Synthetic outcome estimate 0.1"
+      },
+      {
+        "trigger_type": "self",
+        "outcome_type": "psychological",
+        "record": "Synthetic outcome estimate 0.1"
+      },
+      {
+        "trigger_type": "self",
+        "outcome_type": "physiological",
+        "record": "Synthetic outcome estimate 0.1"
+      },
+      {
+        "trigger_type": "self",
+        "outcome_type": "behavioral",
+        "record": "Synthetic outcome estimate 0.1"
+      }
+    ],
+    "trigger_effect_claimed": true,
+    "control_arms": []
+  },
+  "self_trigger": {
+    "present": true,
+    "self_count": 2,
+    "automatic_count": 8
+  },
+  "transfer": {
+    "used": true,
+    "within_performance": {
+      "metric": "AUC",
+      "value": 0.8,
+      "evidence": "Synthetic within-study example"
+    },
+    "transfer_performance": {
+      "metric": "AUC",
+      "value": 0.7,
+      "evidence": "Synthetic held-out target example"
+    },
+    "feature_handling": "union",
+    "warm_start_claimed": true,
+    "transfer_measured": true,
+    "warm_start_evidence": "Synthetic target comparison supporting warm-start in this fixture only"
+  }
+}

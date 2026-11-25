@@ -1,0 +1,12 @@
+{
+  "agent_id": "9425449917",
+  "title": "TikTok Series Continuity Planner — Next Script",
+  "description": "Send past scripts, captions, or a plain summary of your series so far, and get a complete next-episode script that stays consistent and ready to film — with a new-viewer recap, callbacks for loyal viewers, a cliffhanger built only on established facts, and a continuity ledger. Anything not established is marked for confirmation, never invented.",
+  "skills": [
+    {
+      "path": ".claude/skills/tiktok-series-continuity-planner",
+      "name": "tiktok-series-continuity-planner",
+      "purpose": "Turn a creator's pasted series premise, prior episode notes, and approved facts into a cohesive next-episode plan and production-ready script."
+    }
+  ]
+}

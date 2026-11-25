@@ -1,0 +1,8 @@
+{"app":"compliant-design","domain":"example.com","expected_app_id":"ABCDE12345.com.example.app",
+ "live_check":{"recorded":true,"checked_on":"2026-11-14","wellknown_status":200,"root_status":404,"redirected":false},
+ "aasa":{"served":true,"valid_json":true,"applinks_app_ids":["ABCDE12345.com.example.app"],"has_components":true,"all_excluded":false},
+ "entitlement_domains":["applinks:example.com"],
+ "handler":{"handles_browsing_web":true,"routes_to_specific_screen":true},
+ "fallback":{"unmatched_opens_web":true},
+ "measurement":{"ul_taps_event":true,"runbook_notes_cdn_timing":true},
+ "aasa_content_type":"application/json","aasa_size_kb":1}

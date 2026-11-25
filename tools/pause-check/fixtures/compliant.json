@@ -1,0 +1,21 @@
+{
+ "pause_offer_exists": true,
+ "pause_matched_to_not_now_reason": true,
+ "pause_not_offered_for_price_or_feature_reasons": true,
+ "platform_pause_mechanism_verified": true,
+ "fixed_length_with_resume_date_shown": true,
+ "extendable_once_only": true,
+ "billing_stops_and_resumes_same_plan": true,
+ "data_and_settings_preserved": true,
+ "data_retention_stated_in_one_sentence": true,
+ "pause_available_outside_cancel_flow": true,
+ "reminder_before_resume_and_confirmation_on_day": true,
+ "resume_rate_measured": true,
+ "net_resume_rate_measured": true,
+ "pause_to_cancel_counted_as_churn": true,
+ "pauses_reported_by_reason_and_extension": true,
+ "paused_mrr_reported_separately": true,
+ "no_fake_save_counting": true,
+ "outside_equals_inside_pause": true,
+ "app": "compliant-design"
+}

@@ -1,0 +1,10 @@
+{
+  "_note": "Documented current state fixture: the 6-app portfolio and past feature work have no Step1 20-app printing table, no content-before-build check, and no money-math record in shared files. Unrecorded = false/null here; this proves records cannot prove the gate, not that the apps are bad.",
+  "candidate_recorded": false,
+  "category": null,
+  "step1_printing": {},
+  "step2_winnable": {},
+  "step3_content_first": {},
+  "step4_money_math": {},
+  "step5_launch_test": {}
+}

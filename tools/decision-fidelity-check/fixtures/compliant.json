@@ -1,0 +1,174 @@
+{
+  "evaluation_name": "Synthetic complete reporting example; not production evidence",
+  "ground_truth_type": "real_consequential_outcome",
+  "decision_claimed": true,
+  "outcome_conditioned": {
+    "groups": [
+      {
+        "outcome": "buyer",
+        "metric": "depth_bias",
+        "value": 0.01
+      },
+      {
+        "outcome": "non-buyer",
+        "metric": "depth_bias",
+        "value": 0.02
+      }
+    ],
+    "contrast": {
+      "effect_size_metric": "Cohen d",
+      "effect_size": 0.02,
+      "interval": {
+        "lower": -0.03,
+        "upper": 0.07,
+        "confidence": 0.95
+      }
+    }
+  },
+  "behavior": {
+    "resistance": {
+      "real": 0.25,
+      "simulation": 0.24
+    },
+    "deliberation": {
+      "real": 0.22,
+      "simulation": 0.23
+    },
+    "disengagement": {
+      "real": 0.3,
+      "simulation": 0.29
+    },
+    "repair_claimed": true,
+    "post_repair_outcome_conditioned": {
+      "groups": [
+        {
+          "outcome": "buyer",
+          "metric": "depth_bias",
+          "value": 0.01
+        },
+        {
+          "outcome": "non-buyer",
+          "metric": "depth_bias",
+          "value": 0.02
+        }
+      ],
+      "contrast": {
+        "effect_size_metric": "Cohen d",
+        "effect_size": 0.02,
+        "interval": {
+          "lower": -0.03,
+          "upper": 0.07,
+          "confidence": 0.95
+        }
+      }
+    }
+  },
+  "measurement": {
+    "teacher_forced": true,
+    "same_perceiver": true
+  },
+  "knowledge_leakage": {
+    "persona_has_unknown_targets": true,
+    "pairs": [
+      {
+        "real_item": "Synthetic real-item placeholder",
+        "fabricated_twin": "Synthetic invented-item placeholder"
+      }
+    ],
+    "twin_construction": "Matched surface forms and attributes in this synthetic example.",
+    "paired_contrast": {
+      "effect_size_metric": "Cohen d",
+      "effect_size": 0.02,
+      "interval": {
+        "lower": -0.03,
+        "upper": 0.07,
+        "confidence": 0.95
+      }
+    },
+    "domains": [
+      {
+        "domain": "favourable",
+        "paired_contrast": {
+          "effect_size_metric": "Cohen d",
+          "effect_size": 0.02,
+          "interval": {
+            "lower": -0.03,
+            "upper": 0.07,
+            "confidence": 0.95
+          }
+        }
+      },
+      {
+        "domain": "unfavourable",
+        "paired_contrast": {
+          "effect_size_metric": "Cohen d",
+          "effect_size": 0.02,
+          "interval": {
+            "lower": -0.03,
+            "upper": 0.07,
+            "confidence": 0.95
+          }
+        }
+      }
+    ],
+    "conditional_on_twin_adequacy": true
+  },
+  "human_likeness": {
+    "claimed": true,
+    "separate_from_task_success": true,
+    "lexical_metrics": [
+      {
+        "metric": "MATTR",
+        "value": 0.7
+      }
+    ],
+    "judge_metrics": [
+      {
+        "metric": "GTEval",
+        "value": 0.8
+      }
+    ],
+    "controls": {
+      "human_human": {
+        "metric": "GTEval",
+        "value": 0.9
+      },
+      "proxy_proxy": {
+        "metric": "GTEval",
+        "value": 0.95
+      }
+    },
+    "judge_sensitivity": {
+      "performed": false,
+      "note": "Not performed; judge dependence remains unmeasured."
+    }
+  },
+  "reliability": {
+    "R1": {
+      "metric": "individual_agreement",
+      "value": 0.8
+    },
+    "R2": {
+      "metric": "population_discrepancy",
+      "value": 0.1
+    },
+    "cross_level_improvement_inferred": false,
+    "profile_informativeness_evidence": "Synthetic held-out attribute ablation; informative attributes reduce prediction error.",
+    "coverage": {
+      "n": 100,
+      "variance_stability": "Synthetic resampling variance stabilized at n=100.",
+      "bias_assessment": "Residual systematic bias remains; sample size is not evidence of no bias."
+    }
+  },
+  "calibration": {
+    "claimed": true,
+    "type": "transferable_structure",
+    "reference_questions": [
+      "Reference preference A?",
+      "Reference preference B?"
+    ],
+    "cold_start": true,
+    "target_has_human_data": false,
+    "level": "distribution"
+  }
+}

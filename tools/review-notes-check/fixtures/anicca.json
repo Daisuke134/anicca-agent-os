@@ -1,0 +1,29 @@
+{
+ "specificity": {
+  "notes_written_per_version": false,
+  "each_change_specific_with_path": false,
+  "notes_under_4000_bytes_checked": false,
+  "whatsnew_written_separately": false,
+  "minimization_applied": false
+ },
+ "demo": {
+  "demo_account_works_and_seeded": false,
+  "demo_valid_whole_review_no_rotation": false,
+  "extra_roles_listed_in_notes": false,
+  "expired_subscription_account_included": false,
+  "otp_method_preprovided": false,
+  "review_blockers_allowlisted": false
+ },
+ "reachability": {
+  "flags_listed_and_on_for_review": false,
+  "no_post_approval_server_switch_additions": false,
+  "regional_differences_stated": false,
+  "external_services_named": false
+ },
+ "context": {
+  "tested_devices_os_listed": false,
+  "iaps_listed_with_location": false,
+  "reproduction_steps_for_special_features": false,
+  "contact_international_format": false
+ }
+}

@@ -1,0 +1,384 @@
+{
+  "N": 20,
+  "M": 30,
+  "categories": [
+    {
+      "name": "failure",
+      "definition": "no successful completion",
+      "weight": 0
+    },
+    {
+      "name": "partial",
+      "definition": "partially completed",
+      "weight": 0.5
+    },
+    {
+      "name": "success",
+      "definition": "fully completed",
+      "weight": 1
+    }
+  ],
+  "prior": [
+    1,
+    1,
+    1
+  ],
+  "credible_level": 0.95,
+  "primary_metric": "posterior_mean",
+  "models": [
+    {
+      "name": "candidate",
+      "counts": [
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          2,
+          17
+        ]
+      ],
+      "posterior_mean": 0.8478260869565217,
+      "credible_interval": [
+        0.8251462935161876,
+        0.8705058803968558
+      ]
+    },
+    {
+      "name": "baseline",
+      "counts": [
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ],
+        [
+          12,
+          4,
+          4
+        ]
+      ],
+      "posterior_mean": 0.32608695652173914,
+      "credible_interval": [
+        0.296380008708132,
+        0.35579390433534624
+      ]
+    }
+  ],
+  "comparison": {
+    "status": "winner",
+    "winner": "candidate"
+  },
+  "max_interval_width": 0.02,
+  "allocation_rule": "Allocate 10 more trials per case to models exceeding max_interval_width, recompute, stop at N=200 and report unresolved if still overlapping.",
+  "evidence": [
+    {
+      "kind": "execution_trace",
+      "path": "synthetic://run-1/trace"
+    }
+  ],
+  "dimensions": [
+    {
+      "name": "Completion",
+      "score": 0.9,
+      "important": true,
+      "minimum": 0.8
+    },
+    {
+      "name": "Safety",
+      "score": 0.9,
+      "important": true,
+      "minimum": 0.8
+    },
+    {
+      "name": "Robustness",
+      "score": 0.9,
+      "important": true,
+      "minimum": 0.8
+    }
+  ],
+  "overall_pass": true,
+  "fixture_kind": "synthetic compliance example"
+}

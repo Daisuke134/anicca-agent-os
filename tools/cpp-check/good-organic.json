@@ -1,0 +1,86 @@
+{
+ "inventory_recorded": true,
+ "live_keyword_field": [
+  "morning affirmation",
+  "affirmations",
+  "sleep affirmation",
+  "daily affirmation"
+ ],
+ "planned_pages": [
+  {
+   "name": "post-quiz",
+   "type": "direct_link",
+   "keywords": [],
+   "cloned_from_default": true,
+   "ban_list_audited": true,
+   "first_screenshot_shows_result": true,
+   "promo_text": "Your personal plan is ready. Start your first affirmation now.",
+   "deep_link_target": "onboarding/result",
+   "lands_on_generic_welcome": false,
+   "approved": false,
+   "wired": false
+  },
+  {
+   "name": "morning",
+   "type": "keyword",
+   "keywords": [
+    "morning affirmation"
+   ],
+   "monthly_impressions": 850,
+   "converts_below_average": true,
+   "branded": false,
+   "cluster_size": 3,
+   "cloned_from_default": true,
+   "ban_list_audited": true,
+   "first_screenshot_shows_result": true,
+   "promo_text": "Morning affirmation, ready when you wake. Listen first, then start.",
+   "deep_link_target": "category/morning",
+   "lands_on_generic_welcome": false,
+   "approved": false,
+   "wired": false,
+   "intent_sentence": "people searching morning affirmation who want that exact moment answered first",
+   "evidence_in_app_verified": true
+  },
+  {
+   "name": "sleep",
+   "type": "keyword",
+   "keywords": [
+    "sleep affirmation"
+   ],
+   "monthly_impressions": 620,
+   "converts_below_average": true,
+   "branded": false,
+   "cluster_size": 2,
+   "cloned_from_default": true,
+   "ban_list_audited": true,
+   "first_screenshot_shows_result": true,
+   "promo_text": "Sleep affirmation for tonight. Press play and let the day go.",
+   "deep_link_target": "category/sleep",
+   "lands_on_generic_welcome": false,
+   "approved": false,
+   "wired": false,
+   "intent_sentence": "people searching sleep affirmation who want that exact moment answered first",
+   "evidence_in_app_verified": true
+  }
+ ],
+ "submitted_pages": 0,
+ "measurement": {
+  "baseline_formula_recorded": true,
+  "primary_metric": "revenue_per_page_view",
+  "d7_retention_guardrail": true,
+  "reroute_below_1x": true
+ },
+ "organic_search": {
+  "queries_grouped_by_intent": true,
+  "ranking_shortcut_expected": false,
+  "live_pages": 0,
+  "thin_page_retire_rule": true,
+  "compares_vs_default_same_queries": true,
+  "downstream_quality_checked": true,
+  "sparse_traffic_qualitative_check": true,
+  "change_log_joint_keyword_creative": true,
+  "ui_change_triggers_cpp_refresh": true,
+  "monthly_review_cadence": true,
+  "promo_text_not_ranking_factor_acknowledged": true
+ }
+}

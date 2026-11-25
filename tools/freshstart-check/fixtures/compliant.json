@@ -1,0 +1,20 @@
+{
+ "per_app_landmark_calendar_recorded": true,
+ "landmark_types_distinguished": true,
+ "start_offers_mapped_to_landmarks": true,
+ "landmark_named_as_new_period": true,
+ "past_period_closed_in_frame": true,
+ "big_picture_goal_prompt_at_landmark": true,
+ "begin_ask_timed_to_landmark": true,
+ "begin_at_next_landmark_offered": true,
+ "no_invented_landmarks_or_scarcity": true,
+ "upcoming_landmark_not_a_reason_to_pause": true,
+ "action_available_in_current_period": true,
+ "post_start_carry_plan_exists": true,
+ "personal_landmark_collected_with_consent": true,
+ "personal_landmark_frame_not_shaming": true,
+ "landmark_calendar_refreshed_yearly": true,
+ "initiation_measured_not_maintenance_claimed": true,
+ "landmark_cohort_read_separately": true,
+ "effect_sizes_quoted_from_primary_source": true
+}

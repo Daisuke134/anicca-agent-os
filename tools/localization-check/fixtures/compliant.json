@@ -1,0 +1,6 @@
+{"decision":{"supported_locales_recorded":true,"localization_owner_recorded":true,"source_locale_recorded":true},
+"coverage":{"every_locale_complete_keys":true,"extra_keys_triaged":true,"all_tables_covered":true},
+"untranslated":{"identical_to_source_audited":true,"long_identical_zero_or_waived":true,"placeholder_parity_checked":true},
+"fallback":{"missing_key_fallback_is_source_not_key":true,"fallback_behavior_recorded":true},
+"declaration":{"declared_localizations_match_shipped":true,"known_regions_match_resources":true},
+"verification":{"completeness_measured_in_ci":true,"tests_cover_all_supported_locales":true,"per_locale_render_check_recorded":true}}

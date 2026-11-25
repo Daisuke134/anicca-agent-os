@@ -1,0 +1,73 @@
+{
+  "app": "synthetic conforming document; all values illustrative",
+  "declaration": {
+    "moderators": [
+      "name",
+      "age"
+    ],
+    "stratification_factors": [
+      "device",
+      "phase"
+    ],
+    "strata": [
+      "ios-early",
+      "ios-late",
+      "android-early",
+      "android-late"
+    ],
+    "before_analysis": true,
+    "claim_kind": "confirmatory"
+  },
+  "consistency": {
+    "stratum_effects": {
+      "ios-early": "positive",
+      "ios-late": "null",
+      "android-early": "null",
+      "android-late": "null"
+    },
+    "conclusion": "inconsistent",
+    "general_moderator_claim": false
+  },
+  "surface_personalization": {
+    "factor": "name insertion",
+    "tested_independently": true,
+    "result": "null",
+    "reported_result": "null",
+    "personalization_alone_is_evidence": false
+  },
+  "policy_value": {
+    "claimed": true,
+    "policy_assignment_randomized": true,
+    "control": "random-allocation",
+    "comparison_reference": "fixture policy-level 1:1 comparison",
+    "forecasting_only": false
+  },
+  "outcomes": {
+    "declared_proximal": [
+      "resilience",
+      "positive_affect",
+      "negative_affect"
+    ],
+    "results": {
+      "resilience": {
+        "effect": 0.1,
+        "result": "positive"
+      },
+      "positive_affect": {
+        "effect": 0,
+        "result": "null"
+      },
+      "negative_affect": {
+        "effect": 0,
+        "result": "null"
+      }
+    },
+    "generalized_to_other_outcomes": false
+  },
+  "power": {
+    "adequate": false,
+    "assessment": "fixture pilot with insufficient power",
+    "controlled": true,
+    "claim_kind": "feasibility"
+  }
+}

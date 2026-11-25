@@ -1,0 +1,6 @@
+{"app":"CompliantExample","primary_icon_recorded":true,
+"variants":{"count":2,"bundled_in_binary":true,"review_approved":true,"similar_to_primary":true,"four_plus_suitable":true,"rights_cleared":true},
+"switching":{"user_initiated_or_confirmed":true,"silent_switching":false,"restore_default_available":true},
+"seasonal":{"used":true,"calendar_recorded":true,"window_bounded":true,"bundled_before_window":true,"revert_automatic_or_scheduled":true},
+"perk":{"used":true,"gating_recorded":true,"reverts_on_expiry":true},
+"measurement":{"opens_tracked":true,"judged_on_installs_only":false}}

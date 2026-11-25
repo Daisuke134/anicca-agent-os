@@ -1,0 +1,20 @@
+name: media_audio_gate
+title: Media Audio Gate Before Posting
+description: Check a video or slideshow audio track before publishing so a silent or mismatched sound never reaches an audience.
+category: Media
+include_in_prompt: true
+skill_improvement:
+  managed: true
+  status: retired
+  evidence_handles:
+  - assistant-msg-31d59c21
+  - assistant-msg-4b4c237b
+  measurement:
+    proxy_metric_id: social_post_lane_conflict_rate
+    success_criterion: Within 14 days after consolidation, no post is published to an account with an active different owner and no recorded handover, no post is published for a product outside that account assignment, no scheduled post relies on a display name alone as channel proof, no video or slideshow is published with a missing audio stream or a silent mean volume, and every gated asset has a recorded stream, level and sound type check.
+    window_days: 14
+  needs_review: false
+  rationale: Retirement in the same consolidation batch as the merged social_post_lane_check proposal above. Its stream, level and type matched sound gate, repair and reporting method is carried into that merged document, so this file leaves active discovery while staying on disk.
+  review_after: 2026-11-26T05:25:12.755092+00:00
+  reviewed_at: 2026-11-12T05:25:12.755092+00:00
+  run_id: sirun_7de1ed1a6c794176adf2851d354cefb9

@@ -1,0 +1,7 @@
+{"app":"Control design: a refresh helper written once and pasted into one screen, silent failures, parallel refreshes from every view, expired token attached regardless, no 401 handling, no measurement, refresh token left in storage after sign-out.",
+"decision":{"lifecycle_decision_recorded":false,"bearer_vs_deviceid_surfaces_recorded":false,"server_rotation_or_sender_constraint_recorded":false},
+"reach":{"auth_header_helper_called_by_api_sites":true,"all_authenticated_surfaces_use_helper":false},
+"refresh_trigger":{"proactive_refresh_with_skew":false,"expiry_recorded_at_signin":false,"refresh_when_expiry_missing":false},
+"failure":{"refresh_failure_kinds_distinguished":false,"expired_token_not_attached_after_failed_refresh":false,"single_refresh_and_retry_on_401":false,"terminal_failure_moves_to_explicit_state":false},
+"concurrency":{"single_flight_refresh":false,"rotated_refresh_token_persisted_before_use":false},
+"measurement":{"refresh_attempts_and_outcomes_measured":false,"signout_and_deletion_discard_refresh_token":false}}

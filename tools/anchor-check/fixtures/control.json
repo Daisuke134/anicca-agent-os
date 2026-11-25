@@ -1,0 +1,20 @@
+{
+ "anchor_surfaces_recorded_per_app": true,
+ "anchor_is_discrete_completed_action": false,
+ "anchor_already_reliable_daily": true,
+ "recipe_written_after_anchor_i_will": true,
+ "behaviour_tiny_enough_for_worst_day": true,
+ "behaviour_immediately_after_anchor": true,
+ "one_anchor_per_new_behaviour": true,
+ "celebration_immediate_within_seconds": false,
+ "celebration_genuine_not_forced_theatre": true,
+ "failure_diagnosed_as_map_not_character": true,
+ "shrink_before_abandon": true,
+ "single_miss_not_treated_as_reset": false,
+ "timeline_read_as_range_not_promise": false,
+ "automaticity_measured_not_assumed": true,
+ "same_context_repetition_preserved": true,
+ "celebration_claim_labelled_practitioner": false,
+ "primary_numbers_quoted_with_design": false,
+ "anchor_not_used_as_dark_pattern": true
+}

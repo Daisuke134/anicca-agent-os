@@ -1,0 +1,54 @@
+{
+  "fixture_kind": "synthetic control with plausible but unsupported claims",
+  "as_of": "2026-11-24",
+  "scores": [
+    {
+      "id": "A",
+      "value": 0.75,
+      "formality_tier": "controlled offline evaluation",
+      "scope": "held-out English tasks v1",
+      "valid_from": "2026-11-20",
+      "expires_on": "2026-11-23",
+      "reevaluated_on": "2026-11-20",
+      "used_for_current_claim": true
+    }
+  ],
+  "aggregation": {
+    "multiple_signals": true,
+    "higher_is_better_normalized": true,
+    "signals": {
+      "A": [
+        1,
+        0.5
+      ],
+      "B": [
+        0.7,
+        0.7
+      ]
+    },
+    "mean_ranks": {
+      "A": 1,
+      "B": 2
+    },
+    "weakest_link_ranks": {
+      "A": 2,
+      "B": 1
+    },
+    "rank_disagreement_disclosed": false
+  },
+  "audit": {
+    "statistical_result": "negative",
+    "regime": {
+      "iid_assumption": "violated",
+      "benchmark_size": 1000,
+      "power_at_benchmark_size": "synthetic power analysis record: 0.8 at target effect",
+      "reference_set_source": "held-out dataset v1"
+    },
+    "provenance": "training manifest unavailable; provenance unknown, no clean-data claim",
+    "statistical_detection_separate_from_provenance": true,
+    "negative_detection_substitutes_for_provenance": true,
+    "distribution_shift": true,
+    "suspect_validation_distribution_comparison": "suspect multilingual vs validation English",
+    "false_positive_risk_disclosed": false
+  }
+}

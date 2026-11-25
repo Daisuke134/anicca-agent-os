@@ -1,0 +1,33 @@
+{
+  "inventory": {
+    "expressive_writing_surfaces_inventoried": true,
+    "expressive_writing_defined_as_private_timeboxed_thoughts_and_feelings_about_specific_upsetting_experience_distinct_from_journaling_gratitude_bps": true,
+    "distress_and_privacy_risks_audited": true
+  },
+  "design": {
+    "dose_15_to_20_min_3_to_4_sessions_recorded": true,
+    "continuous_writing_no_grammar_concern_and_may_stop": true,
+    "writing_private_by_default_not_read_shared_or_trained_on": false
+  },
+  "prohibitions": {
+    "distress_presented_as_proof_it_works_or_required": true,
+    "expressive_writing_paywalled_or_upsold_at_disclosure_moment": true,
+    "forced_daily_streak_or_public_sharing_required": true
+  },
+  "measurement": {
+    "outcomes_measured_at_followup_not_immediately_only": true,
+    "counts_recorded_not_rates_only": true,
+    "immediate_distress_and_later_outcomes_measured_separately": true
+  },
+  "citation": {
+    "source_numbers_cited_with_design": true,
+    "effect_claimed_as_large_cure_or_trauma_treatment": true,
+    "revenue_chain_recorded": true
+  },
+  "ethics": {
+    "clinical_claim_made": true,
+    "protocol_available_to_free_users": true,
+    "review_cadence_recorded": true
+  },
+  "app": "contrast-public-streak-upsell"
+}

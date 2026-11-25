@@ -1,0 +1,31 @@
+{
+  "decision": {
+    "beta_purpose_recorded_per_build": false,
+    "feedback_owner_with_required_role": false,
+    "test_information_and_feedback_email_set": false
+  },
+  "scope": {
+    "groups_recorded_internal_external": false,
+    "feedback_enabled_verified_per_group": false,
+    "public_link_anonymity_understood": false
+  },
+  "what_to_test": {
+    "what_to_test_written_per_build": false,
+    "testers_told_how_to_send_screenshot_feedback": false
+  },
+  "readback": {
+    "screenshot_feedback_read_on_cadence": false,
+    "crash_feedback_read_on_cadence": false,
+    "crash_download_120d_window_respected": false
+  },
+  "triage": {
+    "every_feedback_classified_with_owner": false,
+    "severity_order_crash_and_dataloss_first": false,
+    "survivors_become_issues": false
+  },
+  "measurement": {
+    "build_metrics_read_per_build": false,
+    "expiry_90d_tracked": false,
+    "beta_learnings_recorded_before_submission": false
+  }
+}

@@ -1,0 +1,1 @@
+{"app":"Sleep Reset (live 1.0.3, code audit 2026-11-12)","placement":"onboarding","dialog":"system","gating":false,"incentive":false,"trigger_event":"auto_step","min_distinct_days":0,"min_sessions":0,"cooldown_days":0,"crash_guard":null,"after_error_block":null,"stacking_block":null,"cohort":{"installs":null,"reached_value":null,"eligible":null,"calls":null}}

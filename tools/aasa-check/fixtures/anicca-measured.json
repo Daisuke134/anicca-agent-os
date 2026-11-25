@@ -1,0 +1,8 @@
+{"app":"Anicca (measured 2026-11-14: AASA live fetch + canonical source read, HEAD e2994a582)","domain":"aniccaai.com","expected_app_id":"S5U8UH3JLJ.ai.anicca.app.ios",
+ "live_check":{"recorded":true,"checked_on":"2026-11-14","wellknown_status":404,"root_status":404,"redirected":false},
+ "aasa":{"served":false,"valid_json":false,"applinks_app_ids":[],"has_components":false,"all_excluded":false},
+ "entitlement_domains":[],
+ "handler":{"handles_browsing_web":false,"routes_to_specific_screen":false},
+ "fallback":{"unmatched_opens_web":true},
+ "measurement":{"ul_taps_event":false,"runbook_notes_cdn_timing":false},
+ "aasa_content_type":"text/html","aasa_size_kb":null}

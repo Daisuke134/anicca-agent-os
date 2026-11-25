@@ -1,0 +1,32 @@
+{
+  "decision": {
+    "decision_recorded": true,
+    "owner_recorded": true,
+    "canonical_source_recorded": true
+  },
+  "selection": {
+    "few_high_impact_tools_not_api_wrappers": true,
+    "consolidated_multi_step_workflows": true,
+    "distinct_purpose_no_overlap": true
+  },
+  "context": {
+    "namespaced_by_service_and_resource": true,
+    "meaningful_context_natural_identifiers": true,
+    "response_format_concise_detailed": false
+  },
+  "token_efficiency": {
+    "pagination_range_filtering_truncation_defaults": true,
+    "truncation_and_errors_guide_action": false,
+    "descriptions_prompt_engineered_unambiguous_params": true
+  },
+  "evaluation": {
+    "eval_tasks_real_world_verifiable": true,
+    "metrics_collected_calls_tokens_errors_runtime": true,
+    "transcripts_read_and_agents_collaborate_to_improve": false
+  },
+  "evolution": {
+    "held_out_sets_prevent_overfitting": false,
+    "prototype_tested_locally_before_eval": true,
+    "tools_pruned_and_descriptions_kept_consistent_on_change": false
+  }
+}

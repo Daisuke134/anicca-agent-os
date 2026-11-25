@@ -1,0 +1,77 @@
+{
+ "app": "control-inflated-k-on-demand",
+ "referral_program_implemented": true,
+ "reward": {
+  "referrer_type": "premium_days",
+  "referee_type": "premium_days",
+  "referrer_value_days": 7,
+  "referee_value_days": 7,
+  "referrer_cap_days": 30
+ },
+ "ask": {
+  "trigger": "after_first_affirmation_complete",
+  "placements": [
+   "after_value_screen",
+   "profile"
+  ],
+  "share_content_has_standalone_value": true,
+  "share_taps": 2
+ },
+ "completion": {
+  "event": "referee_activation",
+  "idempotent_per_pair": true
+ },
+ "attribution": {
+  "code_origin": "server",
+  "code_delivery": "typed_code",
+  "subscriber_attribute_set_before_purchase": true,
+  "first_attribution_wins": true
+ },
+ "fraud": {
+  "hold_days": 7,
+  "manual_claim": false,
+  "self_referral_check": true
+ },
+ "measurement": {
+  "metrics": [
+   "k_factor",
+   "invite_to_activation",
+   "share_rate",
+   "cycle_time"
+  ],
+  "denominator": "eligible",
+  "compares_to_paid_cac": true
+ },
+ "k_honesty": {
+  "i_counts": "share_button_taps",
+  "c_counts": "installs",
+  "window_days": null,
+  "invites_shares_tagged_separately": false,
+  "k_gt1_treated_as_timestamp": false
+ },
+ "cycle": {
+  "cycle_time_measured": false,
+  "cycle_time_days": 61,
+  "loop_efficiency_measured": false,
+  "k_by_cohort": false
+ },
+ "pool": {
+  "model": "per_user_on_demand",
+  "statuses": [
+   "available",
+   "used"
+  ],
+  "refill_scheduled": false,
+  "refill_threshold_defined": false,
+  "detection_paths": [
+   "revenuecat_webhook"
+  ],
+  "webhook_auth_validated": false,
+  "single_entitlement_id": false,
+  "self_referral_rejected_at_redemption": false
+ },
+ "economics": {
+  "effective_cac_formula": "none",
+  "referral_cost_per_activation_tracked": false
+ }
+}

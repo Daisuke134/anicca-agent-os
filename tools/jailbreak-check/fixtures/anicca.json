@@ -1,0 +1,20 @@
+{
+ "decided": false,
+ "owner_recorded": false,
+ "canonical_record": false,
+ "prescreen_lightweight_structured": false,
+ "screen_refusal_is_harmful": false,
+ "input_validation_patterns": false,
+ "system_prompt_refusal_policy": false,
+ "repeat_offender_response": false,
+ "output_monitoring_loop": false,
+ "untrusted_only_tool_results": false,
+ "source_labeling": true,
+ "system_prompt_untrusted_policy": true,
+ "json_encode_untrusted": false,
+ "own_instructions_not_in_tool_results": false,
+ "least_privilege_sandbox": true,
+ "screen_tool_outputs": false,
+ "redteam_before_deploy": false,
+ "chain_layered_defense": false
+}

@@ -1,0 +1,5 @@
+name: agent_brief_template
+title: Write Every Delegation as a Brief
+description: Write delegations, subagent tasks, and loop bodies as five-part briefs that hand over an ongoing result instead of the next action, with boundaries, internal stop conditions, and a definition of done that ends at a verified artifact.
+category: Operations
+include_in_prompt: true

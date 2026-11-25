@@ -1,0 +1,35 @@
+{
+  "app": "illustrative-conforming-not-production",
+  "tasks": {
+    "measurement": {
+      "metric": "construct correlation",
+      "value": 0.7
+    },
+    "individual_prediction": {
+      "metric": "held-out accuracy",
+      "value": 0.6
+    },
+    "population_simulation": {
+      "metric": "effect-size MAE",
+      "value": 0.1
+    }
+  },
+  "population": {
+    "effect_size_mae": 0.1,
+    "desirability_inflation_check": "Synthetic desirability mean exceeds human mean by 0.1.",
+    "individual_variation_compression_check": "Synthetic/human SD ratio 0.9."
+  },
+  "process": {
+    "reasoning_to_conclusion_fidelity": 0.8,
+    "conclusion_to_action_fidelity": 0.9,
+    "extraction_method": "explicit-tag",
+    "conclusion_tag": "<decision>",
+    "tag_machine_checked": true,
+    "free_text_extraction_mismatch_as_model_trait": false
+  },
+  "rule_misapplication": {
+    "directional_bias_probe": "Paired risk-neutral and risk-averse rule violations.",
+    "probe_result": "Risk-averse errors exceeded risk-seeking errors by 0.1.",
+    "assumes_single_upstream_cause": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "app": "control-downloads-only",
+  "inventory_recorded": false,
+  "decision_recorded": false,
+  "auto_reload_enabled": true,
+  "campaigns_running": true,
+  "gross_profit_case_recorded": false,
+  "attribution": {"joined_to_subscription_events": false, "keyword_level_trial_and_subscriber_visible": false, "decisions_on_downloads_only": true},
+  "economics": {"allowable_cpa_derived_from_own_ltv": false, "benchmarks_are_context_only": false, "benchmark_denominator_recorded": ""},
+  "diagnostic": {"compares_cpt_and_cr_to_same_market_medians": false, "fixes_cr_before_bid_changes": false, "bid_cut_is_first_move": true},
+  "structure": {"campaigns_split_by_country_cluster": false, "ad_group_types": ["category"], "naming_convention_recorded": false},
+  "match_types": {"exact_for_brand_and_high_intent": false, "search_match_only_in_discovery": false, "winners_promoted_to_manual_groups": false},
+  "negatives": {"maintained_from_day_one": false, "review_cadence_days": 30},
+  "cpp_mapping": {"intent_clusters": 35, "one_intent_one_group_one_page": false, "first_screenshot_is_searched_result": false, "brand_stays_on_default_page": false},
+  "paywall_match": {"paywall_matches_cpp_intent_per_cluster": false, "judged_on_revenue_not_cr": false, "measurement_window_days": 7},
+  "bidding": {"maximize_conversions_only_for_discovery": false, "manual_cpt_on_known_converters": false, "monthly_cap_from_daily_x_30_4_recorded": false},
+  "markets": {"ranked_by_cost_per_paying_subscriber": false, "starts_where_organic_already_performs": false, "high_cpa_high_cr_not_auto_killed": false},
+  "keyword_evidence": {"demand_evidence_recorded_per_cluster": false, "generic_head_terms_flagged": false},
+  "spend_guardrails": {"budget_cap_recorded": false, "no_spend_without_gross_profit_case": false}
+}

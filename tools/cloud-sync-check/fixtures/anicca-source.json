@@ -1,0 +1,7 @@
+{"_note":"Anicca iOS source fixture, read 2026-11-16 from ~/workspace/anicca-build-20261115 (origin Daisuke134/anicca, branch claude/living-home-paywall-2026-11-15, HEAD 57fab78dd). CloudKit/iCloud: 0 hits in tree, no iCloud entitlement. Only UserProfile uploads (PUT ProfileSyncService); no GET/restore anywhere. Identity: userId when signed in, else deviceId. Pending buffer is in-memory (actor var); retryPendingSyncIfNeeded has 0 callers. Passes: upload exists, failure restores pending unless newer (in-memory only), sign-out wipe/preserve variants exist in AppState, OSLog structured sync logs.",
+"decision":{"continuity_decision_recorded":false,"sync_owner_recorded":false,"reinstall_expectation_recorded":false},
+"coverage":{"every_store_classified":false,"upload_path_exists":true,"download_restore_path_exists":false,"identity_survives_device_change":false},
+"account_status":{"account_status_checked":false,"unavailable_preserves_cache_no_enqueue":false,"account_change_observed":false},
+"conflict":{"conflict_rule_recorded":false,"pending_survives_restart":false,"retry_trigger_wired":false},
+"deletion":{"deletion_propagates_to_synced_copy":false,"signout_data_behavior_decided":true,"account_switch_isolation":false},
+"verification":{"sync_outcomes_measured":false,"restore_rehearsal_recorded":false,"sync_state_logged":true}}

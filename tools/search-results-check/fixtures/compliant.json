@@ -1,0 +1,20 @@
+{
+ "cache_control_on_block_and_json_prompt_caveat": true,
+ "canonical_record": true,
+ "citation_fields_and_index_semantics": true,
+ "citations_enabled_explicitly_default_off": true,
+ "cited_text_free_and_slice_definition": true,
+ "content_text_blocks_nonempty_text_only": true,
+ "decided": true,
+ "failure_returns_plain_text_block": true,
+ "owner_recorded": true,
+ "result_limits_relevance_and_consistency": true,
+ "same_citations_setting_all_results": true,
+ "schema_required_fields": true,
+ "stable_source_and_accurate_title": true,
+ "tool_result_all_search_result_purity": true,
+ "two_delivery_methods_chosen": true,
+ "user_messages_only_assistant_rejected": true,
+ "web_search_tool_requires_citations_all": true,
+ "whole_block_minimal_unit_split_for_granularity": true
+}

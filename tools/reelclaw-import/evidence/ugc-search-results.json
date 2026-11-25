@@ -1,0 +1,9 @@
+{
+  "server": "dansugc",
+  "tool": "search_videos",
+  "error": "Unknown MCP server 'dansugc'.",
+  "issue": {
+    "kind": "other",
+    "rawMessage": "Unknown MCP server 'dansugc'."
+  }
+}

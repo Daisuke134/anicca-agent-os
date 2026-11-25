@@ -1,0 +1,69 @@
+{
+ "control": {
+  "action_perform_does_real_work": false,
+  "controls_real_feature": false,
+  "current_value_reads_real_state": false,
+  "shipped": false
+ },
+ "core_intent": {
+  "description_names_real_action": true,
+  "exists": true,
+  "perform_does_real_work": true,
+  "title_names_real_action": true
+ },
+ "decision": "ship_real",
+ "entity": {
+  "donated_to_spotlight": false,
+  "indexed_entity": false,
+  "searchability_claimed": true,
+  "stable_ids": false
+ },
+ "intelligence": {
+  "clarification_via_request_value": false,
+  "core_uses_app_schema": false,
+  "dialog_names_outcome": false,
+  "donates_on_real_use": false,
+  "donation_excessive": true,
+  "entities_default_private": false,
+  "fast_display_representations": false,
+  "indexing_key_properties_recorded": false,
+  "notifications_annotated_with_entity_ids": false,
+  "onscreen_annotation": null,
+  "ownership_only_for_public_shared": false,
+  "persistent_identifiers": false,
+  "personal_content_marked_public": true,
+  "resolution": "exact_string_only",
+  "schema_domain_available": true,
+  "search_in_app_intent": false,
+  "string_query_reason_recorded": false,
+  "transient_entities_for_integrations": true,
+  "uses_ownership_conformance": true
+ },
+ "legacy_sirikit_only": true,
+ "measurement": {
+  "completion": false,
+  "decision_recorded_with_reason": false,
+  "invocations": false,
+  "retention_vs_control": false,
+  "system_originated_sessions": false
+ },
+ "provider": {
+  "each_shortcut_has_title_and_image": true,
+  "exists": true,
+  "phrases": [
+   [
+    "Open the app"
+   ]
+  ],
+  "shortcut_count": 1,
+  "single_provider": true
+ },
+ "recorded": true,
+ "result": {
+  "opens_generic_home": true,
+  "opens_relevant_screen": false,
+  "returns_dialog_or_value": false
+ },
+ "template_only": false,
+ "template_removed": true
+}

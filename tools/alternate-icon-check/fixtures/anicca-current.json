@@ -1,0 +1,7 @@
+{"app":"Anicca (documented current state 2026-11-23: primary icon only; dark/tinted legibility audited 2026-11-10, no alternate icon system recorded in any spec or ASC record read by this loop)",
+"primary_icon_recorded":true,
+"variants":{"count":0,"bundled_in_binary":false,"review_approved":false,"similar_to_primary":false,"four_plus_suitable":false,"rights_cleared":false},
+"switching":{"user_initiated_or_confirmed":false,"silent_switching":false,"restore_default_available":false},
+"seasonal":{"used":false,"calendar_recorded":false,"window_bounded":false,"bundled_before_window":false,"revert_automatic_or_scheduled":false},
+"perk":{"used":false,"gating_recorded":false,"reverts_on_expiry":false},
+"measurement":{"opens_tracked":false,"judged_on_installs_only":false}}

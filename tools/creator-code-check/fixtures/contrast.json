@@ -1,0 +1,18 @@
+{
+ "promo_dependency_inventoried": true,
+ "migrated_to_offer_codes": false,
+ "offer_per_promoted_subscription": true,
+ "custom_code_per_creator": false,
+ "code_validated_before_creation": false,
+ "code_short_and_sayable": false,
+ "redemption_limit_with_headroom": false,
+ "redemption_link_prefills_code": false,
+ "code_said_shown_caption_pinned": true,
+ "incentive_to_use_code": false,
+ "store_verified_attribution_read": false,
+ "code_count_read_as_floor": false,
+ "commission_on_following_payments": false,
+ "leak_response_decided": false,
+ "no_bulk_untracked_codes": false,
+ "expiry_and_activation_tracked": true
+}

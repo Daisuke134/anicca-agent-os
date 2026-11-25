@@ -1,0 +1,6 @@
+{"app":"Anicca iOS (anicca-build-20261115, origin Daisuke134/anicca, branch claude/living-home-paywall-2026-11-15, HEAD 7ea862d1a, read 2026-11-15)",
+ "decision":{"per_product_decision_recorded":false,"irreversibility_acknowledged":false,"asc_state_evidenced_per_product":false,"revenue_tradeoff_recorded":false},
+ "paywall_truth":{"callout_driven_by_is_family_shareable":false,"no_sharing_claim_when_not_shareable":true},
+ "grant_revoke":{"sdk_initialized_early":true,"access_from_live_entitlement":true,"shared_restore_or_sync_path":true},
+ "shared_education":{"ownership_type_distinguished":false,"shared_user_premium_education":false},
+ "measurement":{"revenue_counts_purchased_only":false,"shared_cohort_counted":false,"intro_eligibility_accounts_for_shared":false}}

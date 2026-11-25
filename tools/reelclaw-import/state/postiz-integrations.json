@@ -1,0 +1,375 @@
+{
+  "version": 4,
+  "updated_at": "2026-07-16T06:30:13.424137+09:00",
+  "source": "Postiz live /public/v1/integrations API — canonical, NEVER hand-edit",
+  "note": "T1 truth rebuild 2026-06-07 v3. Schema v3 adds paired_with_id (TT->IG cross-post target). 5 confirmed pairs: larry-ja-v1, larry-en-v2, larry-en-affirmation, yangmun-monk, watercolor-monk. 2 needs-dais-pairing IGs: anicca.bochi, anicca.video.",
+  "pairs_summary": {
+    "larry-ja-v1": {
+      "tt": "aniccajp",
+      "ig": "anicca.jp1"
+    },
+    "larry-en-v2": {
+      "tt": "aniccaen2",
+      "ig": "anicca.encards"
+    },
+    "larry-en-affirmation": {
+      "tt": "aniccaaffirmation",
+      "ig": "anicca.affirmation"
+    },
+    "yangmun-monk-factory": {
+      "tt": "monk_anicca",
+      "ig": "monk.anicca"
+    },
+    "watercolor-monk-factory": {
+      "tt": "obou_anicca",
+      "ig": "obou.anicca"
+    }
+  },
+  "unpaired_larry_tt": [
+    "aniccajp2",
+    "anicca.jp4",
+    "anicca_buddha",
+    "anicca.comedy",
+    "anicca.he (warmup)"
+  ],
+  "needs_dais_pairing": [
+    "anicca.bochi (IG)",
+    "anicca.video (IG)"
+  ],
+  "integrations": [
+    {
+      "id": "cmp9oubma00q5oh0yejnxduwf",
+      "platform": "instagram",
+      "profile": "anicca.cemetery",
+      "handle": "@anicca.cemetery",
+      "display_name": "Anicca Cemetery",
+      "owner_skill": "brand-feature-cemetery",
+      "warmup_phase": "live",
+      "active": false
+    },
+    {
+      "id": "cmp9pedr700ttqh0yj8o57fog",
+      "platform": "instagram",
+      "profile": "anicca.affirmation",
+      "handle": "@anicca.affirmation",
+      "display_name": "anicca",
+      "owner_skill": "larry-en-affirmation",
+      "warmup_phase": "live",
+      "active": true,
+      "pair_of_profile": "aniccaaffirmation",
+      "pair_of_id": "cmp93bkpu01uvoh0yd3aj560g"
+    },
+    {
+      "id": "cmpc3gx4001nklg0y27a8o66q",
+      "platform": "instagram",
+      "profile": "anicca.encards",
+      "handle": "@anicca.encards",
+      "display_name": "Anicca iOS",
+      "owner_skill": "larry-en-v2",
+      "warmup_phase": "live",
+      "active": true,
+      "pair_of_profile": "aniccaen2",
+      "pair_of_id": "cmlt171eq04d9r00yzzceb6bw"
+    },
+    {
+      "id": "cmn8ycvtn02djqx0ytuisn9mw",
+      "platform": "instagram",
+      "profile": "anicca.jp1",
+      "handle": "@anicca.jp1",
+      "display_name": "Anicca",
+      "owner_skill": "larry-ja-v1",
+      "warmup_phase": "live",
+      "active": true,
+      "pair_of_profile": "aniccajp",
+      "pair_of_id": "cmneo3jls01mjru0yaupveo2w"
+    },
+    {
+      "id": "cmmzujxpa04ujp30yxqpg1vci",
+      "platform": "instagram",
+      "profile": "anicca.bochi",
+      "handle": "@anicca.bochi",
+      "display_name": "アニッチャ",
+      "owner_skill": "needs-dais-pairing",
+      "warmup_phase": "unknown",
+      "active": true
+    },
+    {
+      "id": "cmnipef7g00oerm0y3dz4lamx",
+      "platform": "instagram",
+      "profile": "anicca.video",
+      "handle": "@anicca.video",
+      "display_name": "アニッチャ",
+      "owner_skill": "needs-dais-pairing",
+      "warmup_phase": "unknown",
+      "active": true
+    },
+    {
+      "id": "cmmzzg2es0539p30ycb94ayx0",
+      "platform": "instagram",
+      "profile": "anicca.jp.videos",
+      "handle": "@anicca.jp.videos",
+      "display_name": "Anicca",
+      "owner_skill": "reelclaw-ja-ig-videos",
+      "warmup_phase": "live",
+      "active": true,
+      "_revision": "E4 2026-06-07 22:40 JST — profile drift fix vs Postiz live"
+    },
+    {
+      "id": "cmooplxmu04tpmd0y4h3cpk33",
+      "platform": "instagram",
+      "profile": "obou.anicca",
+      "handle": "@obou.anicca",
+      "display_name": "obou",
+      "owner_skill": "watercolor-monk-factory",
+      "warmup_phase": "live",
+      "active": true,
+      "pair_of_profile": "obou_anicca",
+      "pair_of_id": "cmo5s4edx00vgn10ygnu34a0n"
+    },
+    {
+      "id": "cmoopzaak04yop70y1yx1bwr1",
+      "platform": "instagram",
+      "profile": "monk.anicca",
+      "handle": "@monk.anicca",
+      "display_name": "monk",
+      "owner_skill": "yangmun-monk-factory",
+      "warmup_phase": "live",
+      "active": false,
+      "pair_of_profile": "monk_anicca",
+      "pair_of_id": "cmo5rwq2p00twn10yrsdglng3"
+    },
+    {
+      "id": "cmp93bkpu01uvoh0yd3aj560g",
+      "platform": "tiktok",
+      "profile": "aniccaaffirmation",
+      "handle": "@aniccaaffirmation",
+      "display_name": "Affirmation Girl",
+      "owner_skill": "larry-en-affirmation",
+      "warmup_phase": "live",
+      "active": true,
+      "paired_with_profile": "anicca.affirmation",
+      "paired_with_id": "cmp9pedr700ttqh0yj8o57fog"
+    },
+    {
+      "id": "cmlt171eq04d9r00yzzceb6bw",
+      "platform": "tiktok",
+      "profile": "aniccaen2",
+      "handle": "@aniccaen2",
+      "display_name": "Anicca",
+      "owner_skill": "larry-en-v2",
+      "warmup_phase": "live",
+      "active": true,
+      "paired_with_profile": "anicca.encards",
+      "paired_with_id": "cmpc3gx4001nklg0y27a8o66q"
+    },
+    {
+      "id": "cmp9txjdp01c8oh0yb6dhlarr",
+      "platform": "tiktok",
+      "profile": "anicca_buddha",
+      "handle": "@anicca_buddha",
+      "display_name": "アニッチャ お笑い",
+      "owner_skill": "larry-ja-buddha",
+      "warmup_phase": "live",
+      "active": false
+    },
+    {
+      "id": "cmpc6cr6g00d8lg0yfythzz9f",
+      "platform": "tiktok",
+      "profile": "anicca.comedy",
+      "handle": "@anicca.comedy",
+      "display_name": "アニッチャ　お笑い",
+      "owner_skill": "larry-ja-comedy",
+      "warmup_phase": "live",
+      "active": true
+    },
+    {
+      "id": "cmneo3jls01mjru0yaupveo2w",
+      "platform": "tiktok",
+      "profile": "aniccajp",
+      "handle": "@aniccajp",
+      "display_name": "aniccajp",
+      "owner_skill": "larry-ja-v1",
+      "warmup_phase": "live",
+      "active": true,
+      "paired_with_profile": "anicca.jp1",
+      "paired_with_id": "cmn8ycvtn02djqx0ytuisn9mw"
+    },
+    {
+      "id": "cmneo6zdj01mspa0yn322ay97",
+      "platform": "tiktok",
+      "profile": "aniccajp2",
+      "handle": "@aniccajp2",
+      "display_name": "アニッチャ",
+      "owner_skill": "larry-ja-v2",
+      "warmup_phase": "live",
+      "active": true
+    },
+    {
+      "id": "cmn8x8hdv028uqx0y4gdfse5t",
+      "platform": "tiktok",
+      "profile": "anicca.jp4",
+      "handle": "@anicca.jp4",
+      "display_name": "アニッチャ",
+      "owner_skill": "larry-ja-v4-male-cta",
+      "warmup_phase": "live",
+      "active": true
+    },
+    {
+      "id": "cmq2aoena08bhqp0yx1epjcik",
+      "platform": "tiktok",
+      "profile": "anicca.he",
+      "handle": "@anicca.he",
+      "display_name": "アニッチャ",
+      "owner_skill": "larry-ja-warmup",
+      "warmup_phase": "live",
+      "active": true,
+      "warmup_started_at": "2026-06-07"
+    },
+    {
+      "id": "cmmtt62wq01lqn50yehk1f6dy",
+      "platform": "tiktok",
+      "profile": "anicca.daily",
+      "handle": "@anicca.daily",
+      "display_name": "anicca",
+      "owner_skill": "legacy-jp",
+      "warmup_phase": "retired",
+      "active": true
+    },
+    {
+      "id": "cmp9sdev5012voh0y58qs45xc",
+      "platform": "tiktok",
+      "profile": "anicca.jp",
+      "handle": "@anicca.jp",
+      "display_name": "アニッチャ iOS",
+      "owner_skill": "legacy-jp",
+      "warmup_phase": "retired",
+      "active": true
+    },
+    {
+      "id": "cmnhlk3ju058lpn0ytilqdpo0",
+      "platform": "tiktok",
+      "profile": "anicca.jp8",
+      "handle": "@anicca.jp8",
+      "display_name": "アニッチャ",
+      "owner_skill": "legacy-jp",
+      "warmup_phase": "retired",
+      "active": true
+    },
+    {
+      "id": "cmlrv8jq000hun60yy57eaptx",
+      "platform": "tiktok",
+      "profile": "anicca.jpx",
+      "handle": "@anicca.jpx",
+      "display_name": "アニッチャ",
+      "owner_skill": "legacy-jp",
+      "warmup_phase": "retired",
+      "active": true
+    },
+    {
+      "id": "cmnenjkff01j1pa0ysufmzhfr",
+      "platform": "tiktok",
+      "profile": "anicca_slideshow",
+      "handle": "@anicca_slideshow",
+      "display_name": "anicca",
+      "owner_skill": "legacy-jp",
+      "warmup_phase": "retired",
+      "active": true
+    },
+    {
+      "id": "cmoig11ew001zlv0yk6vqo1us",
+      "platform": "tiktok",
+      "profile": "honne_reveal",
+      "handle": "@honne_reveal",
+      "display_name": "user6721125412040",
+      "owner_skill": "reelclaw-en-honne",
+      "warmup_phase": "live",
+      "active": true
+    },
+    {
+      "id": "cmnit95mg015rrm0ye5vm8dhl",
+      "platform": "tiktok",
+      "profile": "honnevideo",
+      "handle": "@honnevideo",
+      "display_name": "本音翻訳",
+      "owner_skill": "reelclaw-ja-honne",
+      "warmup_phase": "live",
+      "active": true
+    },
+    {
+      "id": "cmo5s4edx00vgn10ygnu34a0n",
+      "platform": "tiktok",
+      "profile": "obou_anicca",
+      "handle": "@obou_anicca",
+      "display_name": "アニッチャ - 無常の教え",
+      "owner_skill": "watercolor-monk-factory",
+      "warmup_phase": "live",
+      "active": true,
+      "paired_with_profile": "obou.anicca",
+      "paired_with_id": "cmooplxmu04tpmd0y4h3cpk33"
+    },
+    {
+      "id": "cmo5rwq2p00twn10yrsdglng3",
+      "platform": "tiktok",
+      "profile": "monk_anicca",
+      "handle": "@monk_anicca",
+      "display_name": "Monk Anicca",
+      "owner_skill": "yangmun-monk-factory",
+      "warmup_phase": "live",
+      "active": false,
+      "paired_with_profile": "monk.anicca",
+      "paired_with_id": "cmoopzaak04yop70y1yx1bwr1"
+    },
+    {
+      "id": "cmm6d7m5703rwpr0yr5vtme3w",
+      "platform": "x",
+      "profile": "aniccaxxx",
+      "handle": "@aniccaxxx",
+      "display_name": "アニッチャ",
+      "owner_skill": "build-in-public",
+      "warmup_phase": "live",
+      "active": true
+    },
+    {
+      "id": "cmmzukbkw04ulp30yfvijrwio",
+      "platform": "youtube",
+      "profile": "@anicca-ai",
+      "handle": "@anicca-ai",
+      "display_name": "Anicca - AI Coaching app",
+      "owner_skill": "DEAD",
+      "warmup_phase": "retired",
+      "active": false,
+      "_revision": "E4 2026-06-07 22:40 JST — dead per Postiz live (replaced by cmq3u37gi)"
+    },
+    {
+      "id": "cmq3u37gi005iqp0y90a2w92n",
+      "platform": "youtube",
+      "profile": "@anicca-ai",
+      "handle": "@anicca-ai",
+      "display_name": "Anicca - Daily Affirmation",
+      "owner_skill": "reelclaw-yt-en",
+      "warmup_phase": "live",
+      "active": true,
+      "_revision": "E4 2026-06-07 22:40 JST — new EN YT integration, replaces dead cmmzukbkw"
+    },
+    {
+      "id": "cmn1oukj9012nnq0yqhouc3ib",
+      "platform": "youtube",
+      "profile": "@anicca-jp",
+      "handle": "@anicca-jp",
+      "display_name": "Anicca",
+      "owner_skill": "reelclaw-yt-ja",
+      "warmup_phase": "live",
+      "active": true
+    },
+    {
+      "id": "cmn8ymq6c02oio70y5ea1trv8",
+      "platform": "youtube",
+      "profile": "@anicca-affirmation-video",
+      "handle": "@anicca-affirmation-video",
+      "display_name": "Daily Affirmation App - Anicca",
+      "owner_skill": "slideshow-video",
+      "warmup_phase": "live",
+      "active": true
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+PAGE https://aniccaai.com/blog/agent-company-stack-2026-11-25
+  [PASS] page itself            status=200 bytes=72259 type=text/html
+  [PASS] https://aniccaai.com/assets/research/agent-stack-hero-2026-11-25.svg  status=200 bytes=2383 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/research/agent-stack-map-2026-11-25.svg  status=200 bytes=4250 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/research/agent-stack-money-2026-11-25.svg  status=200 bytes=1971 type=image/svg+xml
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/autonomous-company-agent-placement-consultation-2026-11-25
+  [PASS] page itself            status=200 bytes=88441 type=text/html
+  [PASS] https://aniccaai.com/assets/research/placement-consultation-hero-2026-11-25.svg  status=200 bytes=997 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/research/placement-clock-figure-2026-11-25.svg  status=200 bytes=1066 type=image/svg+xml
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/believable-is-not-predictive-society-simulation-2026-11-24-en
+  [PASS] page itself            status=200 bytes=74789 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/believable-is-not-predictive-society-simulation-2026-11-24-ja
+  [PASS] page itself            status=200 bytes=82902 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/best-anonymous-venting-apps-2026-11-24
+  [PASS] page itself            status=200 bytes=112588 type=text/html
+  [PASS] https://aniccaai.com/assets/seo/best-anonymous-venting-apps-2026-hero.svg  status=200 bytes=2441 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/seo/best-anonymous-venting-apps-2026-ratings.svg  status=200 bytes=2592 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/seo/best-anonymous-venting-apps-2026-choose.svg  status=200 bytes=3703 type=image/svg+xml
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/best-buddhist-quotes-apps-2026-11-24
+  [PASS] page itself            status=200 bytes=105943 type=text/html
+  [PASS] https://aniccaai.com/assets/seo/best-buddhist-quotes-apps-2026-hero.svg  status=200 bytes=2440 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/seo/best-buddhist-quotes-apps-2026-ratings.svg  status=200 bytes=3658 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/seo/best-buddhist-quotes-apps-2026-choose.svg  status=200 bytes=3084 type=image/svg+xml
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/best-gratitude-journal-apps-2026-11-17
+  [PASS] page itself            status=200 bytes=85632 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/best-gratitude-journal-apps-2026-11-24
+  [PASS] page itself            status=200 bytes=87240 type=text/html
+  [PASS] https://aniccaai.com/assets/seo/best-gratitude-journal-apps-2026-hero.svg  status=200 bytes=2429 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/seo/best-gratitude-journal-apps-2026-ratings.svg  status=200 bytes=2227 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/seo/best-gratitude-journal-apps-2026-choose.svg  status=200 bytes=3711 type=image/svg+xml
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/best-sleep-apps-2026-11-24
+  [PASS] page itself            status=200 bytes=98205 type=text/html
+  [PASS] https://aniccaai.com/assets/seo/best-sleep-apps-2026-hero.svg  status=200 bytes=2425 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/seo/best-sleep-apps-2026-ratings.svg  status=200 bytes=2870 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/seo/best-sleep-apps-2026-choose.svg  status=200 bytes=3143 type=image/svg+xml
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/capafy-ai-agents-for-tiktok-creators
+  [PASS] page itself            status=200 bytes=76092 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/capafy-listings-business-measured-2026-11-25
+  [PASS] page itself            status=200 bytes=61881 type=text/html
+  [PASS] https://aniccaai.com/assets/research/capafy-hero-2026-11-25.svg  status=200 bytes=2495 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/research/capafy-revenue-2026-11-25.svg  status=200 bytes=2586 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/research/capafy-exposure-2026-11-25.svg  status=200 bytes=3049 type=image/svg+xml
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/daily-dhamma-holiday-rush-one-verse-pause
+  [PASS] page itself            status=200 bytes=66926 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/ebook-en-2026-11-11-01
+  [PASS] page itself            status=200 bytes=46188 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/ebook-en-2026-11-11-04
+  [PASS] page itself            status=200 bytes=47040 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/ebook-publishing-kdp-ai-disclosure-checklist
+  [PASS] page itself            status=200 bytes=63156 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/ebook-publishing-kdp-review-timeline-after-publish
+  [PASS] page itself            status=200 bytes=73078 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/elevenlabs-how-many-credits-does-dubbing-use
+  [PASS] page itself            status=200 bytes=62587 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/elevenlabs-how-many-credits-does-narration-use
+  [PASS] page itself            status=200 bytes=58671 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/honne-we-should-catch-up-holiday-group-chat
+  [PASS] page itself            status=200 bytes=55844 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/i-am-affirmation-app-deep-dive-en
+  [PASS] page itself            status=200 bytes=83505 type=text/html
+  [PASS] https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6e/e9/99/6ee99916-66d9-7264-5589-e562a6c61e83/6.5-1.jpg/320x480bb.jpg  status=200 bytes=20447 type=image/jpeg
+  [PASS] https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f7/c1/d3/f7c1d376-e78f-43da-921d-fafe953cfbc6/6.5-2.png/320x480bb.jpg  status=200 bytes=19872 type=image/jpeg
+  [PASS] https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/2c/94/662c940b-76f9-c460-5a05-8d8055bed4da/6.5-3.jpg/320x480bb.jpg  status=200 bytes=29124 type=image/jpeg
+  [PASS] https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/98/1e/98/981e987f-0236-c94f-4c51-3e6f398093d7/6.5-4.png/320x480bb.jpg  status=200 bytes=26115 type=image/jpeg
+  [PASS] https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/bc/4e/6dbc4e58-80f7-12a4-2fdb-f0ad478d2b3e/6.5-5.png/320x480bb.jpg  status=200 bytes=25149 type=image/jpeg
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/i-am-affirmation-app-followup-7-days-en
+  [PASS] page itself            status=200 bytes=83663 type=text/html
+  [PASS] https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6e/e9/99/6ee99916-66d9-7264-5589-e562a6c61e83/6.5-1.jpg/320x480bb.jpg  status=200 bytes=20447 type=image/jpeg
+  [PASS] https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f7/c1/d3/f7c1d376-e78f-43da-921d-fafe953cfbc6/6.5-2.png/320x480bb.jpg  status=200 bytes=19872 type=image/jpeg
+  [PASS] https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/2c/94/662c940b-76f9-c460-5a05-8d8055bed4da/6.5-3.jpg/320x480bb.jpg  status=200 bytes=29124 type=image/jpeg
+  [PASS] https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/98/1e/98/981e987f-0236-c94f-4c51-3e6f398093d7/6.5-4.png/320x480bb.jpg  status=200 bytes=26115 type=image/jpeg
+  [PASS] https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/bc/4e/6dbc4e58-80f7-12a4-2fdb-f0ad478d2b3e/6.5-5.png/320x480bb.jpg  status=200 bytes=25149 type=image/jpeg
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/line-sticker-how-to-choose-daily-reply-2026-11-12
+  [PASS] page itself            status=200 bytes=67609 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/line-sticker-set-034-2026-10-31-12
+  [PASS] page itself            status=200 bytes=42224 type=text/html
+  [PASS] https://stickershop.line-scdn.net/stickershop/v1/product/37295029/LINEStorePC/main.png?v=1  status=200 bytes=15808 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/manager
+  [PASS] page itself            status=200 bytes=189460 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/sleep-reset-holiday-travel-rhythm-before-new-year
+  [PASS] page itself            status=200 bytes=66408 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/studio-cherie-before-buying-check-outfits
+  [PASS] page itself            status=200 bytes=62065 type=text/html
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/studio-cherie-holiday-outfit-from-your-closet
+  [PASS] page itself            status=200 bytes=61089 type=text/html
+  [PASS] https://aniccaai.com/assets/seo/studio-cherie-holiday-outfit-2026-hero.svg  status=200 bytes=1789 type=image/svg+xml
+  [PASS] https://aniccaai.com/assets/seo/studio-cherie-holiday-outfit-2026-chart.svg  status=200 bytes=1850 type=image/svg+xml
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+PAGE https://aniccaai.com/blog/society-simulation-macro-intervention-run1
+  [PASS] page itself            status=200 bytes=75731 type=text/html
+  [PASS] https://aniccaai.com/blog/society-simulation-macro-intervention-run1/cover.svg  status=200 bytes=13816 type=image/svg+xml
+  [PASS] https://aniccaai.com/blog/society-simulation-macro-intervention-run1/diagram-strategies.svg  status=200 bytes=33034 type=image/svg+xml
+  [PASS] https://aniccaai.com/blog/society-simulation-macro-intervention-run1/chart-complex.svg  status=200 bytes=6822 type=image/svg+xml
+  [PASS] https://aniccaai.com/blog/society-simulation-macro-intervention-run1/chart-tipping.svg  status=200 bytes=9196 type=image/svg+xml
+  [PASS] https://aniccaai.com/anicca-app-icon.png  status=200 bytes=728568 type=image/png
+  [PASS] https://aniccaai.com/favicon.png  status=200 bytes=81924 type=image/png
+
+RESULT: PASS (all pages and assets verified)

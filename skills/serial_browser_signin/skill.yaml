@@ -1,0 +1,19 @@
+name: serial_browser_signin
+title: Serial Browser Sign-In
+description: Sign in to websites one at a time through a shared browser session when an account sign-in is involved, so verification prompts never compete and lock the account.
+category: Work and knowledge
+include_in_prompt: true
+skill_improvement:
+  managed: true
+  status: retired
+  evidence_handles:
+  - runtime-child:9dd8acf3-f2c1-5201-9d6e-264bbbe906dc
+  measurement:
+    proxy_metric_id: human_gate_routing_rate
+    success_criterion: Within 14 days after consolidation, no password, MFA, biometric or device step is presented to the user, no sign-in batch launches two logins for the same account in parallel, every sampled successful login has a shared store entry read back and passing a length, format and authenticated test before the session ends, and zero later sessions fail to log in because a prior login was unsaved or saved corrupted.
+    window_days: 14
+  needs_review: false
+  rationale: Retirement in the same consolidation batch as the merged agent_side_auth_gate proposal above. Its queue, shared session, prompt and retry method is carried into that merged document, so this file leaves active discovery while staying on disk.
+  review_after: 2026-11-26T05:25:12.755092+00:00
+  reviewed_at: 2026-11-12T05:25:12.755092+00:00
+  run_id: sirun_7de1ed1a6c794176adf2851d354cefb9

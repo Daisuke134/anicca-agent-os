@@ -1,0 +1,32 @@
+{
+ "commands": {
+  "all_four_commands_implemented": true,
+  "str_replace_requires_exact_match": true,
+  "view_range_semantics_correct": true
+ },
+ "cost": {
+  "combined_tool_cost_accounted": true,
+  "reverified_on_model_change": true,
+  "token_cost_counted": true
+ },
+ "decision": {
+  "decision_recorded": true,
+  "owner_recorded": true,
+  "surfaces_inventoried": true
+ },
+ "execution_loop": {
+  "errors_handled_gracefully": true,
+  "max_characters_truncation_configured": true,
+  "results_returned_as_tool_result": true
+ },
+ "safety": {
+  "backups_created_before_changes": true,
+  "paths_validated_against_traversal": true,
+  "permissions_checked": true
+ },
+ "version_and_pairing": {
+  "current_version_pinned": true,
+  "no_undo_edit_assumption": true,
+  "version_matched_to_model": true
+ }
+}

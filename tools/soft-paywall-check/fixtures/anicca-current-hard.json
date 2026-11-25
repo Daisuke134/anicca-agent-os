@@ -1,0 +1,14 @@
+{
+  "app": "Anicca (current build before 2026-11-13 soft decision)",
+  "model": "hard",
+  "paywall_dismissible": false,
+  "free_core": [],
+  "free_core_includes_aha": false,
+  "premium_features": ["all_content"],
+  "split_documented": false,
+  "reprompt_triggers": ["onboarding_end"],
+  "judge_metrics": ["paywall_conversion"],
+  "observation_window_days": 7,
+  "channel_breakdown": false,
+  "refund_rate_tracked": false
+}

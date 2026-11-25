@@ -1,0 +1,25 @@
+{
+ "category_fit_documented": true,
+ "denominator_declared": true,
+ "combined_trial_direct_judgement": true,
+ "volume_threshold_or_low_volume_mode": true,
+ "structural_before_visual": true,
+ "later_paywall_retained": true,
+ "day0_concentration_measured": true,
+ "hard_disclosure_if_hard": true,
+ "plan_count_decision_recorded": true,
+ "trial_length_decision_recorded": true,
+ "experiment_ledger_and_cadence": true,
+ "higher_price_test_considered": true,
+ "value_legibility": {
+  "legibility_class": "after_input",
+  "legibility_evidence_recorded": true,
+  "class_recorded_before_model_decision": true,
+  "model": "soft",
+  "judgement_window_days": 56,
+  "late_conversion_share_tracked": true,
+  "gates_repeat_value_not_first_experience": true,
+  "full_job_completes_once_before_limit": true,
+  "limit_shown_before_it_bites": true
+ }
+}

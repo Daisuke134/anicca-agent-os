@@ -1,0 +1,59 @@
+{
+ "app": "CompliantExample",
+ "plans": {
+  "weekly": {
+   "trial_days": 7,
+   "sold": true
+  },
+  "monthly": {
+   "trial_days": 14,
+   "sold": true
+  },
+  "annual": {
+   "trial_days": 14,
+   "sold": true
+  }
+ },
+ "activation": {
+  "event_defined": true,
+  "median_days_to_aha": 3,
+  "length_multiple_recorded": true
+ },
+ "first_hour": {
+  "core_outcome_in_first_session": true,
+  "day0_cancel_share_tracked": true
+ },
+ "measurement": {
+  "trial_to_paid_tracked": true,
+  "first_renewal_tracked": true,
+  "revenue_per_install_tracked": true,
+  "refund_rate_tracked": true,
+  "split_by_plan": true,
+  "primary_metric": "cost_per_paid_plus_rpi",
+  "cohort_window_includes_retry": true
+ },
+ "claims": {
+  "asserts_longer_causally_better": false,
+  "headline_median_copied_without_plan_split": false
+ },
+ "reminder": {
+  "implemented": true,
+  "in_app_banner": true,
+  "timing_by_plan_recorded": true,
+  "suppresses_cancelled_or_converted": true,
+  "discount_in_reminder": false,
+  "terms_clear_on_paywall": true
+ },
+ "reminder_sequence": {
+  "activation_nudge_same_day": true,
+  "midtrial_reminder_2d_before": true,
+  "ending_alert_morning_last_day": true,
+  "activation_nudge_targets_untried_feature": true,
+  "architecture": "remote",
+  "local_resync_on_open": false,
+  "push_token_in_attributes": true,
+  "webhook_cancels_on_unsubscribe": true,
+  "scheduled_from_expiration_at": true,
+  "ending_alert_shows_price_and_cancel_path": true
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "program_decision": {
+  "two_layer_system_recorded": false,
+  "amplify_only_proven_winners": false,
+  "free_organic_form_recorded": true,
+  "existing_accounts_only": true
+ },
+ "content_machine": {
+  "proven_format_fixed_before_volume": true,
+  "brief_gives_everything": true,
+  "stock_built_ahead": true,
+  "comedy_taste_in_scripts": true
+ },
+ "amplification": {
+  "every_winner_gets_amplified": false,
+  "theme_page_types_assigned": false,
+  "start_with_hook_reposts": false,
+  "hook_clips_rights_safe": false
+ },
+ "agent_distribution": {
+  "single_approved_folder_pipeline": false,
+  "agent_schedules_all_platforms_one_step": false,
+  "calendar_reviewed_not_handfilled": false,
+  "winners_requeued_with_new_hook": false
+ },
+ "volume_math": {
+  "per_account_cadence_in_winner_band": false,
+  "accounts_judged_after_30_to_60_posts": false,
+  "slideshows_not_counted_as_video_volume": false
+ },
+ "measurement_honesty": {
+  "judged_on_installs_not_views": true,
+  "winner_variant_pairs_recorded": true,
+  "shown_experience_exists_in_app": true
+ }
+}

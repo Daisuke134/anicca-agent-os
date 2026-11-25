@@ -1,0 +1,32 @@
+{
+ "contextualization": {
+  "context_generated_from_whole_document": false,
+  "context_prepended_before_both_indexes": false,
+  "contextualizer_prompt_domain_customized": false
+ },
+ "decision": {
+  "canonical_source_recorded": false,
+  "decision_recorded": false,
+  "owner_recorded": false
+ },
+ "evaluation": {
+  "ablations_stack_measured": false,
+  "failure_rate_measured_on_golden_set": false,
+  "indexing_cost_prepaid_reindex_on_change": false
+ },
+ "hybrid": {
+  "embeddings_and_bm25_both_run": false,
+  "rank_fusion_and_dedup": false,
+  "top_k_chosen_by_own_eval": false
+ },
+ "reranking_delivery": {
+  "context_distinguished_sources_carried": false,
+  "latency_cost_budget_measured": false,
+  "reranker_stage_pool_measured": false
+ },
+ "route": {
+  "chunking_policy_recorded": false,
+  "corpus_inventory_versioned": true,
+  "corpus_size_measured_route_decided": false
+ }
+}

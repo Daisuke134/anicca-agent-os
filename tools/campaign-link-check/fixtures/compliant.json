@@ -1,0 +1,21 @@
+{
+ "link_inventory_recorded": true,
+ "pt_obtained_from_app_store_connect": true,
+ "pt_recorded_once_and_reused": true,
+ "every_controlled_link_tagged": true,
+ "ct_within_30_chars_and_charset": true,
+ "mt8_preserved_as_generated": true,
+ "one_ct_per_placement_not_per_platform": true,
+ "creators_tagged_individually": true,
+ "naming_scheme_channel_placement_date": true,
+ "ct_ledger_with_location_and_live_date": true,
+ "links_direct_to_apps_apple_com": true,
+ "button_itself_carries_ct": true,
+ "links_tested_on_device_in_host_apps": true,
+ "read_in_30day_windows_after_24h": true,
+ "threshold_5_respected_no_premature_kill": true,
+ "last_click_and_24h_window_in_reading": true,
+ "search_lift_crosschecked_on_posting_days": true,
+ "unverified_surfaces_not_relied_on": true,
+ "app": "compliant-design"
+}

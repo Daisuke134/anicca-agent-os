@@ -1,0 +1,11 @@
+{
+  "inventory_recorded": false,
+  "live_keyword_field": [],
+  "planned_pages": [
+    {"name": "post-quiz", "type": "direct_link", "keywords": [], "cloned_from_default": false, "ban_list_audited": false, "first_screenshot_shows_result": true, "promo_text": "", "deep_link_target": "onboarding/result", "lands_on_generic_welcome": false, "approved": false, "wired": false},
+    {"name": "morning", "type": "keyword", "keywords": ["morning affirmation"], "monthly_impressions": 0, "converts_below_average": false, "branded": false, "cluster_size": 0, "cloned_from_default": false, "ban_list_audited": false, "first_screenshot_shows_result": true, "promo_text": "", "deep_link_target": "category/morning", "lands_on_generic_welcome": false, "approved": false, "wired": false},
+    {"name": "sleep", "type": "keyword", "keywords": ["sleep affirmation"], "monthly_impressions": 0, "converts_below_average": false, "branded": false, "cluster_size": 0, "cloned_from_default": false, "ban_list_audited": false, "first_screenshot_shows_result": true, "promo_text": "", "deep_link_target": "category/sleep", "lands_on_generic_welcome": false, "approved": false, "wired": false}
+  ],
+  "submitted_pages": 0,
+  "measurement": {"baseline_formula_recorded": true, "primary_metric": "download_multiple", "d7_retention_guardrail": true, "reroute_below_1x": true}
+}

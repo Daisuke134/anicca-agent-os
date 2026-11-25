@@ -1,0 +1,21 @@
+{
+ "link_inventory_recorded": true,
+ "pt_obtained_from_app_store_connect": false,
+ "pt_recorded_once_and_reused": false,
+ "every_controlled_link_tagged": true,
+ "ct_within_30_chars_and_charset": false,
+ "mt8_preserved_as_generated": false,
+ "one_ct_per_placement_not_per_platform": false,
+ "creators_tagged_individually": false,
+ "naming_scheme_channel_placement_date": false,
+ "ct_ledger_with_location_and_live_date": false,
+ "links_direct_to_apps_apple_com": false,
+ "button_itself_carries_ct": false,
+ "links_tested_on_device_in_host_apps": false,
+ "read_in_30day_windows_after_24h": false,
+ "threshold_5_respected_no_premature_kill": false,
+ "last_click_and_24h_window_in_reading": false,
+ "search_lift_crosschecked_on_posting_days": false,
+ "unverified_surfaces_not_relied_on": false,
+ "app": "contrast: one shared 45-char ct for all channels, invented pt, shortener redirect chain, channel killed after one empty week, Smart App Banner tokens assumed verified"
+}

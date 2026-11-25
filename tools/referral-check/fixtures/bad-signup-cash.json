@@ -1,0 +1,7 @@
+{"app":"control-signup-cash","referral_program_implemented":true,
+ "reward":{"referrer_type":"cash","referee_type":null,"referrer_value_days":0,"referee_value_days":0,"referrer_cap_days":0},
+ "ask":{"trigger":"at_signup","placements":["settings"],"share_content_has_standalone_value":false,"share_taps":5},
+ "completion":{"event":"install","idempotent_per_pair":false},
+ "attribution":{"code_origin":"client","code_delivery":"link_only","subscriber_attribute_set_before_purchase":false,"first_attribution_wins":false},
+ "fraud":{"hold_days":0,"manual_claim":false,"self_referral_check":false},
+ "measurement":{"metrics":["installs"],"denominator":"all_users","compares_to_paid_cac":false}}

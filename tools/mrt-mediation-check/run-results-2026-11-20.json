@@ -1,0 +1,192 @@
+{
+  "date": "2026-11-20",
+  "results": [
+    {
+      "fixture": "compliant",
+      "runs": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/mrt-mediation-check/mrt_mediation_check.py",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/mrt-mediation-check/fixtures/compliant.json"
+          ],
+          "exit_code": 0,
+          "report": {
+            "checker": "mrt-mediation-check",
+            "result": "PASS",
+            "gates": {
+              "MM-0": "PASS",
+              "MM-1": "PASS",
+              "MM-2": "PASS",
+              "MM-3": "PASS",
+              "MM-4": "PASS",
+              "MM-5": "PASS"
+            },
+            "passed": 6,
+            "failed": 0,
+            "total": 6,
+            "failed_gates": []
+          }
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/tools/mrt-mediation-check/mrt_mediation_check.py",
+            "/home/hatch/workspace/tools/mrt-mediation-check/fixtures/compliant.json"
+          ],
+          "exit_code": 0,
+          "report": {
+            "checker": "mrt-mediation-check",
+            "result": "PASS",
+            "gates": {
+              "MM-0": "PASS",
+              "MM-1": "PASS",
+              "MM-2": "PASS",
+              "MM-3": "PASS",
+              "MM-4": "PASS",
+              "MM-5": "PASS"
+            },
+            "passed": 6,
+            "failed": 0,
+            "total": 6,
+            "failed_gates": []
+          }
+        }
+      ]
+    },
+    {
+      "fixture": "anicca-current",
+      "runs": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/mrt-mediation-check/mrt_mediation_check.py",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/mrt-mediation-check/fixtures/anicca-current.json"
+          ],
+          "exit_code": 1,
+          "report": {
+            "checker": "mrt-mediation-check",
+            "result": "FAIL",
+            "gates": {
+              "MM-0": "FAIL",
+              "MM-1": "FAIL",
+              "MM-2": "FAIL",
+              "MM-3": "FAIL",
+              "MM-4": "FAIL",
+              "MM-5": "FAIL"
+            },
+            "passed": 0,
+            "failed": 6,
+            "total": 6,
+            "failed_gates": [
+              "MM-0",
+              "MM-1",
+              "MM-2",
+              "MM-3",
+              "MM-4",
+              "MM-5"
+            ]
+          }
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/tools/mrt-mediation-check/mrt_mediation_check.py",
+            "/home/hatch/workspace/tools/mrt-mediation-check/fixtures/anicca-current.json"
+          ],
+          "exit_code": 1,
+          "report": {
+            "checker": "mrt-mediation-check",
+            "result": "FAIL",
+            "gates": {
+              "MM-0": "FAIL",
+              "MM-1": "FAIL",
+              "MM-2": "FAIL",
+              "MM-3": "FAIL",
+              "MM-4": "FAIL",
+              "MM-5": "FAIL"
+            },
+            "passed": 0,
+            "failed": 6,
+            "total": 6,
+            "failed_gates": [
+              "MM-0",
+              "MM-1",
+              "MM-2",
+              "MM-3",
+              "MM-4",
+              "MM-5"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fixture": "control",
+      "runs": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/mrt-mediation-check/mrt_mediation_check.py",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/mrt-mediation-check/fixtures/control.json"
+          ],
+          "exit_code": 1,
+          "report": {
+            "checker": "mrt-mediation-check",
+            "result": "FAIL",
+            "gates": {
+              "MM-0": "PASS",
+              "MM-1": "PASS",
+              "MM-2": "PASS",
+              "MM-3": "FAIL",
+              "MM-4": "FAIL",
+              "MM-5": "FAIL"
+            },
+            "passed": 3,
+            "failed": 3,
+            "total": 6,
+            "failed_gates": [
+              "MM-3",
+              "MM-4",
+              "MM-5"
+            ]
+          }
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/tools/mrt-mediation-check/mrt_mediation_check.py",
+            "/home/hatch/workspace/tools/mrt-mediation-check/fixtures/control.json"
+          ],
+          "exit_code": 1,
+          "report": {
+            "checker": "mrt-mediation-check",
+            "result": "FAIL",
+            "gates": {
+              "MM-0": "PASS",
+              "MM-1": "PASS",
+              "MM-2": "PASS",
+              "MM-3": "FAIL",
+              "MM-4": "FAIL",
+              "MM-5": "FAIL"
+            },
+            "passed": 3,
+            "failed": 3,
+            "total": 6,
+            "failed_gates": [
+              "MM-3",
+              "MM-4",
+              "MM-5"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

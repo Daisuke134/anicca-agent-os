@@ -1,0 +1,87 @@
+{
+  "app": "illustrative-conforming-not-production",
+  "proxy": {
+    "fidelity_score": 0.8,
+    "fidelity_metric": "held-out UFS",
+    "measured_independently_of_agent_success": true,
+    "premature_disclosure_rate": 0.05,
+    "successful_episode_violation_rate": 0.1,
+    "interaction_change": -2,
+    "interaction_change_unit": "tool calls per successful episode",
+    "preserved_reward_implies_harmless": false
+  },
+  "simulators": {
+    "results": [
+      {
+        "name": "A",
+        "score": 0.8,
+        "cost": 0.04
+      },
+      {
+        "name": "B",
+        "score": 0.7,
+        "cost": 0.01
+      }
+    ],
+    "score_range": 0.1,
+    "cost_fidelity_selection_reason": "A trades 0.03 cost for 0.1 fidelity at the measured frontier.",
+    "ensemble_used": true,
+    "complementarity_evidence": "Held-out mixture JS 0.02 versus A 0.04 and B 0.06."
+  },
+  "distribution": {
+    "backward_kl": 0.1,
+    "forward_kl": 0.2,
+    "js": 0.04,
+    "facets": {
+      "Requests": {
+        "capture": 0.8,
+        "miss": 0.1,
+        "hallucinate": 0.1
+      },
+      "Responses": {
+        "capture": 0.8,
+        "miss": 0.1,
+        "hallucinate": 0.1
+      },
+      "Context": {
+        "capture": 0.8,
+        "miss": 0.1,
+        "hallucinate": 0.1
+      },
+      "Style": {
+        "capture": 0.8,
+        "miss": 0.1,
+        "hallucinate": 0.1
+      },
+      "DAMSL": {
+        "capture": 0.8,
+        "miss": 0.1,
+        "hallucinate": 0.1
+      },
+      "SGD": {
+        "capture": 0.8,
+        "miss": 0.1,
+        "hallucinate": 0.1
+      }
+    }
+  },
+  "grounding": {
+    "source_type": "real-data-profile",
+    "source_description": "Illustrative consented training split profiles",
+    "formalism_ceiling_check": "Profile granularity sweep plateaued after five attributes.",
+    "directive_amplification_check": "Directive-only arm increased request counts.",
+    "anti_leakage_control": "Profiles exclude held-out outcomes and benchmark answers."
+  },
+  "calibration": {
+    "easy": 0.01,
+    "medium": 0.1,
+    "hard": -0.2
+  },
+  "calibration_metric": "simulated minus real success probability",
+  "subgroups": {
+    "JP": 0.8,
+    "EN": 0.7
+  },
+  "subgroup_metric": "held-out UFS",
+  "conversation_artifact_check": "Compared question counts and courtesy phrases with human holdout."
+}

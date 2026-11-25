@@ -1,0 +1,8 @@
+{
+ "decision": {"decision_recorded": true, "owner_recorded": true, "file_surfaces_inventoried": true},
+ "referencing": {"create_once_reference_decided": true, "block_type_matched": true, "unsupported_formats_converted": true},
+ "validation": {"size_storage_limits_validated": true, "filename_validated": true, "billing_and_rate_understood": true},
+ "lifecycle": {"workspace_trust_enforced": true, "expiration_decided": false, "immutability_deletion_handled": true},
+ "operations": {"pagination_handled": true, "ids_omission_reconciled": false, "downloadable_distinguished": false},
+ "governance": {"generated_outputs_captured": true, "beta_header_migrated": false, "audit_logging_enabled": false}
+}

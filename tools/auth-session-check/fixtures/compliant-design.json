@@ -1,0 +1,7 @@
+{"app":"Compliant design (hypothetical): lifecycle and surface map recorded, server rotation with replay detection recorded, every API call site goes through one auth helper, proactive refresh 60s before expiry with a JWT-exp fallback when no expiry is stored, failure kinds distinguished, no token attached after a failed refresh, one refresh+retry on 401, terminal failure moves to an explicit re-auth state, refresh is single-flight, rotated refresh tokens persisted immediately, refresh outcomes measured by kind, sign-out and deletion delete the refresh token.",
+"decision":{"lifecycle_decision_recorded":true,"bearer_vs_deviceid_surfaces_recorded":true,"server_rotation_or_sender_constraint_recorded":true},
+"reach":{"auth_header_helper_called_by_api_sites":true,"all_authenticated_surfaces_use_helper":true},
+"refresh_trigger":{"proactive_refresh_with_skew":true,"expiry_recorded_at_signin":true,"refresh_when_expiry_missing":true},
+"failure":{"refresh_failure_kinds_distinguished":true,"expired_token_not_attached_after_failed_refresh":true,"single_refresh_and_retry_on_401":true,"terminal_failure_moves_to_explicit_state":true},
+"concurrency":{"single_flight_refresh":true,"rotated_refresh_token_persisted_before_use":true},
+"measurement":{"refresh_attempts_and_outcomes_measured":true,"signout_and_deletion_discard_refresh_token":true}}

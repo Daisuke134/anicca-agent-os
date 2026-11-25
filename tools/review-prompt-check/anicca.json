@@ -1,0 +1,1 @@
+{"app":"Anicca (live 1.9.11, code audit 2026-11-12)","placement":"after_value","dialog":"system","gating":false,"incentive":false,"trigger_event":"value_completed","min_distinct_days":3,"min_sessions":null,"cooldown_days":120,"crash_guard":null,"after_error_block":null,"stacking_block":null,"cohort":{"installs":12,"reached_value":9,"eligible":null,"calls":null}}

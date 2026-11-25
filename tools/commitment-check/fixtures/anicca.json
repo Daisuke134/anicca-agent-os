@@ -1,0 +1,20 @@
+{
+ "evaluation_recorded": false,
+ "owner_named": false,
+ "per_app_decision_recorded": false,
+ "us_sg_exclusion_acknowledged": false,
+ "storefront_scope_decided": false,
+ "sdk_and_ios_floor_verified": false,
+ "monthly_times_12_recorded": false,
+ "total_vs_upfront_annual_compared": false,
+ "remaining_payments_understood": false,
+ "commitment_term_shown_before_purchase": false,
+ "not_presented_as_cancel_anytime_monthly": true,
+ "cancel_screen_wording_matches": false,
+ "offers_configured_per_billing_option": false,
+ "grace_period_not_assumed": true,
+ "entitlement_handles_commitment_state": false,
+ "commitment_cohort_measured_separately": false,
+ "full_year_completion_tracked": false,
+ "decision_review_date_set": false
+}

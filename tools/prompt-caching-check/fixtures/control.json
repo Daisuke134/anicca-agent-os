@@ -1,0 +1,32 @@
+{
+ "decision": {
+  "decision_recorded": true,
+  "owner_recorded": true,
+  "call_surface_inventory_classified": true
+ },
+ "prefix_design": {
+  "stable_content_first": true,
+  "dynamic_content_after_breakpoint": true,
+  "breakpoints_strategic_max4": true
+ },
+ "economics": {
+  "minimum_threshold_verified": true,
+  "ttl_matched_to_reuse_interval": true,
+  "breakeven_checked_before_caching": true
+ },
+ "measurement": {
+  "usage_fields_tracked": true,
+  "hit_rate_computed_and_reviewed": true,
+  "write_without_read_alerted": false
+ },
+ "invalidation_control": {
+  "prefix_change_control": false,
+  "consistency_of_tool_choice_and_images": true,
+  "concurrency_warmup_handled": false
+ },
+ "maintenance": {
+  "strategy_per_use_case": true,
+  "hit_rate_tuning_iterated": false,
+  "provider_differences_handled": false
+ }
+}

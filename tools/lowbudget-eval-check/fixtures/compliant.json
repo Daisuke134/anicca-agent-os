@@ -1,0 +1,58 @@
+{
+  "k": 20,
+  "m": 5,
+  "extrapolation": true,
+  "estimator": {
+    "type": "beta_mixture",
+    "prior_family": "Beta mixture",
+    "component_selection": "BIC",
+    "naive_y_over_m_transform_only": false
+  },
+  "interval": {
+    "type": "delta_method_ci",
+    "bounds": [
+      0.6,
+      0.8
+    ],
+    "full_data_reference": 0.7,
+    "contains_reference": true
+  },
+  "improvability": {
+    "used": true,
+    "fitted_prior_dependence_disclosed": true,
+    "dependence_description": "Delta-Pass is conditional on the fitted Beta-mixture approximation."
+  },
+  "metrics_fit": {
+    "reports_pass_power_and_auc": true,
+    "same_fit": true,
+    "pass_power_fit_id": "example-fit-1",
+    "auc_fit_id": "example-fit-1"
+  },
+  "contamination": {
+    "claim_types": [
+      "absolute_inflation",
+      "ranking_reorder"
+    ],
+    "claims_separated": true,
+    "discusses_ranking": true,
+    "paraphrase_rank_correlation": 0.95,
+    "decomposition": {
+      "uniform": 0.1,
+      "differential": 0.02,
+      "differential_evidence": true,
+      "evidence_description": "Illustrative within-item differential contrast interval excludes zero."
+    },
+    "calibration": {
+      "known_dose": 0.2,
+      "known_dose_result": 0.15,
+      "negative_control_result": -0.01
+    },
+    "paraphrase_gap": 0.12,
+    "clean_baseline": {
+      "reference": "synthetic clean control",
+      "gap": 0.01,
+      "used_as_reference": true
+    }
+  },
+  "fixture_note": "Synthetic documentation example; numbers are not Anicca measurements or acceptance thresholds."
+}

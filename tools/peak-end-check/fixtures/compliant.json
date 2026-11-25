@@ -1,0 +1,20 @@
+{
+ "episode_surfaces_recorded_per_app": true,
+ "peak_identified_per_episode": true,
+ "end_identified_as_last_moment": true,
+ "peak_is_genuine_value_moment": true,
+ "negative_peak_recovery_designed": true,
+ "peak_not_friction_or_error": true,
+ "end_designed_positive_close": true,
+ "end_is_genuine_not_deceptive_tail": true,
+ "end_gives_saved_state_and_next_step": true,
+ "remembered_evaluation_measured_separately": true,
+ "duration_not_used_as_quality_proxy": true,
+ "peak_and_end_read_by_cohort": true,
+ "primary_numbers_quoted_with_design": true,
+ "expectations_discounted_for_episode_length": true,
+ "no_app_effect_promised_from_clinical_data": true,
+ "no_manufactured_negative_peak": true,
+ "end_not_used_to_hide_cancellation_or_cost": true,
+ "revenue_claim_tied_to_remembered_chain": true
+}

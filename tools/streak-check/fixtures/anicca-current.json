@@ -1,0 +1,49 @@
+{
+ "activation_window_days_by_plan": {
+  "annual": null,
+  "monthly": null,
+  "weekly": null
+ },
+ "app": "anicca-current-documented",
+ "counter_visible_on_home": false,
+ "forgiveness": {
+  "paid": false,
+  "type": "none"
+ },
+ "frp": {
+  "defined": false,
+  "denominator": null,
+  "measured_from_survivors_vs_churners": false
+ },
+ "full_goal_required": false,
+ "increments_without_core_action": false,
+ "milestones_days": [],
+ "points_economy_farmable": false,
+ "post_break": {
+  "_note": "No streak is implemented (S-0), so no post-break design is documented; values record documented absence, not a live build read.",
+  "break_copy_style": null,
+  "consistency_window_shown": false,
+  "cumulative_progress_preserved": false,
+  "day_boundary": null,
+  "grace_paywalled": false,
+  "hard_day_declaration_protects": false,
+  "longest_streak_record_preserved": false,
+  "offline_completion_counts_on_sync": false,
+  "outage_protection": false,
+  "punishment_on_break": false,
+  "repair_method": null,
+  "repair_offered_after_break": false,
+  "repair_paid": false,
+  "repair_window_hours": null,
+  "rescue_notifications_after_break": null,
+  "streak_display_opt_out": false
+ },
+ "qualifying_action": null,
+ "reminder": {
+  "hours_after_last": null,
+  "message_style": null,
+  "timing_basis": null
+ },
+ "store_copy_claims_no_streaks": true,
+ "streak_implemented": false
+}

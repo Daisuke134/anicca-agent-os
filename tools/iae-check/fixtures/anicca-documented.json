@@ -1,0 +1,22 @@
+{
+ "app": "Anicca (documented state, 2026-11-21: still no in-app event recorded for any of the six apps; no event calendar, no submissions, no rejection log)",
+ "events_recorded": false,
+ "events": [],
+ "portfolio": {
+  "published_count": 0,
+  "approved_count": 0
+ },
+ "measurement": {
+  "tracks_impressions": false,
+  "tracks_details_views": false,
+  "tracks_opens": false,
+  "tracks_downloads_by_event": false,
+  "tracks_notification_optins": false,
+  "repeat_format_before_judging": false
+ },
+ "program": {
+  "calendar_exists": false,
+  "events_per_app_per_year": 0,
+  "rejections_logged_with_cost": false
+ }
+}

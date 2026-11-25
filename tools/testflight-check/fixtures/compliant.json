@@ -1,0 +1,42 @@
+{
+  "decision": {
+    "beta_purpose_recorded_per_build": true,
+    "feedback_owner_with_required_role": true,
+    "test_information_and_feedback_email_set": true
+  },
+  "scope": {
+    "groups_recorded_internal_external": true,
+    "feedback_enabled_verified_per_group": true,
+    "public_link_anonymity_understood": true
+  },
+  "what_to_test": {
+    "what_to_test_written_per_build": true,
+    "testers_told_how_to_send_screenshot_feedback": true
+  },
+  "readback": {
+    "screenshot_feedback_read_on_cadence": true,
+    "crash_feedback_read_on_cadence": true,
+    "crash_download_120d_window_respected": true
+  },
+  "triage": {
+    "every_feedback_classified_with_owner": true,
+    "severity_order_crash_and_dataloss_first": true,
+    "survivors_become_issues": true
+  },
+  "measurement": {
+    "build_metrics_read_per_build": true,
+    "expiry_90d_tracked": true,
+    "beta_learnings_recorded_before_submission": true
+  },
+  "beta_review": {
+    "internal_smoke_exact_build_first": true,
+    "lead_time_24h_in_schedule": true,
+    "review_info_complete": true,
+    "demo_account_works_or_na": true,
+    "export_compliance_answered": true,
+    "uncoached_external_pass_done": true,
+    "rejection_cause_fix_recorded": true,
+    "submit_exact_tested_build": true,
+    "beta_pass_not_conflated_with_app_review": true
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "_note": "Synthetic compliant design; users and effects are test data, not production measurements.",
+  "surface_name": "Synthetic onboarding",
+  "onboarding_owner": "Fixture owner",
+  "source_path": "/home/hatch/workspace/anicca-ops-paper-jitai2-wt/files/paper-loop-jitai2-onboarding2-gates-spec-2026-11-18.md",
+  "goals": {
+    "all_users_covered": true,
+    "users": [
+      {
+        "user_id": "synthetic-low",
+        "tier": "low",
+        "source": "algorithm"
+      },
+      {
+        "user_id": "synthetic-middle",
+        "tier": "middle",
+        "source": "default-unchanged"
+      },
+      {
+        "user_id": "synthetic-high",
+        "tier": "high",
+        "source": "self"
+      }
+    ]
+  },
+  "routing": {
+    "baseline_tiers": {
+      "low": "Baseline daily steps <3000",
+      "middle": "Baseline daily steps 3000 through 6999",
+      "high": "Baseline daily steps >=7000"
+    },
+    "assignments": {
+      "low": [
+        "algorithm",
+        "default-unchanged"
+      ],
+      "middle": [
+        "self",
+        "algorithm",
+        "default-unchanged"
+      ],
+      "high": [
+        "self",
+        "default-unchanged"
+      ]
+    }
+  },
+  "algorithm": {
+    "used": true,
+    "observation_window": "Previous four weeks",
+    "calculation": "60th percentile of observed daily steps"
+  },
+  "adaptation": {
+    "used": true,
+    "first_run_signals": [
+      "referral_source",
+      "device_tier",
+      "network_quality",
+      "interaction_speed",
+      "initial_navigation"
+    ],
+    "intent": "exploratory",
+    "confidence": 0.8,
+    "low_confidence_baseline_fallback": "At confidence <0.6 use unchanged baseline sequence",
+    "decision_log_path": "inline: synthetic decision 1, exploratory 0.8, defer tutorial"
+  },
+  "evaluation": {
+    "effects_present": true,
+    "effects": [
+      {
+        "metric": "completion_relative_change",
+        "value": 0.2,
+        "source": "simulation",
+        "reported_as": "simulation"
+      }
+    ]
+  }
+}

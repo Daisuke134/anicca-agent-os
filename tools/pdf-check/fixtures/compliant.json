@@ -1,0 +1,8 @@
+{
+ "decision": {"decision_recorded": true, "owner_recorded": true, "pdf_surfaces_inventoried": true},
+ "sources": {"source_type_chosen_deliberately": true, "requirements_validated": true, "encrypted_excluded": true},
+ "cost": {"token_cost_estimated": true, "page_image_tier_accounted": true, "splitting_decided": true},
+ "placement": {"pdf_before_text": true, "logical_page_numbers_used": true, "caching_for_repeated_analysis": true},
+ "quality": {"fonts_and_legibility_checked": true, "orientation_upright": true, "interpretations_verified": true},
+ "operations": {"batch_decided_for_high_volume": true, "tool_extraction_decided": true, "limits_reverified_on_model_change": true}
+}

@@ -1,0 +1,84 @@
+{
+ "app": "Control (bad design)",
+ "events_recorded": true,
+ "events": [
+  {
+   "name": "DOWNLOAD NOW!! BEST APP SALE",
+   "name_chars": 28,
+   "badge": "Special Event",
+   "badge_matches_content": false,
+   "is_time_limited_real": false,
+   "is_repetitive_daily_task": true,
+   "is_price_promo_without_content": true,
+   "is_general_awareness_only": true,
+   "short_desc_chars": 61,
+   "long_desc_chars": 140,
+   "has_specific_price": true,
+   "has_unverifiable_claim": true,
+   "has_all_caps_or_excess_punct": true,
+   "name_is_cta_or_filler": true,
+   "card_media": {
+    "ratio": "4:5",
+    "w": 1080,
+    "h": 1350,
+    "has_text_or_logo": true,
+    "has_border_or_gradient": true
+   },
+   "details_media": {
+    "ratio": "16:9",
+    "w": 1920,
+    "h": 1080,
+    "has_text_or_logo": true,
+    "has_border_or_gradient": false
+   },
+   "media_visually_related": false,
+   "deep_link": {
+    "is_universal_link": false,
+    "lands_on_event": false,
+    "uses_shortener_or_redirect": true,
+    "handles_new_user_onboarding": false,
+    "pre_start_landing": false
+   },
+   "purpose": "all users",
+   "content_live_at_start": false,
+   "requires_iap_declared": null,
+   "submit_lead_days": 1,
+   "duration_days": 45,
+   "promote_before_days": 20,
+   "editorial_themed": true,
+   "editorial_submit_lead_weeks": 0,
+   "keyword_test": {
+    "target_cluster_recorded": false,
+    "placed_in_name_and_short_desc": false,
+    "pre_event_rank_snapshot": false,
+    "rank_rechecked_two_weeks": false,
+    "treated_as_guaranteed_lift": true
+   }
+  }
+ ],
+ "portfolio": {
+  "published_count": 12,
+  "approved_count": 16
+ },
+ "measurement": {
+  "tracks_impressions": true,
+  "tracks_details_views": false,
+  "tracks_opens": false,
+  "tracks_downloads_by_event": false,
+  "tracks_notification_optins": false,
+  "repeat_format_before_judging": false
+ },
+ "program": {
+  "calendar_exists": false,
+  "events_per_app_per_year": 1,
+  "rejections_logged_with_cost": false
+ },
+ "purpose_program": {
+  "purpose_recorded_per_event": false,
+  "any_event_targets_both_audiences": true,
+  "stagger_overlap_planned": false,
+  "off_store_promotion_planned": false,
+  "post_event_retention_read": false,
+  "low_quality_video_shipped": true
+ }
+}

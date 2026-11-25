@@ -1,0 +1,77 @@
+{
+ "recorded": true,
+ "inventory": {
+  "families": [
+   "systemSmall",
+   "systemMedium",
+   "systemLarge",
+   "accessoryRectangular"
+  ],
+  "configuration_type": "app_intent",
+  "teach_prompt": true,
+  "measurement": true
+ },
+ "configuration": {
+  "type": "app_intent",
+  "per_widget_category": true,
+  "per_widget_theme": true,
+  "refresh_frequency_selectable": true
+ },
+ "actions": {
+  "like_from_widget": true,
+  "share_from_widget": true
+ },
+ "content": {
+  "uses_user_context": true,
+  "selection": "reaction_history",
+  "fallback_when_no_data": true
+ },
+ "teach": {
+  "guide_shown": true,
+  "timing": "after_first_value"
+ },
+ "store": {
+  "widget_shown_in_screenshots": true,
+  "widget_claim_matches_shipped": true
+ },
+ "measurement": {
+  "adoption_rate": true,
+  "taps_into_app": true,
+  "retention_widget_vs_non": true,
+  "retention_read_with_control": true
+ },
+ "lock_screen_sensitive_by_default": false,
+ "freshness": {
+  "reload_policy_matches_data_cadence": true,
+  "reload_on_underlying_change": true,
+  "stale_guard_recorded": true
+ },
+ "empty_state": {
+  "designed": true,
+  "kind": "motivating_default",
+  "gallery_preview_populated": true
+ },
+ "ownership": {
+  "shows_user_own_data": true,
+  "shows_app_promo_or_editorial": false,
+  "single_retention_behavior_focus": true,
+  "larger_sizes_extend_same_core": true
+ },
+ "interaction": {
+  "decision_recorded_before_build": true,
+  "mode": "informational",
+  "completion_is_retention_behavior": false,
+  "prompts_tap_through": true,
+  "intents_local_only": true
+ },
+ "small_first": {
+  "small_built_first": true,
+  "small_is_one_value": true
+ },
+ "measurement_ext": {
+  "widget_tap_event_instrumented": true,
+  "install_to_adoption_as_first_session_metric": true,
+  "cohort_definition_first7_tapped": true,
+  "gap_read_with_self_selection_caveat": true
+ }
+}

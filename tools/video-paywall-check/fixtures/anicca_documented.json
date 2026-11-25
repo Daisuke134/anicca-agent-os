@@ -1,0 +1,59 @@
+{
+ "app": "Anicca (documented 2026-11-21)",
+ "audience": {
+  "low_bandwidth_considered": false,
+  "low_quality_video_present": false
+ },
+ "consistency": {
+  "clip_consistency_recorded": false,
+  "expectation_match_goal": true,
+  "same_clip_as_onboarding": false
+ },
+ "goal": {
+  "declared": null
+ },
+ "inventory_recorded": true,
+ "performance": {
+  "locally_cached": false,
+  "optimized_or_progressive_load": false,
+  "poster_or_thumbnail_immediate": false,
+  "static_fallback_if_load_fails": false
+ },
+ "placement": {
+  "type": null
+ },
+ "prerequisites": {
+  "messaging_validated": false,
+  "payment_drivers_identified": false
+ },
+ "returning": {
+  "returning_forced_same_intense_video": false
+ },
+ "setup": {
+  "fades_to_cta": false,
+  "forced_watch_before_access": false,
+  "hero_autoplay_or_optional_click_only": false,
+  "loops": false,
+  "muted_by_default": false
+ },
+ "shown_to_subscribed_users": false,
+ "testing": {
+  "baseline_static_recorded": false,
+  "first_test_single_variable": false,
+  "judged_on_trial_and_revenue": false,
+  "test_order": null,
+  "video_banned_after_one_test": false
+ },
+ "video": {
+  "captions_if_dialogue": false,
+  "dialogue_present": false,
+  "dynamic_video": false,
+  "fabricated_features_present": false,
+  "present": false,
+  "seconds": 0,
+  "shows_real_app_experience": false,
+  "strong_hook_first_seconds": false,
+  "supporting_copy_minimal": false,
+  "works_without_sound": false
+ }
+}

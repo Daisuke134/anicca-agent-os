@@ -1,0 +1,10 @@
+{
+  "owner": "Codex",
+  "surface": "notification",
+  "decisions": [
+    {
+      "calendar_interval_hours": 24
+    }
+  ],
+  "fixture_kind": "Anicca-assumed fixed calendar scenario; no production export or scheduler comparison evidence supplied; missing SR3 records intentionally fail"
+}

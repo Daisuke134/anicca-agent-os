@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "adoption": {
+      "definition": "App opens"
+    },
+    "engagement": {
+      "definition": "App opens"
+    },
+    "adherence": {
+      "definition": "App opens"
+    }
+  },
+  "allocation_method": "unknown",
+  "fit_type": "perceived",
+  "recommendations_change_with_answers": false,
+  "precommitment": {
+    "used": true,
+    "when": "Morning"
+  },
+  "effects": {
+    "starts": {
+      "value": 0.32,
+      "measure": "Difference versus control in starts",
+      "improvement_supported": true
+    },
+    "opens": {
+      "value": 0.075,
+      "measure": "Difference versus control in opens",
+      "improvement_supported": true
+    },
+    "active_days": {
+      "value": 0,
+      "measure": "Difference versus control in active_days",
+      "improvement_supported": false
+    }
+  },
+  "claim": {
+    "fit_type": "personalized",
+    "outcome_type": "habit",
+    "text": "More starts prove personalization forms habits."
+  },
+  "mismatch_audit": {
+    "recommended_categories": "Basics"
+  }
+}

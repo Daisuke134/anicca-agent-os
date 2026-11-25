@@ -1,0 +1,22 @@
+{
+ "pause_offer_exists": false,
+ "pause_matched_to_not_now_reason": false,
+ "pause_not_offered_for_price_or_feature_reasons": true,
+ "platform_pause_mechanism_verified": false,
+ "fixed_length_with_resume_date_shown": false,
+ "extendable_once_only": false,
+ "billing_stops_and_resumes_same_plan": false,
+ "data_and_settings_preserved": false,
+ "data_retention_stated_in_one_sentence": false,
+ "pause_available_outside_cancel_flow": false,
+ "reminder_before_resume_and_confirmation_on_day": false,
+ "resume_rate_measured": false,
+ "net_resume_rate_measured": false,
+ "pause_to_cancel_counted_as_churn": false,
+ "pauses_reported_by_reason_and_extension": false,
+ "paused_mrr_reported_separately": false,
+ "no_fake_save_counting": false,
+ "outside_equals_inside_pause": true,
+ "no_fabricated": "n/a",
+ "app": "anicca-current (recorded practice only; no pause offer, mechanism check, or pause measurement recorded)"
+}

@@ -1,0 +1,1 @@
+{"synthetic_object_exists":true,"questions":[{"id":"age","synthetic_field":"age"},{"id":"gender","synthetic_field":"gender"},{"id":"country","synthetic_field":"country"}],"domains_covered":[],"has_free_text_input":false,"memory_stream":false,"reflection_step":false,"planning_from_reflection":false,"claims_replacement_of_humans":true,"fidelity_validated_against_real":false}

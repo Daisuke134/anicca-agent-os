@@ -1,0 +1,22 @@
+name: delegated_execution_verification
+title: Verify Delegated Execution Lands
+description: Verify a delegated run is actually executing and lands a real artifact, for use whenever work is handed to another agent, a local CLI worker, or a cloud worker.
+category: Work and knowledge
+include_in_prompt: true
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - anicca-ops files/verification-audit-2026-11-16.md commit 229460a3
+  - TOOLS.md VM local Codex confirmed form entry dated 2026-11-16
+  - AGENTS.md verification three layers rule dated 2026-11-16 09:43 JST
+  - MEMORY.md delegation ack is not work entry dated 2026-11-16
+  measurement:
+    proxy_metric_id: delegated_artifact_landing_rate
+    success_criterion: Within 14 days after install, every sampled delegated run carries a smoke test or channel check record and an activity check within its first minutes, zero delegations are reported as running or done on acknowledgement alone, and zero zero artifact runs stay undetected past their brief deadline.
+    window_days: 14
+  needs_review: false
+  rationale: The 2026-11-16 record shows the same failure shape twice. A primary source verification predecessor ended with zero artifacts while its receipt had been treated as the work being started, and the replacement had to be verified independently in anicca-ops files/verification-audit-2026-11-16.md commit 229460a3. The same day, the Codex binary on the path lacked its code mode host and failed closed with zero artifacts, a fault the user spotted as tokens not being used, while the npm Codex route passed a 16 second smoke test at 7,770 tokens and then landed three real runs. The existing agent_brief_template skill covers writing a five part brief and defining done as a verified artifact, and skill search found no skill that smoke tests the delegation channel itself, watches activity and resource use instead of acknowledgement, or forces takeover when no artifact lands. This skill adds that execution check and leaves brief writing where it already lives.
+  review_after: 2026-11-30T05:25:23.587116+00:00
+  reviewed_at: 2026-11-16T05:25:23.587116+00:00
+  run_id: sirun_fa090a06605e4fe1a3c2cca6e8792410

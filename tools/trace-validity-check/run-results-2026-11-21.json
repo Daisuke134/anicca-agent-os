@@ -1,0 +1,128 @@
+{
+  "checker": "trace-validity-check",
+  "executed_at_utc": "2026-11-20T21:30:45.182489+00:00",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "fixtures": [
+    {
+      "fixture": "compliant",
+      "command": [
+        "python3",
+        "-B",
+        "trace_validity_check.py",
+        "fixtures/compliant.json"
+      ],
+      "exit_code": 0,
+      "report": {
+        "checker": "trace-validity-check",
+        "result": "PASS",
+        "gates": {
+          "BT-0": "PASS",
+          "BT-1": "PASS",
+          "BT-2": "PASS",
+          "BT-3": "PASS",
+          "BT-4": "PASS",
+          "HB-0": "PASS",
+          "HB-1": "PASS",
+          "HB-2": "PASS"
+        },
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "failed_gates": []
+      },
+      "stderr": ""
+    },
+    {
+      "fixture": "anicca-current",
+      "command": [
+        "python3",
+        "-B",
+        "trace_validity_check.py",
+        "fixtures/anicca-current.json"
+      ],
+      "exit_code": 1,
+      "report": {
+        "checker": "trace-validity-check",
+        "result": "FAIL",
+        "gates": {
+          "BT-0": "FAIL",
+          "BT-1": "FAIL",
+          "BT-2": "FAIL",
+          "BT-3": "FAIL",
+          "BT-4": "FAIL",
+          "HB-0": "FAIL",
+          "HB-1": "FAIL",
+          "HB-2": "FAIL"
+        },
+        "passed": 0,
+        "failed": 8,
+        "total": 8,
+        "failed_gates": [
+          "BT-0",
+          "BT-1",
+          "BT-2",
+          "BT-3",
+          "BT-4",
+          "HB-0",
+          "HB-1",
+          "HB-2"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "fixture": "control",
+      "command": [
+        "python3",
+        "-B",
+        "trace_validity_check.py",
+        "fixtures/control.json"
+      ],
+      "exit_code": 1,
+      "report": {
+        "checker": "trace-validity-check",
+        "result": "FAIL",
+        "gates": {
+          "BT-0": "FAIL",
+          "BT-1": "FAIL",
+          "BT-2": "PASS",
+          "BT-3": "FAIL",
+          "BT-4": "PASS",
+          "HB-0": "PASS",
+          "HB-1": "FAIL",
+          "HB-2": "FAIL"
+        },
+        "passed": 3,
+        "failed": 5,
+        "total": 8,
+        "failed_gates": [
+          "BT-0",
+          "BT-1",
+          "BT-3",
+          "HB-1",
+          "HB-2"
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "tests": {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "cwd": ".",
+    "test_count": 11,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_all_mechanisms_must_be_declared_even_if_absent (test_trace_validity_check.CheckerTests.test_all_mechanisms_must_be_declared_even_if_absent) ... ok\ntest_ci_order_including_touching_bounds (test_trace_validity_check.CheckerTests.test_ci_order_including_touching_bounds) ... ok\ntest_each_missing_section_fails_its_gate (test_trace_validity_check.CheckerTests.test_each_missing_section_fails_its_gate) ... ok\ntest_empty_state_fails_every_gate (test_trace_validity_check.CheckerTests.test_empty_state_fails_every_gate) ... ok\ntest_fixtures (test_trace_validity_check.CheckerTests.test_fixtures) ... ok\ntest_holdout_and_other_calibration (test_trace_validity_check.CheckerTests.test_holdout_and_other_calibration) ... ok\ntest_individual_gate_rejections (test_trace_validity_check.CheckerTests.test_individual_gate_rejections) ... ok\ntest_invalid_cli_inputs_fail_closed (test_trace_validity_check.CheckerTests.test_invalid_cli_inputs_fail_closed) ... ok\ntest_malformed_sections_do_not_crash (test_trace_validity_check.CheckerTests.test_malformed_sections_do_not_crash) ... ok\ntest_retention_and_no_comparison_exemptions (test_trace_validity_check.CheckerTests.test_retention_and_no_comparison_exemptions) ... ok\ntest_self_report_without_effect_claim (test_trace_validity_check.CheckerTests.test_self_report_without_effect_claim) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.888s\n\nOK\n"
+  }
+}

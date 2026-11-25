@@ -1,0 +1,58 @@
+{
+  "predictor": {
+    "source_type": "mixed",
+    "retention_or_effect_claim": true
+  },
+  "validation": {
+    "unit": "user",
+    "method": "cv",
+    "grouped_by_learner": true
+  },
+  "calibration": {
+    "metric": "ece",
+    "value": 0.02
+  },
+  "sensitivity": {
+    "proximity_contamination": "Immediate retests within five minutes",
+    "excluded_and_recomputed": true,
+    "metric": "auc",
+    "value": 0.6
+  },
+  "common_metric_comparison": {
+    "performed": true,
+    "metric": "correlation",
+    "left": {
+      "tradition": "self_report",
+      "ci": [
+        -0.2,
+        0.1
+      ]
+    },
+    "right": {
+      "tradition": "behavioural_trace",
+      "ci": [
+        0.2,
+        0.4
+      ]
+    },
+    "ci_order": "left_below_right"
+  },
+  "mechanisms": {
+    "streak": false,
+    "freeze_or_emergency_reserve": false,
+    "social": false,
+    "push": false,
+    "reward": false
+  },
+  "outcome": {
+    "claimed_type": "autonomous_habit",
+    "measured_type": "autonomous_habit"
+  },
+  "no_reminder_measurement": {
+    "reminders_absent": true,
+    "continuation_metric": "daily offline practice rate",
+    "value": 0.5,
+    "observation_period": "14 days"
+  },
+  "fixture_note": "Synthetic documentation example; numbers are not Anicca measurements or acceptance thresholds."
+}

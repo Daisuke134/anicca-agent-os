@@ -1,0 +1,21 @@
+{
+ "community_decision_recorded": true,
+ "natural_repeat_reason_exists": true,
+ "newcomer_first_weeks_focus": true,
+ "group_activity_shown_prominently": true,
+ "return_triggers_from_other_users": true,
+ "group_identity_prioritised_over_bonds": true,
+ "first_post_response_guaranteed": true,
+ "early_feedback_loop_tracked": true,
+ "reading_participation_supported": true,
+ "seeding_plan_before_launch": true,
+ "cadence_calendar_planned": true,
+ "moderation_is_precondition": true,
+ "causal_design_holdout_or_matched": true,
+ "judged_at_week4_and_month3": true,
+ "self_selection_bias_acknowledged": true,
+ "history_accumulates_inside_app": true,
+ "no_fabricated_members_or_activity": true,
+ "outside_equals_inside_community": true,
+ "app": "compliant-design"
+}

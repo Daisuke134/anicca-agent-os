@@ -1,0 +1,8 @@
+{
+  "evaluation_name": "Anicca documentation snapshot, 2026-11-22",
+  "source_paths": [
+    "files/paper-loop-jitai3-onboarding3-gates-spec-2026-11-22.md",
+    "team-outbox/muse/to-codex-2026-11-22-paper-loop-jitai3-onboarding3-checks.md"
+  ],
+  "documented_state": "The supplied specification and delegation provide no Anicca policy or experiment measurements for these gates. Unknown fields intentionally absent. This is a documentation snapshot, not a live-system audit."
+}

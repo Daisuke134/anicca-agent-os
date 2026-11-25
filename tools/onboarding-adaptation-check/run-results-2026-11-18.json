@@ -1,0 +1,96 @@
+{
+  "runs": [
+    {
+      "checker": "onboarding-adaptation-check",
+      "fixture": "anicca-documented.json",
+      "command": [
+        "/usr/bin/python3",
+        "/home/hatch/workspace/tools/onboarding-adaptation-check/onboarding_adaptation_check.py",
+        "/home/hatch/workspace/tools/onboarding-adaptation-check/fixtures/anicca-documented.json"
+      ],
+      "exit_code": 1,
+      "output": {
+        "checker": "onboarding-adaptation-check",
+        "result": "FAIL",
+        "gates": {
+          "OG-0": "FAIL",
+          "OG-1": "FAIL",
+          "OG-2": "FAIL",
+          "OG-3": "FAIL",
+          "OG-4": "FAIL",
+          "OG-5": "FAIL"
+        },
+        "passed": 0,
+        "failed": 6,
+        "total": 6,
+        "failed_gates": [
+          "OG-0",
+          "OG-1",
+          "OG-2",
+          "OG-3",
+          "OG-4",
+          "OG-5"
+        ]
+      }
+    },
+    {
+      "checker": "onboarding-adaptation-check",
+      "fixture": "compliant.json",
+      "command": [
+        "/usr/bin/python3",
+        "/home/hatch/workspace/tools/onboarding-adaptation-check/onboarding_adaptation_check.py",
+        "/home/hatch/workspace/tools/onboarding-adaptation-check/fixtures/compliant.json"
+      ],
+      "exit_code": 0,
+      "output": {
+        "checker": "onboarding-adaptation-check",
+        "result": "PASS",
+        "gates": {
+          "OG-0": "PASS",
+          "OG-1": "PASS",
+          "OG-2": "PASS",
+          "OG-3": "PASS",
+          "OG-4": "PASS",
+          "OG-5": "PASS"
+        },
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "failed_gates": []
+      }
+    },
+    {
+      "checker": "onboarding-adaptation-check",
+      "fixture": "control.json",
+      "command": [
+        "/usr/bin/python3",
+        "/home/hatch/workspace/tools/onboarding-adaptation-check/onboarding_adaptation_check.py",
+        "/home/hatch/workspace/tools/onboarding-adaptation-check/fixtures/control.json"
+      ],
+      "exit_code": 1,
+      "output": {
+        "checker": "onboarding-adaptation-check",
+        "result": "FAIL",
+        "gates": {
+          "OG-0": "PASS",
+          "OG-1": "FAIL",
+          "OG-2": "FAIL",
+          "OG-3": "FAIL",
+          "OG-4": "FAIL",
+          "OG-5": "FAIL"
+        },
+        "passed": 1,
+        "failed": 5,
+        "total": 6,
+        "failed_gates": [
+          "OG-1",
+          "OG-2",
+          "OG-3",
+          "OG-4",
+          "OG-5"
+        ]
+      }
+    }
+  ],
+  "additional_assertions_passed": 48
+}

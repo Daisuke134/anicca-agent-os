@@ -1,0 +1,20 @@
+{
+ "decided": false,
+ "owner_recorded": false,
+ "canonical_record": false,
+ "clear_direct_specific": false,
+ "context_motivation_given": false,
+ "examples_relevant_diverse_structured": true,
+ "xml_tags_consistent_nested": false,
+ "role_in_system_prompt": true,
+ "long_context_top_quotes_first": false,
+ "positive_format_instructions": false,
+ "tool_direction_calibrated": false,
+ "parallel_tool_calling_steered": false,
+ "adaptive_thinking_migrated": false,
+ "general_instructions_over_prescriptive": false,
+ "self_check_calibrated": false,
+ "prefill_migrated": false,
+ "multiwindow_state_practices": false,
+ "autonomy_safety_and_subagent_damping": false
+}

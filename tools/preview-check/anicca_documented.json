@@ -1,0 +1,3 @@
+{"inventory_recorded": false, "preview_exists": null, "devices_checked": [], "locales_checked": [],
+ "sequencing": {"screenshots_before_after_done": false, "single_variable": false},
+ "measurement": {"reads_cvr": false, "reads_download_to_paid": false, "reads_proceeds_per_download": false, "install_rate_only": true, "window_days": 0}}

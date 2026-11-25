@@ -1,0 +1,20 @@
+{
+ "second_session_activation_metric_defined": true,
+ "death_valley_cohort_measured": true,
+ "first_session_triangle_balanced": true,
+ "celebration_three_part_present": true,
+ "celebration_at_completion_moment": true,
+ "identity_goal_framing": true,
+ "commitment_captured_at_peak": true,
+ "milestone_ladder_incremental": true,
+ "notification_permission_after_commitment": true,
+ "second_session_previewed_exact": true,
+ "one_tap_start_next": true,
+ "next_step_single_clear_cta": true,
+ "return_landing_continues": true,
+ "progress_visible_on_return": true,
+ "no_reblock_before_second_value": true,
+ "first_to_second_conversion_read": true,
+ "second_session_read_by_cohort": true,
+ "bridge_built_inside_first_session": true
+}

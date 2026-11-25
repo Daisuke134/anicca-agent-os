@@ -1,0 +1,10 @@
+{
+  "candidate_recorded": true,
+  "category": "social_dating",
+  "needs_marketplace": true, "needs_social_feed": true, "needs_chat": true, "needs_team": false, "needs_expensive_backend": true,
+  "step1_printing": {"source_monthly_revenue_usd": null, "revenue_evidence_how": null, "total_reviews": null, "rating": null, "reviews_per_week": null, "creators_posting": false, "creator_video_views": null, "source_paywall_recorded": false, "creator_one_liner": null, "ranked_by_revenue_over_quality": false},
+  "step2_winnable": {"one_sentence": false, "one_screenshot": false, "visible_twist": false, "daily_creators_in_niche": false, "belong_or_hire_creators": false, "build_days": 90, "day1_win": false, "mascot_or_visual": false, "three_screenshots_planned": false, "paywall_model": null, "paywall_model_reason": null, "twist_elements": ["fake_timer", "review_steering"]},
+  "step3_content_first": {"best_competitor_videos_found": 0, "hooks_written": 0, "format": null, "best_competitor_video_views": 12000},
+  "step4_money_math": {"yearly_price_usd": null, "weekly_price_usd": null, "views_to_paid_math_recorded": false, "download_to_paid_pct": null, "months_to_10k": null, "paid_creators_required": true, "paid_ads_required": true, "reaches_10k_on_free_organic": false},
+  "step5_launch_test": {"onboarding_paywall_copied_from": null, "launch_hooks": 0, "day1_alive_rule_recorded": false, "kill_rule_recorded": false, "no_tinker_until_3k_recorded": false}
+}

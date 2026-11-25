@@ -1,0 +1,21 @@
+{
+  "audit_recorded": true,
+  "owner_named": true,
+  "fresh_account_test_done": true,
+  "trial_length_on_signup_screen": true,
+  "renewal_price_same_screen_as_cta": true,
+  "renewal_price_not_footnote_only": false,
+  "renewal_date_basis_is_trial_start": false,
+  "price_shown_before_payment_entry": true,
+  "no_prechecked_upgrade_beyond_chosen_plan": true,
+  "free_claim_matches_actual_limits": false,
+  "feature_limits_on_pricing_surface": false,
+  "in_product_upgrade_prompts_disclosed": true,
+  "cancel_steps_counted": true,
+  "cancel_is_cancel_not_pause": false,
+  "cancel_without_chat_or_email": false,
+  "support_answer_matches_screen": false,
+  "no_resetting_countdown": false,
+  "reaudit_per_release_with_screenshots": true,
+  "app": "contrast-fixture"
+}

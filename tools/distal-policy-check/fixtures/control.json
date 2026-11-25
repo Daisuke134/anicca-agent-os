@@ -1,0 +1,27 @@
+{
+  "estimand_type": "distal",
+  "policy_class": "deterministic",
+  "probability_bounds": [
+    0,
+    1
+  ],
+  "decision_points": {
+    "count": 112,
+    "many": true,
+    "classification_reason": "Repeated daily decisions"
+  },
+  "uncertainty": {
+    "type": "pointwise",
+    "nonuse_reason": "Only pointwise intervals calculated"
+  },
+  "routine_elicitation": {
+    "used": true,
+    "playback_check": false
+  },
+  "claim": {
+    "text": "Proximal clicks establish distal optimal wellbeing.",
+    "outcome_type": "distal",
+    "optimal": true
+  },
+  "measured_outcome_type": "proximal"
+}

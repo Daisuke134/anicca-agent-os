@@ -1,0 +1,32 @@
+{
+ "decision": {
+  "canonical_source_recorded": true,
+  "decision_recorded": true,
+  "owner_recorded": true
+ },
+ "evolution": {
+  "guardrails_added_from_real_failures": false,
+  "guardrails_coupled_with_auth_and_access_controls": true,
+  "guardrails_tuned_for_security_and_ux": false
+ },
+ "execution_and_intervention": {
+  "failure_thresholds_escalate": false,
+  "guardrail_execution_mode_decided": false,
+  "high_risk_actions_trigger_oversight": false
+ },
+ "foundations": {
+  "instructions_from_docs_clear_actions_edge_cases": true,
+  "single_agent_maximized_before_splitting": true,
+  "tools_classified_and_standardized": true
+ },
+ "guardrail_layers": {
+  "input_guardrails_layered": true,
+  "output_validation_applied": true,
+  "tool_safeguards_risk_rated": true
+ },
+ "orchestration": {
+  "handoffs_transfer_state_with_return_path": true,
+  "pattern_chosen_manager_vs_decentralized": true,
+  "run_loop_exit_conditions_defined": true
+ }
+}

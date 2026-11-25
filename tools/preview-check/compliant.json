@@ -1,0 +1,9 @@
+{"inventory_recorded": true, "preview_exists": true, "devices_checked": ["iphone","ipad"], "locales_checked": ["en-US","ja"],
+ "duration_s": 22, "fps": 30, "size_mb": 48, "format": "mp4", "videos_per_locale": 1, "orientation": "portrait", "screenshots_orientation": "portrait",
+ "first3s": {"opens_with": "value_moment", "opening_caption_words": 5, "opening_caption_outcome_focused": true, "keyword_promise_matches_first_frame": true},
+ "muted": {"works_muted": true, "captions_large": true, "max_beat_s": 3.5, "min_beat_s": 1.5},
+ "poster": {"poster_selected": true, "poster_matches_screenshot1_story": true, "poster_readable_static": true},
+ "content": {"in_app_footage_only": true, "hands_or_live_action": false, "price_or_discount_shown": false, "external_cta_shown": false, "unshipped_features_shown": false, "paywall_consistent": true},
+ "localization": {"preview_locales": ["en-US","ja"], "top_locale_covered": true, "opening_caption_localized": true},
+ "sequencing": {"screenshots_before_after_done": true, "single_variable": true},
+ "measurement": {"reads_cvr": true, "reads_download_to_paid": true, "reads_proceeds_per_download": true, "install_rate_only": false, "window_days": 30}}

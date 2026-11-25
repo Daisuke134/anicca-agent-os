@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-20",
+  "results": [
+    {
+      "fixture": "compliant",
+      "runs": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/provenance-stability-check/provenance_stability_check.py",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/provenance-stability-check/fixtures/compliant.json"
+          ],
+          "exit_code": 0,
+          "report": {
+            "checker": "provenance-stability-check",
+            "result": "PASS",
+            "gates": {
+              "PS-0": "PASS",
+              "PS-1": "PASS",
+              "PS-2": "PASS",
+              "PS-3": "PASS",
+              "PS-4": "PASS",
+              "PS-5": "PASS"
+            },
+            "passed": 6,
+            "failed": 0,
+            "total": 6,
+            "failed_gates": []
+          }
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/tools/provenance-stability-check/provenance_stability_check.py",
+            "/home/hatch/workspace/tools/provenance-stability-check/fixtures/compliant.json"
+          ],
+          "exit_code": 0,
+          "report": {
+            "checker": "provenance-stability-check",
+            "result": "PASS",
+            "gates": {
+              "PS-0": "PASS",
+              "PS-1": "PASS",
+              "PS-2": "PASS",
+              "PS-3": "PASS",
+              "PS-4": "PASS",
+              "PS-5": "PASS"
+            },
+            "passed": 6,
+            "failed": 0,
+            "total": 6,
+            "failed_gates": []
+          }
+        }
+      ]
+    },
+    {
+      "fixture": "anicca-current",
+      "runs": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/provenance-stability-check/provenance_stability_check.py",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/provenance-stability-check/fixtures/anicca-current.json"
+          ],
+          "exit_code": 1,
+          "report": {
+            "checker": "provenance-stability-check",
+            "result": "FAIL",
+            "gates": {
+              "PS-0": "FAIL",
+              "PS-1": "FAIL",
+              "PS-2": "FAIL",
+              "PS-3": "FAIL",
+              "PS-4": "FAIL",
+              "PS-5": "FAIL"
+            },
+            "passed": 0,
+            "failed": 6,
+            "total": 6,
+            "failed_gates": [
+              "PS-0",
+              "PS-1",
+              "PS-2",
+              "PS-3",
+              "PS-4",
+              "PS-5"
+            ]
+          }
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/tools/provenance-stability-check/provenance_stability_check.py",
+            "/home/hatch/workspace/tools/provenance-stability-check/fixtures/anicca-current.json"
+          ],
+          "exit_code": 1,
+          "report": {
+            "checker": "provenance-stability-check",
+            "result": "FAIL",
+            "gates": {
+              "PS-0": "FAIL",
+              "PS-1": "FAIL",
+              "PS-2": "FAIL",
+              "PS-3": "FAIL",
+              "PS-4": "FAIL",
+              "PS-5": "FAIL"
+            },
+            "passed": 0,
+            "failed": 6,
+            "total": 6,
+            "failed_gates": [
+              "PS-0",
+              "PS-1",
+              "PS-2",
+              "PS-3",
+              "PS-4",
+              "PS-5"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fixture": "control",
+      "runs": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/provenance-stability-check/provenance_stability_check.py",
+            "/home/hatch/workspace/anicca-ops-synthetic2-mrt2-wt/tools/provenance-stability-check/fixtures/control.json"
+          ],
+          "exit_code": 1,
+          "report": {
+            "checker": "provenance-stability-check",
+            "result": "FAIL",
+            "gates": {
+              "PS-0": "PASS",
+              "PS-1": "PASS",
+              "PS-2": "PASS",
+              "PS-3": "FAIL",
+              "PS-4": "FAIL",
+              "PS-5": "PASS"
+            },
+            "passed": 4,
+            "failed": 2,
+            "total": 6,
+            "failed_gates": [
+              "PS-3",
+              "PS-4"
+            ]
+          }
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/home/hatch/workspace/tools/provenance-stability-check/provenance_stability_check.py",
+            "/home/hatch/workspace/tools/provenance-stability-check/fixtures/control.json"
+          ],
+          "exit_code": 1,
+          "report": {
+            "checker": "provenance-stability-check",
+            "result": "FAIL",
+            "gates": {
+              "PS-0": "PASS",
+              "PS-1": "PASS",
+              "PS-2": "PASS",
+              "PS-3": "FAIL",
+              "PS-4": "FAIL",
+              "PS-5": "PASS"
+            },
+            "passed": 4,
+            "failed": 2,
+            "total": 6,
+            "failed_gates": [
+              "PS-3",
+              "PS-4"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+name: "fxtwitter_post_reader"
+title: "X Post Reader (FxTwitter)"
+description: "Read a public X (Twitter) post without login via the FxTwitter public API (fxtwittergo CLI), with vxTwitter and official oEmbed fallbacks. Read-only: text, author, metrics, media URLs, quotes and profiles."
+category: "Work and knowledge"
+include_in_prompt: true

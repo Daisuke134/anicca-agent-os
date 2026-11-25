@@ -1,0 +1,42 @@
+{
+ "decision": {
+  "presentation_decision_recorded": true,
+  "owner_recorded": true,
+  "asc_and_key_verified": true
+ },
+ "eligibility": {
+  "segment_from_subscription_history": true,
+  "never_subscribed_excluded": true,
+  "history_source_verified": true
+ },
+ "fetch": {
+  "fetches_and_validates_before_display": true,
+  "selects_by_offer_id": true,
+  "validation_failure_falls_back_to_standard": true
+ },
+ "presentation": {
+  "terms_shown_before_purchase": true,
+  "purchase_passes_promo_offer": true,
+  "presentation_confined_to_segment_surfaces": true
+ },
+ "measurement": {
+  "offer_id_logged_per_view": true,
+  "promo_purchase_distinguished": true,
+  "fallback_and_take_rate_measured": true
+ },
+ "verification": {
+  "sandbox_current_and_lapsed_e2e": true,
+  "unit_tests_segments_and_fallback": true,
+  "debug_offer_guarded": true
+ },
+ "routing": {
+  "tool_routing_recorded_per_segment": false,
+  "promo_not_used_as_only_channel_for_unreachable_lapsed": false,
+  "signature_server_side_with_fresh_nonce": false,
+  "eligibility_checked_before_sending_any_link": false,
+  "dead_link_and_streamlined_decision_recorded": false,
+  "incrementality_measured_with_control": false,
+  "recovered_margin_measured": false,
+  "discount_escalates_across_offers": true
+ }
+}

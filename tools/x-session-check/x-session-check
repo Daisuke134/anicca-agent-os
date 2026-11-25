@@ -1,0 +1,4 @@
+#!/bin/sh
+# Wrapper for x_session_check.py
+DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec python3 "$DIR/x_session_check.py" "$@"

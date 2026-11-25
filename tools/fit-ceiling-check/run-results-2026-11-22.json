@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-22",
+  "checker": "fit-ceiling-check",
+  "runs": [
+    {
+      "fixture": "fixtures/compliant.json",
+      "command": [
+        "python3",
+        "fit_ceiling_check.py",
+        "fixtures/compliant.json"
+      ],
+      "exit_code": 0,
+      "report": {
+        "checker": "fit-ceiling-check",
+        "result": "PASS",
+        "gates": {
+          "FC-0": "PASS",
+          "FC-1": "PASS",
+          "FC-2": "PASS",
+          "FC-3": "PASS",
+          "FC-4": "PASS",
+          "FC-5": "PASS"
+        },
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "failed_gates": []
+      }
+    },
+    {
+      "fixture": "fixtures/control.json",
+      "command": [
+        "python3",
+        "fit_ceiling_check.py",
+        "fixtures/control.json"
+      ],
+      "exit_code": 1,
+      "report": {
+        "checker": "fit-ceiling-check",
+        "result": "FAIL",
+        "gates": {
+          "FC-0": "FAIL",
+          "FC-1": "FAIL",
+          "FC-2": "FAIL",
+          "FC-3": "FAIL",
+          "FC-4": "FAIL",
+          "FC-5": "FAIL"
+        },
+        "passed": 0,
+        "failed": 6,
+        "total": 6,
+        "failed_gates": [
+          "FC-0",
+          "FC-1",
+          "FC-2",
+          "FC-3",
+          "FC-4",
+          "FC-5"
+        ]
+      }
+    },
+    {
+      "fixture": "fixtures/anicca-current-state.json",
+      "command": [
+        "python3",
+        "fit_ceiling_check.py",
+        "fixtures/anicca-current-state.json"
+      ],
+      "exit_code": 1,
+      "report": {
+        "checker": "fit-ceiling-check",
+        "result": "FAIL",
+        "gates": {
+          "FC-0": "FAIL",
+          "FC-1": "FAIL",
+          "FC-2": "FAIL",
+          "FC-3": "FAIL",
+          "FC-4": "FAIL",
+          "FC-5": "FAIL"
+        },
+        "passed": 0,
+        "failed": 6,
+        "total": 6,
+        "failed_gates": [
+          "FC-0",
+          "FC-1",
+          "FC-2",
+          "FC-3",
+          "FC-4",
+          "FC-5"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "fixtures": 3,
+    "passed": 1,
+    "failed": 2,
+    "gates_passed": 6,
+    "gates_failed": 12
+  }
+}

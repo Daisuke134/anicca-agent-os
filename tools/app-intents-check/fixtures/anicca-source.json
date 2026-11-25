@@ -1,0 +1,66 @@
+{
+ "_note_ext_2026_11_21": "intelligence scored from recorded state: only intent is the untouched template, so no schema/annotation/donation/cross-surface wiring exists. Negatives that would assert an active violation (transient use, public marking, ownership misuse, non-private default) are false: nothing exists to commit them. schema_domain_available=false means no matching domain was verified this run, not that none exists. Live build not re-read.",
+ "control": {
+  "action_perform_does_real_work": false,
+  "controls_real_feature": false,
+  "current_value_reads_real_state": false,
+  "shipped": true
+ },
+ "core_intent": {
+  "description_names_real_action": false,
+  "exists": false,
+  "perform_does_real_work": false,
+  "title_names_real_action": false
+ },
+ "decision": null,
+ "entity": {
+  "donated_to_spotlight": false,
+  "indexed_entity": false,
+  "searchability_claimed": false,
+  "stable_ids": false
+ },
+ "intelligence": {
+  "clarification_via_request_value": false,
+  "core_uses_app_schema": false,
+  "dialog_names_outcome": false,
+  "donates_on_real_use": false,
+  "donation_excessive": false,
+  "entities_default_private": true,
+  "fast_display_representations": false,
+  "indexing_key_properties_recorded": false,
+  "notifications_annotated_with_entity_ids": false,
+  "onscreen_annotation": null,
+  "ownership_only_for_public_shared": true,
+  "persistent_identifiers": false,
+  "personal_content_marked_public": false,
+  "resolution": "exact_string_only",
+  "schema_domain_available": false,
+  "search_in_app_intent": false,
+  "string_query_reason_recorded": false,
+  "transient_entities_for_integrations": false,
+  "uses_ownership_conformance": false
+ },
+ "legacy_sirikit_only": false,
+ "measurement": {
+  "completion": false,
+  "decision_recorded_with_reason": false,
+  "invocations": false,
+  "retention_vs_control": false,
+  "system_originated_sessions": false
+ },
+ "provider": {
+  "each_shortcut_has_title_and_image": false,
+  "exists": false,
+  "phrases": [],
+  "shortcut_count": 0,
+  "single_provider": false
+ },
+ "recorded": true,
+ "result": {
+  "opens_generic_home": false,
+  "opens_relevant_screen": false,
+  "returns_dialog_or_value": false
+ },
+ "template_only": true,
+ "template_removed": false
+}

@@ -1,0 +1,8 @@
+{
+ "decision": {"decision_recorded": true, "owner_recorded": true, "paywall_surfaces_inventoried": true},
+ "dual_offer": {"no_trial_annual_beside_trial_option": true, "direct_option_is_a_plan_not_a_toggle": true, "trial_terms_equally_clear_on_both": true},
+ "testimonial": {"single_testimonial_on_paywall": true, "matched_to_onboarding_answers": true, "testimonial_is_real_and_consented": true},
+ "inapp_segment": {"declined_and_active_segment_defined": true, "inapp_paywall_has_no_trial": true, "no_trial_offer_not_shown_to_new_users": true},
+ "measurement": {"judged_on_revenue_not_trial_starts": true, "ship_threshold_recorded": true, "per_segment_revenue_read_separately": true},
+ "guardrails": {"no_fake_scarcity_or_false_terms": true, "gross_profit_checked_per_segment": true, "evidence_strength_recorded": true}
+}

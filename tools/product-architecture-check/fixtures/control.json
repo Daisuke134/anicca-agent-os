@@ -1,0 +1,20 @@
+{
+ "catalog_recorded": true,
+ "catalog_owner_recorded": true,
+ "offerings_mapping_recorded": true,
+ "new_product_for_experiments_rule": false,
+ "scheduled_change_irreversible_acknowledged": true,
+ "propagation_window_planned": true,
+ "preserved_cohort_via_increase_only": false,
+ "product_never_taken_off_sale_to_hide": false,
+ "lapsed_resubscribe_window_known": true,
+ "decrease_timing_known": false,
+ "paywall_price_matches_store_product": true,
+ "one_live_product_per_slot": true,
+ "reporting_price_basis_verified": true,
+ "legacy_cohorts_counted_separately": false,
+ "cross_store_difference_recorded": true,
+ "catalog_change_register": false,
+ "removal_checklist_exists": false,
+ "periodic_catalog_audit": true
+}

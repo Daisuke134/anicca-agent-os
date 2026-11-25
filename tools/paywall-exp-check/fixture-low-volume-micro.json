@@ -1,0 +1,7 @@
+{"experiment":{"recorded":true,"hypothesis":"button copy raises conversion","variables_changed":1,"variants_otherwise_identical":true,"change_size":"micro"},
+ "metrics":{"primary_preregistered":true,"decision_metric":"d30_retained_rpi","refund_watched":true},
+ "sample":{"size_preregistered":true,"stop_date_preregistered":true,"baseline_rate":0.05,"mde_relative":0.20,"per_variant_views":9000,"weekly_paywall_views":500},
+ "duration_days":14,
+ "stopping":{"stopped_early_on_peek":false,"peeked":false,"sequential_method":false,"stopped_reason":"preregistered_date"},
+ "assignment":{"deterministic_hash":true,"randomize_per_session":false,"cohort_tracked_to_d30":true},
+ "operations":{"overlapping_same_placement":false,"segment_check_channel_country":true,"holdout_pct":5}}

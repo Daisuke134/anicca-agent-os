@@ -1,0 +1,10 @@
+{"recorded": true,
+ "record": {"common_tasks_listed": true, "per_device_matrix": true, "declared_labels_read_from_asc": true, "accessibility_url_recorded": true},
+ "declared_labels": ["voiceover","voice_control","larger_text","dark_interface","differentiate_without_color","sufficient_contrast","reduced_motion"],
+ "evidence": {"voiceover": true, "voice_control": true, "larger_text": true, "dark_interface": true, "differentiate_without_color": true, "sufficient_contrast": true, "reduced_motion": true},
+ "voiceover": {"all_interactive_elements_labelled": true, "traits_and_actions_present": true, "all_common_tasks_completable": true},
+ "larger_text": {"fixed_size_font_count": 12, "semantic_font_count": 140, "tested_at_200_percent": true},
+ "visual": {"dark_interface_supported": true, "differentiate_without_color": true, "contrast_verified": true},
+ "reduced_motion": {"respects_reduce_motion_setting": true},
+ "media": {"captions_status_recorded": true, "timed_text_available": false, "audio_descriptions_available": false},
+ "currency": {"reaudit_each_release": true, "accessibility_url_provided": true}}

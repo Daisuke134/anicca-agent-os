@@ -1,0 +1,20 @@
+{
+ "launch_pipeline_inventoried": false,
+ "territory_oneshot_acknowledged": false,
+ "approved_build_before_preorder": false,
+ "window_within_limits": false,
+ "date_is_real_and_build_ready": true,
+ "cpp_ppo_run_during_window": false,
+ "per_storefront_prices_localized": false,
+ "lower_of_two_price_modelled": false,
+ "price_increase_notice_plan": false,
+ "page_matches_shipped_app": true,
+ "name_category_lock_acknowledged": false,
+ "search_browse_visibility_used": false,
+ "preorder_count_tracked": false,
+ "dayone_velocity_plan": false,
+ "preorder_to_activation_read": false,
+ "date_change_early_release_procedure": false,
+ "iap_ready_during_window": false,
+ "regional_preorder_evaluated_for_existing": false
+}

@@ -1,0 +1,20 @@
+{
+ "per_app_ifthen_surface_recorded": true,
+ "goal_intention_recorded_before_plan": true,
+ "plan_linked_to_single_named_goal": true,
+ "conditional_ifthen_format_used": true,
+ "cue_concrete_and_recognisable": true,
+ "action_concrete_observable_immediately_startable": true,
+ "plan_written_externalised": true,
+ "plan_rehearsed_at_formation": true,
+ "commitment_to_plan_recorded": true,
+ "plan_reminder_sent_in_advance_of_cue": true,
+ "reminders_distributed_not_massed": true,
+ "plan_recall_checked": true,
+ "plan_editable_and_replaced_when_goal_changes": true,
+ "failed_cue_reviewed_not_just_repeated": true,
+ "single_active_plan_per_goal": true,
+ "expectation_set_to_corrected_effect": true,
+ "initiation_at_cue_measured": true,
+ "plan_cohort_read_separately": true
+}

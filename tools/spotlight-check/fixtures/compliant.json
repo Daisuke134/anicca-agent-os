@@ -1,0 +1,8 @@
+{"app":"compliant-design",
+ "inventory":{"recorded":true,"indexable_content":["saved affirmations","habits"]},
+ "core_spotlight":{"implemented":true,"attribute_fields":["title","content_description","keywords","thumbnail"],"stable_unique_ids":true},
+ "user_activity":{"donated_at_viewing":true,"eligible_for_search":true,"eligible_for_prediction":true,"become_current":true},
+ "continuation":{"handles_searchable_item_action":true,"lands_on_specific_content":true},
+ "freshness":{"updates_or_deletes_on_change":true,"ranking_signal_fed":true,"reindex_handler_present":true},
+ "scope":{"only_likely_searched":true,"personal_content_publicly_indexed":false},
+ "measurement":{"spotlight_event_defined":true,"spotlight_event_fired":true,"joinable_to_completion":true}}

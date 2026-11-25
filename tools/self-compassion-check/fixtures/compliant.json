@@ -1,0 +1,9 @@
+{
+ "app": "compliant",
+ "inventory": {"lapse_surfaces_inventoried": true, "three_components_defined": true, "current_copy_audited_for_self_judgment": true},
+ "design": {"compassion_break_before_reengagement_ask": true, "return_path_no_penalty": true, "compassion_precedes_paywall_at_lapse": true},
+ "prohibitions": {"shame_or_guilt_copy": false, "toxic_positivity_denies_suffering": false, "compassion_withheld_behind_paywall": false},
+ "measurement": {"lapse_return_measured_separately": true, "post_lapse_churn_measured": true, "counts_recorded_not_rates_only": true},
+ "citation": {"source_numbers_cited_with_design": true, "program_effect_used_as_product_promise": false, "revenue_chain_recorded": true},
+ "ethics": {"clinical_claim_made": false, "compassion_available_to_free_users": true, "review_cadence_recorded": true}
+}

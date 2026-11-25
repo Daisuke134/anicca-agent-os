@@ -1,0 +1,9 @@
+{
+  "inventory_recorded": true,
+  "live_keyword_field": ["affirmations"],
+  "planned_pages": [
+    {"name": "everything", "type": "keyword", "keywords": ["affirmations", "affirmations"], "monthly_impressions": 5000, "converts_below_average": false, "branded": false, "cluster_size": 12, "cloned_from_default": false, "ban_list_audited": false, "first_screenshot_shows_result": false, "promo_text": "Best app ever download now best app ever download now best app ever download now best app ever download now best app ever download now best app ever download now best app ever!!", "deep_link_target": "", "lands_on_generic_welcome": true, "approved": false, "wired": true}
+  ],
+  "submitted_pages": 0,
+  "measurement": {"baseline_formula_recorded": false, "primary_metric": "downloads", "d7_retention_guardrail": false, "reroute_below_1x": false}
+}

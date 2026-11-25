@@ -1,0 +1,14 @@
+{
+  "app": "Control (fake soft: dismissible but empty free core)",
+  "model": "soft",
+  "paywall_dismissible": true,
+  "free_core": [],
+  "free_core_includes_aha": false,
+  "premium_features": ["full_library"],
+  "split_documented": true,
+  "reprompt_triggers": ["locked_feature_tap", "free_limit_reached"],
+  "judge_metrics": ["revenue_per_install"],
+  "observation_window_days": 56,
+  "channel_breakdown": true,
+  "refund_rate_tracked": true
+}

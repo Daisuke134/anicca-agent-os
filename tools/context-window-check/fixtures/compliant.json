@@ -1,0 +1,20 @@
+{
+ "decided": true,
+ "owner_recorded": true,
+ "canonical_record": true,
+ "everything_counts": true,
+ "usage_and_cache_split_read": true,
+ "preflight_token_counting": true,
+ "size_by_model_known": true,
+ "default_1m_pricing_nuance": true,
+ "media_and_request_size_limits": true,
+ "thinking_counts_subset_billing": true,
+ "thinking_preservation_by_model": true,
+ "thinking_tool_cycle_and_rebilling": true,
+ "context_awareness_models_known": true,
+ "context_awareness_absent_task_budgets": true,
+ "context_rot_curation": true,
+ "overflow_input_alone_400": true,
+ "overflow_generation_stop_behavior": true,
+ "management_stack_recorded": true
+}

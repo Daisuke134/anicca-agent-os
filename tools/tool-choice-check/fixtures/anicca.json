@@ -1,0 +1,32 @@
+{
+ "cost": {
+  "choice_type_cost_difference_counted": false,
+  "reverified_on_model_change": false,
+  "system_prompt_addon_counted": false
+ },
+ "decision": {
+  "canonical_source_recorded": false,
+  "decision_recorded": false,
+  "owner_recorded": false
+ },
+ "forcing": {
+  "support_checked_per_model_and_thinking": false,
+  "thinking_and_preamble_tradeoff_accepted": false,
+  "unsupported_fallback_defined": false
+ },
+ "measurement": {
+  "choice_effect_measured": false,
+  "dependent_calls_guarded": false,
+  "history_formatting_preserves_parallelism": false
+ },
+ "modes": {
+  "choice_decided_per_surface": false,
+  "defaults_understood": false,
+  "prompt_steering_used_before_forcing": true
+ },
+ "parallel": {
+  "all_results_single_user_message": true,
+  "disable_flag_used_correctly": false,
+  "execution_strategy_decided": false
+ }
+}

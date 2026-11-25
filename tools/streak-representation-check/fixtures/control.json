@@ -1,0 +1,45 @@
+{
+  "fixture_kind": "synthetic control with plausible but unsupported claims",
+  "actual_behavior": {
+    "measure": "completed practice sessions",
+    "observation_window": "7 days"
+  },
+  "representation": {
+    "conditions": [
+      "intact",
+      "broken",
+      "no-log"
+    ],
+    "separate_from_actual_behavior": true
+  },
+  "continuation_rates": {
+    "intact": 0.8,
+    "broken": 0.4,
+    "no-log": 0.5
+  },
+  "comparison_protocol": "same observation window and randomized display conditions",
+  "display_harm_recorded": false,
+  "benefit_claim_based_only_on_intact_gap": false,
+  "attribution": {
+    "groups": [
+      "self",
+      "external",
+      "system"
+    ],
+    "self_external_pooled": true,
+    "analysis_by_attribution": "separate self/external/system comparisons"
+  },
+  "repair": {
+    "available": true,
+    "may_remain_below_intact": true,
+    "equivalent_to_intact_claim": true
+  },
+  "consideration": {
+    "offered": true,
+    "types": [
+      "paid freeze",
+      "ad-supported repair"
+    ],
+    "included_in_mechanism_inventory": true
+  }
+}

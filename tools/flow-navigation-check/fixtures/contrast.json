@@ -1,0 +1,20 @@
+{
+ "flow_map_recorded": true,
+ "per_screen_dropoff_measured": true,
+ "first_screen_loss_read_separately": false,
+ "progress_form_matches_length": false,
+ "progress_indicator_truthful": true,
+ "effort_ordering_decided": true,
+ "back_preserves_answers": true,
+ "skip_visible_on_nonessential": false,
+ "skip_copy_and_personalisation_rule": false,
+ "chunking_two_to_four_inputs": true,
+ "phases_grouped_and_labelled": true,
+ "no_ask_wall_before_first_value": true,
+ "stop_point_recorded_per_user": false,
+ "resume_exact_step_inputs_preserved": false,
+ "recovery_message_specific_and_timed": false,
+ "completion_read_with_revenue_per_open": false,
+ "drop_clusters_reviewed_on_cadence": true,
+ "lighter_reentry_decided_for_high_friction": true
+}

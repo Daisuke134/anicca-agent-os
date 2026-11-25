@@ -1,0 +1,34 @@
+{
+  "decision": {
+    "decision_recorded_per_storefront": false,
+    "owner_recorded": false,
+    "profit_calc_current_terms": false,
+    "entitlement_and_plist_verified": false
+  },
+  "eligibility": {
+    "storefront_from_storefront_api": true,
+    "eligibility_checked_before_presenting": false,
+    "minors_excluded_where_required": false,
+    "iap_prominence_and_election_respected": false
+  },
+  "flow": {
+    "disclosure_sheet_via_storekit": false,
+    "token_minted_and_attached": false,
+    "destination_own_no_intermediary": false,
+    "purchase_tied_to_app_account": false
+  },
+  "reporting": {
+    "transactions_reported_in_window": false,
+    "tokenless_coverage_measured": false,
+    "server_verifies_before_granting": false
+  },
+  "measurement": {
+    "funnel_per_storefront_measured": false,
+    "net_revenue_after_all_fees_measured": false
+  },
+  "verification": {
+    "storefront_matrix_e2e": false,
+    "unit_tests_disclosure_token_fallback": false,
+    "debug_link_guarded": false
+  }
+}

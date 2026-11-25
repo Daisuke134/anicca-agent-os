@@ -1,0 +1,36 @@
+{
+ "export_classification": {
+  "dependency_inventory_incl_libraries": false,
+  "strongest_crypto_case_determined": false,
+  "determination_own_not_copied": false,
+  "https_read_as_encryption_but_exempt": false
+ },
+ "plist_declaration": {
+  "plist_key_set_before_first_upload": false,
+  "plist_value_matches_case": false,
+  "middle_case_answered_in_asc_not_copied": false,
+  "compliance_code_key_recorded_when_cleared": false
+ },
+ "documents_timing": {
+  "france_distribution_checked": false,
+  "ccats_required_only_for_proprietary": false,
+  "two_business_day_buffer_and_prereqs": false,
+  "year_end_self_classification_considered": false,
+  "play_export_acknowledgement_recorded": false
+ },
+ "content_inventory": {
+  "third_party_inventory_contain_show_access": false,
+  "permission_reachable_within_a_day_per_item": false,
+  "unprovable_content_removed_before_answering": false
+ },
+ "content_declaration": {
+  "declaration_value_matches_inventory": false,
+  "submitter_owns_or_licenses_ip": false,
+  "no_misleading_trademark_or_copycat_metadata": false
+ },
+ "guideline_52_subrules": {
+  "service_terms_permission_522": false,
+  "no_media_download_without_auth_523": false,
+  "no_apple_endorsement_or_emoji_524_525": false
+ }
+}

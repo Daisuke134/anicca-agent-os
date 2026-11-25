@@ -1,0 +1,8 @@
+{"app":"Anicca iOS (canonical source e2994a582, 2026-11-15 read)",
+ "inventory":{"recorded":false,"indexable_content":[]},
+ "core_spotlight":{"implemented":false,"attribute_fields":[],"stable_unique_ids":false},
+ "user_activity":{"donated_at_viewing":false,"eligible_for_search":false,"eligible_for_prediction":false,"become_current":false},
+ "continuation":{"handles_searchable_item_action":false,"lands_on_specific_content":false},
+ "freshness":{"updates_or_deletes_on_change":false,"ranking_signal_fed":false,"reindex_handler_present":false},
+ "scope":{"only_likely_searched":false,"personal_content_publicly_indexed":false},
+ "measurement":{"spotlight_event_defined":false,"spotlight_event_fired":false,"joinable_to_completion":false}}

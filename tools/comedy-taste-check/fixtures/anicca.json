@@ -1,0 +1,36 @@
+{
+ "coverage": {
+  "comedy_required_on_every_surface_recorded": true,
+  "surface_inventory_covers_notifications_home_posts_blog": true,
+  "single_mascot_character_decided": false,
+  "mascot_voice_defined_and_shared": false
+ },
+ "type": {
+  "affiliative_humor_only": true,
+  "aggressive_and_self_defeating_humor_banned": true,
+  "no_monk_premise_in_comedy": true,
+  "comedy_serves_hard_day_promise": true
+ },
+ "generation": {
+  "model_generated_not_canned_catalogue": false,
+  "personalized_from_user_state": false,
+  "repetition_guard_same_joke_not_resent": false,
+  "push_text_fits_full_banner_length": false
+ },
+ "measurement": {
+  "engagement_measured_as_the_mediator": false,
+  "behavior_outcome_measured_not_opens_only": false,
+  "comedy_not_credited_without_own_test": false,
+  "founder_first_gate_laugh_test": true
+ },
+ "safety": {
+  "clear_action_path_preserved_despite_humor": true,
+  "crisis_and_safety_surfaces_gentle_or_exempt": false,
+  "outside_matches_inside_comedy_exists_in_product": true
+ },
+ "loop": {
+  "shareability_checked_screenshots": false,
+  "comedy_samples_reviewed_on_a_loop": false,
+  "unfunny_lines_killed_and_recorded": false
+ }
+}

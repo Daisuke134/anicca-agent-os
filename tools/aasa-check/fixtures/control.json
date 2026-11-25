@@ -1,0 +1,8 @@
+{"app":"control-mismatched-pairing","domain":"example.com","expected_app_id":"ABCDE12345.com.example.app",
+ "live_check":{"recorded":true,"checked_on":"2026-11-14","wellknown_status":200,"root_status":200,"redirected":true},
+ "aasa":{"served":true,"valid_json":true,"applinks_app_ids":["ZZZZZ99999.com.other.app"],"has_components":true,"all_excluded":true},
+ "entitlement_domains":["applinks:example.com/"],
+ "handler":{"handles_browsing_web":true,"routes_to_specific_screen":false},
+ "fallback":{"unmatched_opens_web":false},
+ "measurement":{"ul_taps_event":false,"runbook_notes_cdn_timing":false},
+ "aasa_content_type":"text/html","aasa_size_kb":200}

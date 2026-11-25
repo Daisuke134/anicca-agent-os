@@ -1,0 +1,22 @@
+name: canonical_source_check
+title: Canonical Source Check
+description: Verify that the copy you are about to measure or diagnose from is the canonical source at a current revision, so a stale mirror or old checkout never produces a false finding.
+category: Work and knowledge
+include_in_prompt: true
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - assistant-msg-e067d836-581e-afda-2ed8-ae905910abb0
+  - assistant-msg-8a0f55f3-efae-d219-0650-afead1773dc9
+  - assistant-msg-20d578a9
+  - assistant-msg-0bda6197
+  measurement:
+    proxy_metric_id: stale_source_diagnosis_rate
+    success_criterion: Within 14 days after consolidation, no measurement, gap claim or fix plan is reported from a stale mirror or old checkout without a recorded canonical source and revision comparison, no byte identical series across many runs is reported as a fresh result without a probe, at least one frozen series is detected and probed rather than reported as fresh, and any stale source found is re-read from the canonical source before a conclusion is drawn.
+    window_days: 14
+  needs_review: false
+  rationale: Second merge in the same consolidation batch. canonical_source_check and frozen_measurement_check both answer whether a reading can be trusted before it is reported. The first checks that the copy read is the canonical source at a current revision, after three false findings from stale copies including the anicca-products mirror at 1.9.6 against the canonical life-manager copy at 1.9.10 in assistant-msg-8a0f55f3-efae-d219-0650-afead1773dc9. The second checks that a repeated series is not a cache freeze, after byte identical GEO answers across runs 124 to 146 in assistant-msg-20d578a9. Both checks belong at the start of one measurement reading, so the frozen probe and re-measure method moves into canonical_source_check and frozen_measurement_check is retired in this batch.
+  review_after: 2026-11-26T05:25:12.755092+00:00
+  reviewed_at: 2026-11-12T05:25:12.755092+00:00
+  run_id: sirun_7de1ed1a6c794176adf2851d354cefb9

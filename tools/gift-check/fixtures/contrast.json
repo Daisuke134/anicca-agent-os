@@ -1,0 +1,20 @@
+{
+ "gift_surface_recorded": true,
+ "gift_item_is_iap_eligible_and_sold_via_iap": true,
+ "gift_has_detected_trigger_not_menu_only": false,
+ "sender_segment_is_satisfied_subscribers": true,
+ "gift_entry_on_paywall_or_profile": false,
+ "gift_terms_offer_term_discount_ladder": false,
+ "recipient_needs_no_account_until_claim": false,
+ "sender_confirms_recipient_permission_versioned": false,
+ "recipient_choice_when_sender_cant_guess": true,
+ "one_personalisation_rung_and_sender_preview": true,
+ "scheduled_delivery_date_timezone_capped": true,
+ "claim_opens_gift_before_account_ask": false,
+ "claim_is_idempotent_single_credit": true,
+ "giftee_renewal_is_explicit_optin_not_default": false,
+ "expiry_per_kind_and_refund_separate_state": true,
+ "sender_sent_received_tracking_view": false,
+ "gift_read_as_acquisition_funnel": false,
+ "unclaimed_gifts_have_sender_chase_path": false
+}

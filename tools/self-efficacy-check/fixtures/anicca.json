@@ -1,0 +1,20 @@
+{
+ "efficacy_measured_per_task_not_global": false,
+ "efficacy_baseline_taken_before_intervention": false,
+ "efficacy_sources_inventoried_per_surface": false,
+ "first_task_graded_attainable_but_real": false,
+ "success_is_real_performance_not_praise": false,
+ "difficulty_progresses_from_performance_pattern": false,
+ "similar_models_used_for_vicarious": false,
+ "persuasion_specific_credible_and_subordinate": false,
+ "affective_state_not_misread_as_inability": false,
+ "efficacy_distinguished_from_outcome_expectancy": false,
+ "efficacy_read_against_next_performance": false,
+ "failure_pattern_read_not_single_failure": false,
+ "primary_numbers_quoted_with_design": false,
+ "expectations_discounted_for_rct_limits": false,
+ "no_revenue_promised_from_efficacy_alone": false,
+ "no_manufactured_fake_success": false,
+ "no_persuasion_claiming_unsupported_capability": false,
+ "mastery_records_kept_and_reused": false
+}

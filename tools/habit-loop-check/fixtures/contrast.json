@@ -1,0 +1,20 @@
+{
+  "habit_loops_recorded_per_app": true,
+  "target_behaviour_single_and_specific": true,
+  "cue_is_existing_daily_context": true,
+  "cue_stable_same_context_each_repetition": false,
+  "cue_fires_before_routine": true,
+  "one_primary_cue_not_competing_cues": false,
+  "routine_small_and_low_friction": true,
+  "routine_same_form_each_repetition": true,
+  "single_miss_not_catastrophic": false,
+  "reward_immediate_after_routine": true,
+  "reward_is_experienced_value": false,
+  "reward_not_only_weekly_summary": false,
+  "automaticity_measured_directly": false,
+  "formation_window_from_evidence_range": false,
+  "context_change_plan_exists": false,
+  "primary_numbers_quoted_with_design": false,
+  "repetition_counted_only_in_cue_context": false,
+  "revenue_claim_tied_to_automaticity_chain": false
+}

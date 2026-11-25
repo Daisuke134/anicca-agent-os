@@ -1,0 +1,7 @@
+{"app":"contrast: silent sync-only restore, auto-fired on launch, no outcomes, no counting",
+ "inventory":{"purchase_surfaces_recorded":false,"restore_outcomes_defined":false,"transfer_behavior_recorded":false},
+ "entry":{"restore_on_paywall":true,"restore_in_settings_direct":false,"settings_restore_string_referenced":false},
+ "mechanism":{"calls_restore_purchases":false,"user_initiated_only":false,"identity_login_linking_evidenced":false},
+ "outcomes":{"success_advances_flow":false,"no_entitlement_message_shown":false,"failure_message_shown":false,"cancellation_distinguished":false},
+ "customer_center":{"customer_center_linked_in_settings":false,"customer_center_restore_config_verified":false},
+ "measurement":{"restore_started_counted":false,"restore_result_counted":false,"restore_results_connected_to_revenue":false}}

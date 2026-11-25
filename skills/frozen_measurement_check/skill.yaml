@@ -1,0 +1,20 @@
+name: frozen_measurement_check
+title: Check a Frozen Measurement Before You Trust It
+description: Detect a frozen repeated measurement, probe it with a changed input, and re-measure before reporting the result.
+category: Work and knowledge
+include_in_prompt: true
+skill_improvement:
+  managed: true
+  status: retired
+  evidence_handles:
+  - assistant-msg-20d578a9
+  - assistant-msg-0bda6197
+  measurement:
+    proxy_metric_id: stale_source_diagnosis_rate
+    success_criterion: Within 14 days after consolidation, no measurement, gap claim or fix plan is reported from a stale mirror or old checkout without a recorded canonical source and revision comparison, no byte identical series across many runs is reported as a fresh result without a probe, at least one frozen series is detected and probed rather than reported as fresh, and any stale source found is re-read from the canonical source before a conclusion is drawn.
+    window_days: 14
+  needs_review: false
+  rationale: Retirement in the same consolidation batch as the merged canonical_source_check proposal above. Its freeze detection, changed input probe and re-measure method is carried into that merged document, so this file leaves active discovery while staying on disk.
+  review_after: 2026-11-26T05:25:12.755092+00:00
+  reviewed_at: 2026-11-12T05:25:12.755092+00:00
+  run_id: sirun_7de1ed1a6c794176adf2851d354cefb9

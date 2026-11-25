@@ -1,0 +1,8 @@
+{
+  "evaluation_name": "Anicca documented reporting snapshot",
+  "source_paths": [
+    "files/paper-loop-sim-reliability-gates-spec-2026-11-15.md",
+    "files/paper-loop-decision-fidelity-gates-spec-2026-11-19.md"
+  ],
+  "documented_state": "Prior SR/CAL reporting only; no outcome-conditioned reporting, twin contrast or R1/R2 separation documented. Unknown fields intentionally absent; no invented measurements or exemptions."
+}

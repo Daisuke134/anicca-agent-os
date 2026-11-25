@@ -1,0 +1,245 @@
+#!/usr/bin/env python3
+"""
+postiz-post — safe wrapper around `postiz posts:create`.
+
+Why this exists (root cause record: anicca-ops files/postiz-link-fix-2026-11-17.md):
+  1. Postiz Cloud DELIBERATELY deletes every URL from X post content at creation
+     time (server-side env STRIP_LINKS_FROM_X_POSTS -> XProvider.stripLinks()).
+     It applies to drafts and scheduled posts, CLI and JSON paths, with or
+     without shortLink, to body text, bare domains, and thread/reply entries.
+     The vendor confirmed this is intentional and not configurable per org
+     (gitroomhq/postiz-app issue #1939). Publishing an X post with a link via
+     Postiz Cloud therefore SILENTLY ships a post whose link is gone.
+  2. On other providers (e.g. LinkedIn), the CLI default shortLink=true makes
+     Postiz rewrite original URLs into dub.sh shortlinks. With shortLink=false
+     the original URL is stored and published verbatim.
+
+Rules enforced here:
+  R1. shortLink is forced to false on every creation (CLI: --no-shortLink is
+      appended and any --shortLink flag is removed; JSON: "shortLink": false
+      is injected into a temp copy of the payload).
+  R2. If any target integration is an X channel and any content value contains
+      a URL, the creation is REFUSED (exit 3) before anything is sent.
+      Escape hatch (only when losing the link is genuinely acceptable):
+      POSTIZ_SAFE_ALLOW_X_URL=1
+  R3. After creation, the stored content is read back via posts:list and every
+      URL from the submitted root content must be present verbatim.
+      Mismatch -> exit 4. Read-back impossible after retries -> exit 5
+      (post was created but is UNVERIFIED; check it manually).
+
+Usage: identical arguments to `postiz posts:create`, e.g.
+  postiz-post -c "text" -s 2026-11-18T10:00:00+09:00 -i <integrationId> [--settings '{...}']
+  postiz-post -j payload.json
+
+Exit codes: 0 ok (created + verified, or nothing to verify),
+  2 usage/io error, 3 refused (X + URL), 4 created but URL missing on read-back,
+  5 created but read-back failed, other codes pass through from the CLI.
+"""
+import json
+import os
+import re
+import subprocess
+import sys
+import tempfile
+import time
+
+POSTIZ = os.path.expanduser("~/.local/bin/postiz")
+CACHE = "/tmp/postiz-safe-integrations.json"
+CACHE_TTL = 3600
+
+URL_RE = re.compile(
+    r"https?://\S+|www\.\S+|\b[\w-]+(?:\.[\w-]+)*\."
+    r"(?:com|io|ai|dev|app|net|org|jp|co|me|sh|gg|xyz|site|online|page|tv|to|link|info|biz)\b(?:/\S*)?",
+    re.IGNORECASE,
+)
+
+# Fallback provider map if integrations:list is unreachable. The X channel id
+# is fixed for this workspace's @diceai0 connection.
+KNOWN_PROVIDERS = {
+    "cmm6d7m5703rwpr0yr5vtme3w": "x",          # X @diceai0
+    "cmvv0yppi03iio91cax0bwmjx": "linkedin",   # LinkedIn Daisuke Narita
+}
+
+
+def find_urls(text):
+    if not text:
+        return []
+    return [u.rstrip(").,") for u in URL_RE.findall(text)]
+
+
+def integrations_map():
+    """id -> provider identifier (e.g. 'x', 'linkedin'). Best effort + cache."""
+    mapping = dict(KNOWN_PROVIDERS)
+    try:
+        if time.time() - os.path.getmtime(CACHE) < CACHE_TTL:
+            with open(CACHE) as f:
+                mapping.update(json.load(f))
+            return mapping
+    except Exception:
+        pass
+    try:
+        out = subprocess.run(
+            [POSTIZ, "integrations:list"], capture_output=True, text=True, timeout=60
+        ).stdout
+        arr = json.loads(out[out.index("["):])
+        live = {i["id"]: i.get("identifier", "") for i in arr}
+        mapping.update(live)
+        with open(CACHE, "w") as f:
+            json.dump(live, f)
+    except Exception as e:
+        print(f"postiz-post: warning: integrations:list failed ({e}); "
+              "using built-in provider map", file=sys.stderr)
+    return mapping
+
+
+def parse_args(argv):
+    """Pull the pieces we need out of posts:create arguments."""
+    contents, integrations, json_path, date = [], [], None, None
+    i = 0
+    while i < len(argv):
+        a = argv[i]
+        if a in ("-c", "--content") and i + 1 < len(argv):
+            contents.append(argv[i + 1]); i += 2; continue
+        if a in ("-i", "--integrations") and i + 1 < len(argv):
+            integrations += [x.strip() for x in argv[i + 1].split(",") if x.strip()]
+            i += 2; continue
+        if a in ("-j", "--json") and i + 1 < len(argv):
+            json_path = argv[i + 1]; i += 2; continue
+        if a in ("-s", "--date") and i + 1 < len(argv):
+            date = argv[i + 1]; i += 2; continue
+        i += 1
+    return contents, integrations, json_path, date
+
+
+def main():
+    argv = sys.argv[1:]
+    if not argv or argv[0] in ("-h", "--help"):
+        print(__doc__)
+        return 0
+
+    contents, integrations, json_path, date = parse_args(argv)
+    tmp_json = None
+
+    if json_path:
+        try:
+            with open(json_path) as f:
+                payload = json.load(f)
+        except Exception as e:
+            print(f"postiz-post: cannot read JSON payload: {e}", file=sys.stderr)
+            return 2
+        payload["shortLink"] = False  # R1
+        for p in payload.get("posts", []):
+            iid = (p.get("integration") or {}).get("id")
+            if iid:
+                integrations.append(iid)
+            for v in p.get("value", []):
+                contents.append(v.get("content", ""))
+        fd, tmp_json = tempfile.mkstemp(prefix="postiz-safe-", suffix=".json")
+        with os.fdopen(fd, "w") as f:
+            json.dump(payload, f, ensure_ascii=False)
+        new_argv = []
+        i = 0
+        while i < len(argv):
+            if argv[i] in ("-j", "--json") and i + 1 < len(argv):
+                new_argv += [argv[i], tmp_json]; i += 2; continue
+            new_argv.append(argv[i]); i += 1
+        argv = new_argv
+
+    providers = integrations_map()
+    targets = {i: providers.get(i, "") for i in integrations}
+
+    # R2: refuse X + URL before sending anything.
+    all_urls = []
+    for c in contents:
+        all_urls += find_urls(c)
+    x_targets = [i for i, p in targets.items() if p == "x"]
+    if x_targets and all_urls and os.environ.get("POSTIZ_SAFE_ALLOW_X_URL") != "1":
+        print("postiz-post: REFUSED. Postiz Cloud deletes every URL from X posts "
+              "server-side (STRIP_LINKS_FROM_X_POSTS; vendor-confirmed, not "
+              "configurable). This post would be published WITHOUT its link:",
+              file=sys.stderr)
+        for u in sorted(set(all_urls)):
+            print(f"  - {u}", file=sys.stderr)
+        print("Put the link somewhere that survives (another channel), or set "
+              "POSTIZ_SAFE_ALLOW_X_URL=1 only if losing the link is acceptable. "
+              "See anicca-ops files/postiz-link-fix-2026-11-17.md", file=sys.stderr)
+        return 3
+
+    # R1 (CLI mode): strip any --shortLink enabling flag, force --no-shortLink.
+    if not json_path:
+        cleaned = []
+        i = 0
+        while i < len(argv):
+            a = argv[i]
+            if a == "--shortLink" or a.startswith("--shortLink="):
+                i += 1; continue
+            cleaned.append(a); i += 1
+        argv = cleaned + ["--no-shortLink"]
+
+    proc = subprocess.run([POSTIZ, "posts:create"] + argv,
+                          capture_output=True, text=True)
+    sys.stdout.write(proc.stdout)
+    sys.stderr.write(proc.stderr)
+    if proc.returncode != 0:
+        return proc.returncode
+
+    post_ids = re.findall(r'"postId":\s*"([^"]+)"', proc.stdout)
+    if tmp_json:
+        try:
+            os.unlink(tmp_json)
+        except OSError:
+            pass
+    if not post_ids or not all_urls:
+        return 0
+
+    # R3: read back stored content and verify every submitted URL survived.
+    # posts:list is minified (root content only) — thread/reply children are
+    # verified for X by R2's refusal; for other providers the root carries the
+    # link in our posting patterns.
+    day = (date or "")[:10]
+    try:
+        import datetime
+        base = datetime.date.fromisoformat(day) if day else datetime.date.today()
+    except Exception:
+        import datetime
+        base = datetime.date.today()
+    import datetime as dt
+    start = (base - dt.timedelta(days=1)).isoformat() + "T00:00:00+09:00"
+    end = (base + dt.timedelta(days=1)).isoformat() + "T23:59:59+09:00"
+
+    stored = None
+    for attempt in range(3):
+        try:
+            out = subprocess.run(
+                [POSTIZ, "posts:list", "--startDate", start, "--endDate", end],
+                capture_output=True, text=True, timeout=90).stdout
+            data = json.loads(out[out.index("{"):])
+            for p in data.get("posts", []):
+                if p.get("id") in post_ids:
+                    stored = p.get("content", "")
+                    break
+            if stored is not None:
+                break
+        except Exception:
+            pass
+        time.sleep(5)
+    if stored is None:
+        print(f"postiz-post: WARNING: created {post_ids} but read-back failed; "
+              "post is UNVERIFIED. Check its stored content manually.",
+              file=sys.stderr)
+        return 5
+    missing = [u for u in set(all_urls) if u not in stored]
+    if missing:
+        print("postiz-post: WARNING: created post(s) " + ", ".join(post_ids) +
+              " but these URLs are MISSING from the stored content:",
+              file=sys.stderr)
+        for u in missing:
+            print(f"  - {u}", file=sys.stderr)
+        return 4
+    print(f"postiz-post: verified — {len(set(all_urls))} URL(s) present in "
+          f"stored content of {', '.join(post_ids)}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

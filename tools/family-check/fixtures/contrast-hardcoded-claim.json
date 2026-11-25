@@ -1,0 +1,6 @@
+{"app":"contrast-hardcoded-claim-cached-access",
+ "decision":{"per_product_decision_recorded":true,"irreversibility_acknowledged":false,"asc_state_evidenced_per_product":false,"revenue_tradeoff_recorded":false},
+ "paywall_truth":{"callout_driven_by_is_family_shareable":false,"no_sharing_claim_when_not_shareable":false},
+ "grant_revoke":{"sdk_initialized_early":false,"access_from_live_entitlement":false,"shared_restore_or_sync_path":false},
+ "shared_education":{"ownership_type_distinguished":false,"shared_user_premium_education":false},
+ "measurement":{"revenue_counts_purchased_only":false,"shared_cohort_counted":false,"intro_eligibility_accounts_for_shared":false}}

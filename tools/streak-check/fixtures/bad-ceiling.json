@@ -1,0 +1,50 @@
+{
+ "activation_window_days_by_plan": {
+  "annual": 365,
+  "monthly": 30,
+  "weekly": 7
+ },
+ "app": "bad-ceiling-design",
+ "counter_visible_on_home": false,
+ "forgiveness": {
+  "paid": true,
+  "type": "none"
+ },
+ "frp": {
+  "defined": false,
+  "denominator": "all_installs",
+  "measured_from_survivors_vs_churners": false
+ },
+ "full_goal_required": true,
+ "increments_without_core_action": true,
+ "milestones_days": [
+  100
+ ],
+ "points_economy_farmable": true,
+ "post_break": {
+  "break_copy_style": "shame_you_lost_it",
+  "consistency_window_shown": false,
+  "cumulative_progress_preserved": false,
+  "day_boundary": "server_utc",
+  "grace_paywalled": true,
+  "hard_day_declaration_protects": false,
+  "longest_streak_record_preserved": false,
+  "offline_completion_counts_on_sync": false,
+  "outage_protection": false,
+  "punishment_on_break": true,
+  "repair_method": "paid_offer",
+  "repair_offered_after_break": false,
+  "repair_paid": true,
+  "repair_window_hours": 12,
+  "rescue_notifications_after_break": 5,
+  "streak_display_opt_out": false
+ },
+ "qualifying_action": "full_daily_goal",
+ "reminder": {
+  "hours_after_last": 6,
+  "message_style": "generic_please_return",
+  "timing_basis": "fixed_clock"
+ },
+ "store_copy_claims_no_streaks": true,
+ "streak_implemented": true
+}

@@ -1,0 +1,5 @@
+{"recorded":true,"paywall_type":"hard","trial_days":3,"trial_shown_on_paywall":false,
+ "day0":{"aha_in_first_session":false,"day0_cancellation_measured":false},
+ "metrics":{"d35_download_to_paid_pct":null},
+ "annual":{"month1_cancellation_measured":false,"winback_in_first_2_months":false},
+ "billing":{"grace_period_enabled":false,"winback_enabled":false,"billing_failure_share_pct":null}}

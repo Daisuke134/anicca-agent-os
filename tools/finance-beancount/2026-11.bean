@@ -1,0 +1,28 @@
+option "title" "Anicca November 2026 reconciliation (from cost-ledger.md chain)"
+option "operating_currency" "USD"
+2026-01-01 open Assets:Bank:MUFG
+2026-01-01 open Expenses:Observed
+2026-01-01 open Expenses:AgentTools
+2026-01-01 open Expenses:ClientWork
+2026-01-01 open Expenses:Social
+2026-01-01 open Income:AppStore
+
+2026-11-20 * "November observed costs recorded through 2026-11-20 (cost-ledger running total)"
+  Expenses:Observed  1640.08 USD
+  Assets:Bank:MUFG
+
+2026-11-20 * "COMMANDCODE.AI debit JPY 1,777 / 156.84 (cost-ledger 2026-11-21 entry)"
+  Expenses:AgentTools  11.33 USD
+  Assets:Bank:MUFG
+
+2026-11-24 * "Upwork Connects 100 purchase JPY 2,500 = USD 15.00 (cost-ledger 2026-11-24 audit entry)"
+  Expenses:ClientWork  15.00 USD
+  Assets:Bank:MUFG
+
+2026-11-24 * "X Premium receipt #2152-8208-5756 JPY 918 / 156.84 (cost-ledger 2026-11-24 21:52 entry)"
+  Expenses:Social  5.85 USD
+  Assets:Bank:MUFG
+
+2026-11-24 * "November App Store sales MTD per /open and 2026-11-16 independent audit"
+  Assets:Bank:MUFG  31.81 USD
+  Income:AppStore

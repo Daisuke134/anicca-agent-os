@@ -1,0 +1,15 @@
+{
+ "sequential": {
+  "n": 20,
+  "ok": 20,
+  "latency_min_s": 0.06528949737548828,
+  "latency_median_s": 0.06633591651916504,
+  "latency_max_s": 0.09973001480102539,
+  "failures": []
+ },
+ "concurrent": {
+  "n": 5,
+  "ok": 5,
+  "failures": []
+ }
+}

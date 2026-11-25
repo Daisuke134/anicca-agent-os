@@ -1,0 +1,21 @@
+{
+  "decided": true,
+  "owner": "Manager research loop",
+  "source": "Anthropic Data residency (platform.claude.com/docs/en/manage-claude/data-residency)",
+  "inference_geo_vs_workspace_geo_distinguished_as_independent": false,
+  "inference_geo_values_global_default_and_us_only_known": true,
+  "us_value_means_us_based_infrastructure_only_known": true,
+  "global_means_any_geography_and_standard_pricing_known": true,
+  "inference_geo_supported_on_46_and_later_only_known": true,
+  "older_models_return_400_so_param_gated_by_model": false,
+  "batch_api_per_request_inference_geo_known": true,
+  "allowed_inference_geos_restriction_and_400_on_violation_set": false,
+  "default_inference_geo_in_allowed_and_request_can_override_with_allowed": true,
+  "workspace_geo_us_only_set_at_creation_immutable_known": true,
+  "us_only_11x_all_token_categories_incl_haiku_long_context_known": true,
+  "pricing_scope_firstparty_aws_google_managed_foundry_vs_partner_known": true,
+  "managed_agents_pinned_us_also_11x_known": false,
+  "response_usage_inference_geo_read_per_request": false,
+  "legacy_optout_migrated_to_allowed_us_default_us_known": true,
+  "limitations_shared_rate_limits_and_endpoint_processing_follows_workspace_geo_known": true
+}

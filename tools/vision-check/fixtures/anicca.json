@@ -1,0 +1,8 @@
+{
+ "decision": {"decision_recorded": false, "owner_recorded": false, "vision_surfaces_inventoried": false},
+ "sources": {"source_type_chosen_deliberately": false, "formats_validated": false, "size_and_count_limits_enforced": false},
+ "resolution": {"visual_token_cost_estimated": false, "resizing_decided_before_send": false, "oversized_handling_decided": false},
+ "multi_image": {"multiple_images_labelled": false, "many_image_stricter_limit_handled": false, "prior_turn_images_reused_not_resent": false},
+ "quality": {"image_quality_checked": false, "compression_checked_on_actual_sent_images": false, "interpretations_verified": true},
+ "operations": {"coordinates_rescaled_to_original": false, "limits_reverified_on_model_change": false, "prohibited_uses_excluded": true}
+}

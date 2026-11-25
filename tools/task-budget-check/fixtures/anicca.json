@@ -1,0 +1,8 @@
+{
+ "decided": false, "owner_recorded": false, "canonical_record": false,
+ "setting_shape_and_beta_header": false, "countdown_marker_pacing": false, "counts_seen_new_only": false,
+ "turn_definition_tool_result_boundary": false, "remaining_only_for_client_compaction": false, "mid_conversation_change_cache_cost": false,
+ "advisory_not_enforced_max_tokens_hard": false, "independence_and_64k_floor": false, "minimum_20000_and_measure_first_p99": false,
+ "effort_complementary_depth_vs_breadth": false, "adaptive_thinking_counts_scales_down": false, "caching_set_once_no_mutation": false,
+ "supported_models_beta": false, "unsupported_models_guarded": false, "surface_limits_no_code_cowork": false
+}

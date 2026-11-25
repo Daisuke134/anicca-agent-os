@@ -1,0 +1,36 @@
+{
+ "decision_record": {
+  "availability_decision_recorded_per_app": true,
+  "territory_list_read_from_asc_not_assumed": true,
+  "new_territory_auto_add_preference_recorded": true,
+  "released_territory_preorder_irreversibility_understood": true
+ },
+ "window_eligibility": {
+  "preorder_only_in_unreleased_territories": true,
+  "iap_and_bundles_excluded_understood": true,
+  "first_release_window_2_to_180_checked": true,
+  "new_territory_window_2_to_365_checked": true
+ },
+ "clock_and_slack": {
+  "window_counted_from_initial_publication": false,
+  "slip_slack_planned_not_maxed": false,
+  "date_change_customer_notice_owned": false,
+  "date_kept_out_of_uneditable_marketing": false
+ },
+ "review_and_display": {
+  "preorder_live_only_after_review_and_manual_release": true,
+  "visibility_24h_verified_before_traffic": false,
+  "expected_date_display_rule_understood": true,
+  "paid_lower_of_two_prices_understood": false
+ },
+ "release_and_removal": {
+  "release_day_notify_autodownload_expected": true,
+  "customers_get_latest_released_version": true,
+  "removal_consequences_understood": false
+ },
+ "measurement_and_use": {
+  "preorder_analytics_and_cancellations_read": false,
+  "preorders_not_counted_as_installs": false,
+  "play_preregistration_clock_separate": true
+ }
+}

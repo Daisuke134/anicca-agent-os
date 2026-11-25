@@ -1,0 +1,32 @@
+{
+ "decision": {
+  "central_owner_recorded": true,
+  "decision_recorded": true,
+  "subagent_inventory_with_verdicts": true
+ },
+ "disclosure": {
+  "knowledge_behind_search_not_pasted": true,
+  "progressive_disclosure_skills_tools": true,
+  "tools_grouped_by_intent_under_limit": true
+ },
+ "keep_conditions": {
+  "divide_by_context_not_problem_type": true,
+  "keep_only_on_measurable_evidence": true,
+  "parallel_fresh_context_used": true
+ },
+ "loop_shape": {
+  "harness_limits_write_gates": true,
+  "one_model_one_context_open_loop": true,
+  "plan_in_context_revised_shared_context_kept": true
+ },
+ "maintenance": {
+  "prompt_audit_and_one_change_at_a_time": false,
+  "skill_dri_and_pruning_by_cost_usage": false,
+  "teams_own_skills_tools_vetted": false
+ },
+ "migration_eval": {
+  "flipped_tasks_inspected_and_tasks_run_multiple_times": false,
+  "fold_one_at_a_time_compare": false,
+  "small_e2e_eval_before_folding": true
+ }
+}

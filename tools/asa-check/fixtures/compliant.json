@@ -1,0 +1,20 @@
+{
+  "app": "compliant-example",
+  "inventory_recorded": true,
+  "decision_recorded": true,
+  "auto_reload_enabled": false,
+  "campaigns_running": true,
+  "gross_profit_case_recorded": true,
+  "attribution": {"joined_to_subscription_events": true, "keyword_level_trial_and_subscriber_visible": true, "decisions_on_downloads_only": false},
+  "economics": {"allowable_cpa_derived_from_own_ltv": true, "benchmarks_are_context_only": true, "benchmark_denominator_recorded": "US / Health & Fitness subscription, Adapty 2026 (90 markets)"},
+  "diagnostic": {"compares_cpt_and_cr_to_same_market_medians": true, "fixes_cr_before_bid_changes": true, "bid_cut_is_first_move": false},
+  "structure": {"campaigns_split_by_country_cluster": true, "ad_group_types": ["brand","competitor","category","feature","discovery"], "naming_convention_recorded": true},
+  "match_types": {"exact_for_brand_and_high_intent": true, "search_match_only_in_discovery": true, "winners_promoted_to_manual_groups": true},
+  "negatives": {"maintained_from_day_one": true, "review_cadence_days": 7},
+  "cpp_mapping": {"intent_clusters": 4, "one_intent_one_group_one_page": true, "first_screenshot_is_searched_result": true, "brand_stays_on_default_page": true},
+  "paywall_match": {"paywall_matches_cpp_intent_per_cluster": true, "judged_on_revenue_not_cr": true, "measurement_window_days": 92},
+  "bidding": {"maximize_conversions_only_for_discovery": true, "manual_cpt_on_known_converters": true, "monthly_cap_from_daily_x_30_4_recorded": true},
+  "markets": {"ranked_by_cost_per_paying_subscriber": true, "starts_where_organic_already_performs": true, "high_cpa_high_cr_not_auto_killed": true},
+  "keyword_evidence": {"demand_evidence_recorded_per_cluster": true, "generic_head_terms_flagged": true},
+  "spend_guardrails": {"budget_cap_recorded": true, "no_spend_without_gross_profit_case": true}
+}

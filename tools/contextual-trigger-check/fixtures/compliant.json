@@ -1,0 +1,20 @@
+{
+ "trigger_map_recorded": true,
+ "triggers_ranked_by_engagement_depth": true,
+ "timer_only_triggers_removed_or_flagged": true,
+ "first_win_defined": true,
+ "no_contextual_paywall_before_first_win": true,
+ "feature_gate_trigger_present": true,
+ "limit_trigger_after_success_not_first_item": true,
+ "success_or_return_trigger_present": true,
+ "separate_placement_per_trigger": true,
+ "headline_names_the_trigger": true,
+ "copy_fixed_before_layout_test": true,
+ "weekly_cap_for_dismissers": true,
+ "hard_stop_after_5_to_7_dismissals": true,
+ "cooldown_72h_after_2_dismissals": true,
+ "clear_continue_free_path": true,
+ "per_placement_conversion_measured": true,
+ "dismissal_rate_not_judged_alone": true,
+ "contextual_vs_timer_test_or_decision": true
+}

@@ -1,0 +1,15 @@
+{
+ "app": "anicca-self-assessment-2026-11-25",
+ "citation": {},
+ "design": {},
+ "ethics": {
+  "clinical_claim_made": false
+ },
+ "inventory": {},
+ "measurement": {},
+ "prohibitions": {
+  "acceptance_used_to_endure_harm_or_bypass_changeable_problems": false,
+  "suppression_or_distraction_counted_as_acceptance": false,
+  "unwillingness_shamed_or_framed_as_failure": false
+ }
+}

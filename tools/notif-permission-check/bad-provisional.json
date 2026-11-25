@@ -1,0 +1,46 @@
+{
+ "ask_timing": "first_launch",
+ "control": {
+  "categories_separable": false,
+  "preference_center": false,
+  "segments": [
+   "new"
+  ]
+ },
+ "eligible": 1000,
+ "funnel_events": [
+  "permission_allowed"
+ ],
+ "granted": 180,
+ "has_recovery_path": false,
+ "has_soft_prompt": false,
+ "platform": "ios",
+ "primer": {
+  "buttons_direct_choice": false,
+  "generic_copy": true,
+  "imitates_system_dialog": true,
+  "names_specific_value": false
+ },
+ "prompt_shown": 1000,
+ "protection": {
+  "cap_per_user": false,
+  "quiet_hours_defined": false,
+  "suppress_if_action_done_24h": false,
+  "transactional_exempt": false,
+  "weekly_cap_nontransactional": 14
+ },
+ "reask": {
+  "at_need_moment": false,
+  "cadence_days": 1,
+  "soft_only": false,
+  "system_denied_route": "reprompt"
+ },
+ "sends_within_90d": false,
+ "provisional": {
+  "enabled": false,
+  "first_week_sends": 0,
+  "upgrade_trigger_high_signal": false,
+  "upgrade_reshow_capped": false,
+  "cohort_measured_separately": false
+ }
+}

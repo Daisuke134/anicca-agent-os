@@ -1,0 +1,8 @@
+{
+ "decision": {"decision_recorded": true, "owner_recorded": true, "canonical_source_recorded": true},
+ "sample": {"real_representative_traces": true, "diverse_pool_about_100": true, "sampling_beyond_feedback": true},
+ "open_coding": {"free_text_first_failure": true, "expert_first30_before_agent": true, "rubric_built_after_review": true},
+ "axial_coding": {"taxonomy_with_counts": true, "non_model_problems_included": true, "root_cause_deferred": true},
+ "conversion": {"top_categories_acted_on": true, "cheapest_detector_chosen": true, "non_eval_fixes_tracked": true},
+ "maintenance": {"saturation_checked": true, "rerun_cadence_recorded": true, "taxonomy_revisited_on_change": true}
+}

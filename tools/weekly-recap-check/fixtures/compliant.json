@@ -1,0 +1,20 @@
+{
+ "recap_surface_recorded": true,
+ "recap_timing_inside_activation_window": true,
+ "recap_built_from_logged_core_action": true,
+ "recap_numbers_traceable_to_events": true,
+ "recap_shows_goal_progress": true,
+ "recap_celebrates_done_not_guilt": true,
+ "zero_activity_branch_distinct": true,
+ "recap_ends_single_next_step": true,
+ "hesitation_removal_path": true,
+ "recap_not_interrupting_core_action": true,
+ "recap_frequency_tapers_and_adjusts": true,
+ "pre_renewal_recap_before_charge": true,
+ "recap_echoes_stated_goal_language": true,
+ "active_user_acknowledged_not_pushed": true,
+ "recap_persists_in_app": true,
+ "recap_read_by_plan_and_activity_cohort": true,
+ "recap_judged_on_renewal_not_opens": true,
+ "renewal_predictor_behavior_named_and_driven": true
+}

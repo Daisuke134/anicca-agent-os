@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "agent_id": "7069327619",
+  "agent_version_id": "2123693253949419520",
+  "env_id": "openclaw",
+  "current_stage": "package_uploaded",
+  "pending_review_url": "https://api.capafy.ai/R2123774717894356992",
+  "last_updated": "2026-11-20T13:45:24.459963Z",
+  "history": [
+    {
+      "stage": "init_completed",
+      "updated_at": "2026-11-12T07:08:45.066085Z"
+    },
+    {
+      "stage": "security_review_required",
+      "updated_at": "2026-11-20T13:44:06.291374Z"
+    },
+    {
+      "stage": "package_uploaded",
+      "updated_at": "2026-11-20T13:45:24.459963Z"
+    }
+  ],
+  "extra": {
+    "runtime_dir": "/home/hatch/.openclaw/workspace",
+    "explicit_skill": {
+      "path": ".openclaw/skills/formula-1-race-weekend-brief",
+      "source_path": "/home/hatch/.openclaw/workspace/skills/formula-1-race-weekend-brief",
+      "binding_kind": "external_skill_dir",
+      "source_kind": "explicit_skill_dir",
+      "unit_type": "skill",
+      "name": "formula-1-race-weekend-brief",
+      "description": "Turn the event name, session schedule, and approved facts you paste in into one race weekend brief — schedule organized by day, approved facts arranged into brief sections, and every unconfirmed point marked for review."
+    },
+    "external_skill_bindings": [
+      {
+        "path": ".openclaw/skills/formula-1-race-weekend-brief",
+        "source_path": "/home/hatch/.openclaw/workspace/skills/formula-1-race-weekend-brief",
+        "binding_kind": "external_skill_dir",
+        "source_kind": "explicit_skill_dir",
+        "unit_type": "skill",
+        "name": "formula-1-race-weekend-brief",
+        "description": "Turn the event name, session schedule, and approved facts you paste in into one race weekend brief — schedule organized by day, approved facts arranged into brief sections, and every unconfirmed point marked for review."
+      }
+    ],
+    "staging_path": "/home/hatch/workspace/tools/capafy-publisher-skill/capafy-publisher/.temp/staging",
+    "staging_digest": "7285da5525d409c72effb0a400ecdbf313b5ba4cad86592c67f8a44c8e5a12f4",
+    "reviewed_scan_path": "/home/hatch/workspace/tools/capafy-publisher-skill/capafy-publisher/.temp/reviewed-scan.json",
+    "reviewed_scan_digest": "e5c90fbd19927a520536af245e5c18ea849ad3ea44714e9f3e1301f56b2ae816",
+    "environment_candidates_path": "/home/hatch/workspace/tools/capafy-publisher-skill/capafy-publisher/.temp/environment-selection-2123693253949419520.json",
+    "environment_candidate_digest": "sha256:d4d667d34aa4427870d0d733d04b605368a454fc1905886b0e41581debe06b37",
+    "source_snapshot_digest": "5f4c5270bae0b81ed1e704883874859243d3d6066b346752cfe4d93133310aaa",
+    "source_snapshot_roots": [
+      {
+        "group": "skills",
+        "logical_path": ".openclaw/skills/formula-1-race-weekend-brief",
+        "source_path": "/home/hatch/.openclaw/workspace/skills/formula-1-race-weekend-brief"
+      }
+    ],
+    "bundle_path": "/home/hatch/workspace/tools/capafy-publisher-skill/capafy-publisher/.temp/bundle.zip",
+    "package_url": "https://s3.eu-central-1.amazonaws.com/s3.capafy/agent/run-online-package/2060981302278778880/2026/11/20c1c1acbcce3246929f7b215a5aa8ad97.zip"
+  },
+  "agent_type": "run_online"
+}

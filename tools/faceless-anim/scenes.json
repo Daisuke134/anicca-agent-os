@@ -1,0 +1,5 @@
+[
+ {"id": 1, "template": "WALL", "left": "PERFECTIONIST", "right": "ACTION TAKER", "caption": "one is still fixing the first brick, the other one is standing on the wall"},
+ {"id": 2, "template": "STAIRS", "left": "WAITING", "right": "STARTING", "caption": "you don't need to see the whole staircase, you need to take the first step"},
+ {"id": 3, "template": "DOORS", "left": "ASKING ONCE", "right": "ASKING AGAIN", "caption": "the door that opens is never the first one you knock on"}
+]

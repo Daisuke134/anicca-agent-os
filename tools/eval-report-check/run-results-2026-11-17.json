@@ -1,0 +1,56 @@
+[
+  {
+    "checker": "eval-report-check",
+    "fixture": "good.json",
+    "exit": 0,
+    "stdout": "PASS\n - EV-0 PASS: N=20, M=30, categories=3; counts validated\n - EV-1 PASS: reported means and intervals match computed Dirichlet moments\n - EV-2 PASS: candidate: strictly separated intervals\n - EV-3 PASS: allocation rule recorded\n - EV-4 PASS: evidence routes recorded (path contents are not verified offline)\n - EV-5 PASS: dimensions separated; no important dimension masked\n - POSTERIOR candidate: mean=0.847826087 interval=[0.825146294, 0.870505880] width=0.045359587 (Gaussian approximation)\n - POSTERIOR baseline: mean=0.326086957 interval=[0.296380009, 0.355793904] width=0.059413896 (Gaussian approximation)\n",
+    "pass": 6,
+    "fail": 0,
+    "warn": 0
+  },
+  {
+    "checker": "eval-report-check",
+    "fixture": "anicca.json",
+    "exit": 1,
+    "stdout": "FAIL (5):\n - EV-0 FAIL: missing/invalid N trials per case or M cases\n - EV-1 FAIL: posterior cannot be computed: valid trial counts required\n - EV-2 FAIL: comparison unavailable without valid trial counts\n - EV-3 WARN: pre-specified max_interval_width missing; next assessment requires allocation policy\n - EV-4 FAIL: evidence paths missing; artifact-only reports must explicitly set trajectory_opaque=true\n - EV-5 FAIL: dimension-level scores and importance/floors missing\n",
+    "pass": 0,
+    "fail": 5,
+    "warn": 1
+  },
+  {
+    "checker": "eval-report-check",
+    "fixture": "bad.json",
+    "exit": 1,
+    "stdout": "FAIL (3):\n - EV-0 PASS: N=20, M=30, categories=3; counts validated\n - EV-1 FAIL: primary metric must be posterior_mean plus credible_interval; Pass@k alone is insufficient\n - EV-2 FAIL: winner candidate is not strictly above baseline: intervals overlap/touch or winner is lower\n - EV-3 PASS: allocation rule recorded\n - EV-4 PASS: evidence routes recorded (path contents are not verified offline)\n - EV-5 FAIL: dimension masking: Safety below minimum despite overall pass\n - POSTERIOR candidate: mean=0.586956522 interval=[0.555277953, 0.618635090] width=0.063357137 (Gaussian approximation)\n - POSTERIOR baseline: mean=0.586956522 interval=[0.555277953, 0.618635090] width=0.063357137 (Gaussian approximation)\n",
+    "pass": 3,
+    "fail": 3,
+    "warn": 0
+  },
+  {
+    "checker": "repetition-schedule-check",
+    "fixture": "good.json",
+    "exit": 0,
+    "stdout": "PASS\n - HL-0 PASS: recorded and valid\n - HL-1 PASS: recorded and valid\n - HL-2 PASS: recorded and valid\n - HL-3 PASS: recorded and valid\n - HL-4 PASS: recorded and valid\n",
+    "pass": 5,
+    "fail": 0,
+    "warn": 0
+  },
+  {
+    "checker": "repetition-schedule-check",
+    "fixture": "anicca.json",
+    "exit": 1,
+    "stdout": "FAIL (4):\n - HL-0 PASS: recorded and valid\n - HL-1 FAIL: decision 0: missing item feature group/fields\n - HL-2 FAIL: recall probability or positive half-life missing; fixed calendar interval alone fails\n - HL-3 FAIL: separate item difficulty and learner ability required; combined score is insufficient\n - HL-4 FAIL: named top factors required for each decision\n",
+    "pass": 1,
+    "fail": 4,
+    "warn": 0
+  },
+  {
+    "checker": "repetition-schedule-check",
+    "fixture": "bad.json",
+    "exit": 1,
+    "stdout": "FAIL (1):\n - HL-0 PASS: recorded and valid\n - HL-1 FAIL: decision 0: missing context feature group/fields\n - HL-2 PASS: recorded and valid\n - HL-3 PASS: recorded and valid\n - HL-4 PASS: recorded and valid\n",
+    "pass": 4,
+    "fail": 1,
+    "warn": 0
+  }
+]

@@ -1,0 +1,20 @@
+{
+ "fields_read_from_asc_per_release": true,
+ "allocation_recorded_per_release": true,
+ "byte_length_verified_in_asc": true,
+ "no_repeat_across_fields": false,
+ "no_plural_duplicates": false,
+ "no_generic_or_filler": false,
+ "no_competitor_or_trademark": true,
+ "every_term_relevant_and_true": true,
+ "candidates_from_evidence": false,
+ "scored_by_popularity_difficulty_relevance": true,
+ "strongest_phrase_in_name": true,
+ "single_words_preferred": false,
+ "no_spaces_after_commas": false,
+ "field_near_full": false,
+ "localized_per_market": false,
+ "promo_text_not_used_for_keywords": true,
+ "change_batched_and_logged": true,
+ "post_release_read_scheduled": false
+}

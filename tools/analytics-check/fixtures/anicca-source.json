@@ -1,0 +1,37 @@
+{
+ "app": "Anicca iOS (evidence read 2026-11-16: canonical checkout Daisuke134/anicca, branch claude/living-home-paywall-2026-11-15, HEAD a553a6e42; Services/AnalyticsManager.swift, Models/OnboardingAnalytics.swift, Onboarding/OnboardingFlowView.swift, Services/DecisionPointRecorder.swift and AppState.swift read; event census computed over the whole Swift tree excluding tests. PASSES, not hidden: every event is merged with a common context (app_id, app_version, app_build, app_environment simulator/sandbox/production, flow_version adaptive-onboarding-v2, session_id, language, locale, device_region_code, storefront_country_code) and stamped with a per-event event_id and millisecond event_timestamp; Mixpanel payload logging is explicitly disabled (loggingEnabled = false). Since commit 7ea862d1a, onboarding_step_completed carries answer_ids + answer_axis from PersonalizationProfile.answerSnapshot() and sets the same IDs as a per-step user property; the vocabulary is privacy-safe by construction and by 20 unit tests (birth date only ever the token date_provided, free-text name only provided/unknown). onboarding_step_abandoned fires exactly once per step visit from two lifecycle surfaces, deduped by OnboardingAbandonmentTracker, and flushes immediately. onboarding_step_viewed is emitted for every step, and the primary funnel viewed/completed/abandoned/started/completed/paywall/purchase events all have emitters. identify is called at login (AppState) and at launch when stored credentials exist (AppDelegate); AnalyticsManager.reset() is called both in signOutPreservingSensorAccess and in signOutAndWipe (account deletion). nudge_decision_made reaches Mixpanel with delivery_id, message_id, category, assigned_probability, policy_version, selection_reason and answer_ids. FAILURES: (1) No tracking plan exists in the repo -- a markdown search for Mixpanel across the checkout returns no document; no event has a recorded consumer or owner, and no Lexicon governance (descriptions, Event Approval, named governor) is recorded anywhere in the repo or the company logs read this run. (2) Of 71 AnalyticsEvent cases, only 42 distinct events are ever passed to track(...) anywhere in the tree: 29 declared events are never sent (personalization_applied, affirmation_liked/unliked, six legacy onboarding completed events, onboarding_step_advanced/back, tinder_pain_card_agreed/dismissed, share_completed, rating_prompt_no_tapped, feedback_form_submitted/skipped, onboarding_paywall_customer_info_result, onboarding_paywall_dismissed_free, trial_cancelled, subscription_renewed/cancelled, session_failed, habit_created/deleted, habit_notification_tapped, talk_tab_opened, settings_opened, nudge_scheduled) and none carries a recorded disposition as server-owned or retired -- several (subscription_renewed/cancelled) plausibly belong to the server/RevenueCat side, but that is nowhere recorded, so a broken emitter and an intentional server event are indistinguishable. (3) The same step is identified as screen_id on onboarding_step_viewed and as step_id on onboarding_step_completed and onboarding_step_abandoned; onboarding_completed is tracked with no step/flow properties beyond the common context. (4) flush() exists at exactly one call site in the whole tree -- the abandonment path; purchase results, onboarding completion and account deletion do not flush. (5) The full ManagerBench decision rows (managerbench-cases.jsonl: stimulus, assigned probability, response windows, answer snapshot) are stored on-device only in Application Support; allCases() is consumed only on-device (synthetic-user history, onboarding preview), and no upload/sync path for the case rows exists in the tree -- only the ids-only nudge_decision_made event leaves the device, so the case dataset the eval needs cannot be rebuilt server-side and is lost on reinstall. (6) No pre-ship verification that events arrive in Mixpanel is recorded, and no planned-vs-actual audit cadence exists. (7) The read path is not verified alive: the company iteration logs record verify_access.py as skipped (credentials unset) on 2026-11-11 through 2026-11-15 and the MCP read route returning a sandbox 403 (rc-vs-asc-deepdive-2026-11-12) -- this run did not re-test either route, so the state is last-recorded-broken, not re-verified, not proven still broken. NOTE: this fixture is a source read of an unreleased branch (the answer-carrying fix is in HEAD parent commit 7ea862d1a, not yet a released build per the 2026-11-15 iteration log), not a production-receipt measurement.)",
+ "inventory": {
+  "tracking_plan_recorded": false,
+  "every_event_has_consumer_and_owner": false,
+  "lexicon_governance_recorded": false
+ },
+ "emission": {
+  "no_dead_events": false,
+  "dead_events_disposition_recorded": false,
+  "funnel_steps_all_emitted": true
+ },
+ "properties": {
+  "same_concept_same_property_name": false,
+  "funnel_events_carry_answers": true,
+  "pii_safe_vocabulary": true,
+  "context_properties_on_every_event": true
+ },
+ "identity": {
+  "identify_on_login": true,
+  "identify_on_launch_with_stored_credentials": true,
+  "reset_on_signout": true,
+  "reset_on_account_deletion": true
+ },
+ "delivery": {
+  "flush_at_terminal_moments": false,
+  "event_id_and_timestamp_for_dedup": true,
+  "payload_logging_disabled": true,
+  "decision_records_leave_device": false
+ },
+ "readback": {
+  "pre_ship_verification_recorded": false,
+  "planned_vs_actual_audit_scheduled": false,
+  "read_path_verified_alive": false,
+  "environment_separation_in_analysis": true
+ }
+}

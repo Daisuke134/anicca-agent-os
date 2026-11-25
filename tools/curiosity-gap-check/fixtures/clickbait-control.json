@@ -1,0 +1,33 @@
+{
+ "app": "clickbait-control",
+ "inventory": {
+  "gaps_inventoried_per_surface": true,
+  "gap_is_specific_question": false,
+  "partial_knowledge_present": false
+ },
+ "design": {
+  "gap_opened_before_answer": true,
+  "answer_exists_and_closable": false,
+  "closure_distance_honest": false
+ },
+ "prohibitions": {
+  "payoff_unrelated_or_absent": true,
+  "gap_never_closed": true,
+  "fabricated_mystery": true
+ },
+ "measurement": {
+  "open_and_closure_measured_separately": false,
+  "post_answer_disappointment_measured": false,
+  "counts_recorded_not_rates_only": false
+ },
+ "citation": {
+  "source_numbers_cited_with_design": false,
+  "lab_effect_used_as_product_promise": true,
+  "revenue_chain_recorded": false
+ },
+ "ethics": {
+  "paywall_blocks_self_generated_answer": true,
+  "user_can_ignore_gap_without_penalty": false,
+  "review_cadence_recorded": false
+ }
+}

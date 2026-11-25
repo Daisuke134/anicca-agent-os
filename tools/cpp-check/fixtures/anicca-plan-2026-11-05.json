@@ -1,0 +1,5 @@
+{"app":"Anicca (plan from affirmation-cpp-spec-2026-11-05, not live ASC state)","keyword_field":[],
+ "pages":[
+  {"name":"quiz-after","channel":"direct","intent":"post-quiz continuation","traffic_source":"quiz landing page","just_did":"finished the quiz","keywords":[],"promo_text":"","first_frame_shows_result":true,"ban_list":[],"text_layers":[],"deep_link_continuity":true},
+  {"name":"morning-search","channel":"search","intent":"morning affirmations search","traffic_source":"App Store search","just_did":"searched morning affirmations","cluster_size":0,"branded":false,"monthly_impressions":null,"conversion_below_average":false,"keywords":["morning"],"promo_text":"","first_frame_shows_result":true,"ban_list":[],"text_layers":[],"deep_link_continuity":false},
+  {"name":"sleep-search","channel":"search","intent":"sleep affirmations search","traffic_source":"App Store search","just_did":"searched sleep affirmations","cluster_size":0,"branded":false,"monthly_impressions":null,"conversion_below_average":false,"keywords":["sleep"],"promo_text":"","first_frame_shows_result":true,"ban_list":[],"text_layers":[],"deep_link_continuity":true}]}

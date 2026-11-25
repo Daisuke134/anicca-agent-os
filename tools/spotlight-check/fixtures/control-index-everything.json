@@ -1,0 +1,8 @@
+{"app":"control-index-everything-public",
+ "inventory":{"recorded":true,"indexable_content":["all screens","private journal text","all quotes ever served"]},
+ "core_spotlight":{"implemented":true,"attribute_fields":["title"],"stable_unique_ids":false},
+ "user_activity":{"donated_at_viewing":true,"eligible_for_search":true,"eligible_for_prediction":false,"become_current":false},
+ "continuation":{"handles_searchable_item_action":false,"lands_on_specific_content":false},
+ "freshness":{"updates_or_deletes_on_change":false,"ranking_signal_fed":false,"reindex_handler_present":false},
+ "scope":{"only_likely_searched":false,"personal_content_publicly_indexed":true},
+ "measurement":{"spotlight_event_defined":true,"spotlight_event_fired":false,"joinable_to_completion":false}}

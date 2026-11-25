@@ -1,0 +1,3 @@
+01 [WALL] one is still fixing the first brick, the other one is standing on the wall
+02 [STAIRS] you don't need to see the whole staircase, you need to take the first step
+03 [DOORS] the door that opens is never the first one you knock on
